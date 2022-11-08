@@ -1,0 +1,42 @@
+[0.039s] Invoking command in '/home/tofstudent/sa_zhao/build/tod_input_devices': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/tod_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/tod_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/tod_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/tod_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/tod_input_devices -- -j8 -l8
+[0.223s] [ 61%] Built target VirtualInputDevice
+[0.259s] [35m[1mScanning dependencies of target InputDevice[0m
+[0.335s] [ 69%] [32mBuilding CXX object src/CMakeFiles/InputDevice.dir/InputDeviceController.cpp.o[0m
+[3.990s] [ 76%] [32m[1mLinking CXX executable InputDevice[0m
+[4.850s] [100%] Built target InputDevice
+[4.864s] Invoked command in '/home/tofstudent/sa_zhao/build/tod_input_devices' returned '0': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/tod_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/tod_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/tod_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/tod_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/tod_input_devices -- -j8 -l8
+[4.922s] Invoking command in '/home/tofstudent/sa_zhao/build/tod_input_devices': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/tod_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/tod_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/tod_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/tod_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/tod_input_devices
+[4.946s] -- Install configuration: ""
+[4.946s] -- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/launch
+[4.946s] -- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/launch/tod_input_devices.launch.xml
+[4.946s] -- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/config
+[4.946s] -- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/config/virtual_ros2.yaml
+[4.946s] -- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/config/template.yaml
+[4.947s] -- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/config/fanatec_ff.yaml
+[4.947s] -- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/config/fanatec.yaml
+[4.947s] -- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/config/senso.yaml
+[4.947s] -- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/config/xboxcontroller.yaml
+[4.947s] -- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/config/joystick.yaml
+[4.947s] -- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/config/stormjoystick.yaml
+[4.947s] -- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/config/virtual.yaml
+[4.947s] -- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/ament_index/resource_index/package_run_dependencies/tod_input_devices
+[4.947s] -- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/ament_index/resource_index/parent_prefix_path/tod_input_devices
+[4.947s] -- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/environment/ament_prefix_path.sh
+[4.948s] -- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/environment/ament_prefix_path.dsv
+[4.948s] -- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/environment/path.sh
+[4.948s] -- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/environment/path.dsv
+[4.948s] -- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/local_setup.bash
+[4.948s] -- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/local_setup.sh
+[4.948s] -- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/local_setup.zsh
+[4.948s] -- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/local_setup.dsv
+[4.948s] -- Installing: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/package.dsv
+[4.948s] -- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/ament_index/resource_index/packages/tod_input_devices
+[4.949s] -- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.949s] -- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.949s] -- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/cmake/tod_input_devicesConfig.cmake
+[4.949s] -- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/cmake/tod_input_devicesConfig-version.cmake
+[4.949s] -- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/package.xml
+[4.950s] -- Installing: /home/tofstudent/sa_zhao/install/tod_input_devices/lib/tod_input_devices/InputDevice
+[4.952s] -- Set runtime path of "/home/tofstudent/sa_zhao/install/tod_input_devices/lib/tod_input_devices/InputDevice" to ""
+[4.952s] -- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/lib/libVirtualInputDevice.a
+[4.957s] Invoked command in '/home/tofstudent/sa_zhao/build/tod_input_devices' returned '0': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/tod_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/tod_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/tod_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/tod_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/tod_input_devices

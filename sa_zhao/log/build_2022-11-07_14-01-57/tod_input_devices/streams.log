@@ -1,0 +1,81 @@
+[0.045s] Invoking command in '/home/tofstudent/sa_zhao/build/tod_input_devices': CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/tod_msgs:/home/tofstudent/sa_zhao/install/pure_pursuit:/home/tofstudent/sa_zhao/install/vehicle_info_util:/home/tofstudent/sa_zhao/install/interactive_trajectory:/home/tofstudent/sa_zhao/install/tod_command_creation:/home/tofstudent/sa_zhao/install/random_trajectory:/home/tofstudent/sa_zhao/install/traj_interfaces:/home/tofstudent/sa_zhao/install/tod_input_devices:/home/tofstudent/sa_zhao/install/carla_ackermann_msgs:/home/tofstudent/sa_zhao/install/carla_msgs:/home/tofstudent/sa_zhao/install/autoware_cmake:/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs:/home/tofstudent/sa_zhao/install/carla_ackermann_control:/home/tofstudent/sa_zhao/install/carla_ros_bridge:/home/tofstudent/sa_zhao/install/carla_spawn_objects:/home/tofstudent/sa_zhao/install/ros_compatibility:/home/tofstudent/sa_zhao/install/carla_common:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/tod_msgs/lib:/home/tofstudent/sa_zhao/install/pure_pursuit/lib:/home/tofstudent/sa_zhao/install/vehicle_info_util/lib:/home/tofstudent/sa_zhao/install/traj_interfaces/lib:/home/tofstudent/sa_zhao/install/carla_ackermann_msgs/lib:/home/tofstudent/sa_zhao/install/carla_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/tofstudent/sa_zhao/install/tod_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/traj_interfaces/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_ackermann_control/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_spawn_objects/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/ros_compatibility/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_ackermann_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_common/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/tod_input_devices -- -j8 -l8
+[0.158s] [35m[1mScanning dependencies of target UsbInputDevice[0m
+[0.188s] [ 12%] [32mBuilding CXX object src/UsbInputDevice/CMakeFiles/UsbInputDevice.dir/UsbInputDevice.cpp.o[0m
+[0.441s] In file included from [01m[K/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/UsbInputDevice.cpp:2[m[K:
+[0.442s] [01m[K/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/UsbInputDevice.h:17:42:[m[K [01;31m[Kerror: [m[Kexpected class-name before ‘[01m[K{[m[K’ token
+[0.442s]  class UsbInputDevice : public InputDevice[01;31m[K{[m[K
+[0.442s]                                           [01;31m[K^[m[K
+[0.442s] [01m[K/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/UsbInputDevice.h:24:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool UsbInputDevice::activate()[m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+[0.442s]      bool [01;31m[Kactivate[m[K() override;
+[0.442s]           [01;31m[K^~~~~~~~[m[K
+[0.442s] [01m[K/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/UsbInputDevice.h:25:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool UsbInputDevice::deactivate()[m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+[0.442s]      bool [01;31m[Kdeactivate[m[K() override;
+[0.442s]           [01;31m[K^~~~~~~~~~[m[K
+[0.443s] [01m[K/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/UsbInputDevice.cpp:[m[K In constructor ‘[01m[KUsbInputDevice::UsbInputDevice(std::function<void(int, double)>, std::function<void(int, int)>, std::function<void(const std::__cxx11::basic_string<char>&)>)[m[K’:
+[0.443s] [01m[K/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/UsbInputDevice.cpp:7:12:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KUsbInputDevice[m[K’ does not have any field named ‘[01m[KInputDevice[m[K’
+[0.443s]           : [01;31m[KInputDevice[m[K(axisCb, buttonCb, errorCb) {
+[0.443s]             [01;31m[K^~~~~~~~~~~[m[K
+[0.443s] [01m[K/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/UsbInputDevice.cpp:[m[K In member function ‘[01m[Kbool UsbInputDevice::activate()[m[K’:
+[0.443s] [01m[K/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/UsbInputDevice.cpp:22:37:[m[K [01;31m[Kerror: [m[K‘[01m[K_correction[m[K’ was not declared in this scope
+[0.443s]      if (!Correction::set_correction([01;31m[K_correction[m[K.c_str(), _js))
+[0.443s]                                      [01;31m[K^~~~~~~~~~~[m[K
+[0.443s] [01m[K/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/UsbInputDevice.cpp:22:37:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KCorrection[m[K’
+[0.444s]      if (!Correction::set_correction([01;36m[K_correction[m[K.c_str(), _js))
+[0.444s]                                      [01;36m[K^~~~~~~~~~~[m[K
+[0.444s]                                      [32m[KCorrection[m[K
+[0.444s] [01m[K/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/UsbInputDevice.cpp:25:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krunning[m[K’ was not declared in this scope
+[0.444s]      [01;31m[Krunning[m[K = true;
+[0.444s]      [01;31m[K^~~~~~~[m[K
+[0.445s] [01m[K/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/UsbInputDevice.cpp:25:5:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kunlink[m[K’
+[0.445s]      [01;36m[Krunning[m[K = true;
+[0.445s]      [01;36m[K^~~~~~~[m[K
+[0.445s]      [32m[Kunlink[m[K
+[0.446s] [01m[K/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/UsbInputDevice.cpp:[m[K In member function ‘[01m[Kbool UsbInputDevice::deactivate()[m[K’:
+[0.446s] [01m[K/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/UsbInputDevice.cpp:31:9:[m[K [01;31m[Kerror: [m[K‘[01m[Krunning[m[K’ was not declared in this scope
+[0.446s]      if ([01;31m[Krunning[m[K) {
+[0.446s]          [01;31m[K^~~~~~~[m[K
+[0.446s] [01m[K/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/UsbInputDevice.cpp:31:9:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kunlink[m[K’
+[0.447s]      if ([01;36m[Krunning[m[K) {
+[0.447s]          [01;36m[K^~~~~~~[m[K
+[0.447s]          [32m[Kunlink[m[K
+[0.447s] [01m[K/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/UsbInputDevice.cpp:[m[K In member function ‘[01m[Kvoid UsbInputDevice::run()[m[K’:
+[0.447s] [01m[K/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/UsbInputDevice.cpp:44:12:[m[K [01;31m[Kerror: [m[K‘[01m[Krunning[m[K’ was not declared in this scope
+[0.447s]      while ([01;31m[Krunning[m[K) {
+[0.447s]             [01;31m[K^~~~~~~[m[K
+[0.448s] [01m[K/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/UsbInputDevice.cpp:44:12:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kunlink[m[K’
+[0.448s]      while ([01;36m[Krunning[m[K) {
+[0.448s]             [01;36m[K^~~~~~~[m[K
+[0.448s]             [32m[Kunlink[m[K
+[0.448s] [01m[K/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/UsbInputDevice.cpp:49:17:[m[K [01;31m[Kerror: [m[K‘[01m[KerrorCallback[m[K’ was not declared in this scope
+[0.448s]                  [01;31m[KerrorCallback[m[K("USB Input Device - Check Connection and restart!");
+[0.449s]                  [01;31m[K^~~~~~~~~~~~~[m[K
+[0.450s] [01m[K/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/UsbInputDevice.cpp:53:17:[m[K [01;31m[Kerror: [m[K‘[01m[KbuttonCallback[m[K’ was not declared in this scope
+[0.450s]                  [01;31m[KbuttonCallback[m[K(_jsevent.number, _jsevent.value);
+[0.450s]                  [01;31m[K^~~~~~~~~~~~~~[m[K
+[0.452s] [01m[K/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/UsbInputDevice.cpp:56:47:[m[K [01;31m[Kerror: [m[K‘[01m[KscaleValue[m[K’ was not declared in this scope
+[0.452s]                  axisCallback(_jsevent.number, [01;31m[KscaleValue[m[K(_jsevent.value,
+[0.452s]                                                [01;31m[K^~~~~~~~~~[m[K
+[0.454s] [01m[K/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/UsbInputDevice.cpp:56:47:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Ksetlocale[m[K’
+[0.454s]                  axisCallback(_jsevent.number, [01;36m[KscaleValue[m[K(_jsevent.value,
+[0.454s]                                                [01;36m[K^~~~~~~~~~[m[K
+[0.454s]                                                [32m[Ksetlocale[m[K
+[0.454s] [01m[K/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/UsbInputDevice.cpp:56:17:[m[K [01;31m[Kerror: [m[K‘[01m[KaxisCallback[m[K’ was not declared in this scope
+[0.454s]                  [01;31m[KaxisCallback[m[K(_jsevent.number, scaleValue(_jsevent.value,
+[0.454s]                  [01;31m[K^~~~~~~~~~~~[m[K
+[0.456s] [01m[K/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/UsbInputDevice.cpp:[m[K In member function ‘[01m[Kvoid UsbInputDevice::init_size()[m[K’:
+[0.456s] [01m[K/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/UsbInputDevice.cpp:88:9:[m[K [01;31m[Kerror: [m[K‘[01m[K_numberOfAxes[m[K’ was not declared in this scope
+[0.456s]          [01;31m[K_numberOfAxes[m[K = 0;
+[0.456s]          [01;31m[K^~~~~~~~~~~~~[m[K
+[0.459s] [01m[K/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/UsbInputDevice.cpp:90:9:[m[K [01;31m[Kerror: [m[K‘[01m[K_numberOfAxes[m[K’ was not declared in this scope
+[0.459s]          [01;31m[K_numberOfAxes[m[K = (int)axes;
+[0.459s]          [01;31m[K^~~~~~~~~~~~~[m[K
+[0.462s] [01m[K/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/UsbInputDevice.cpp:93:9:[m[K [01;31m[Kerror: [m[K‘[01m[K_numberOfButtons[m[K’ was not declared in this scope
+[0.462s]          [01;31m[K_numberOfButtons[m[K = 0;
+[0.463s]          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[0.466s] [01m[K/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/UsbInputDevice.cpp:95:9:[m[K [01;31m[Kerror: [m[K‘[01m[K_numberOfButtons[m[K’ was not declared in this scope
+[0.467s]          [01;31m[K_numberOfButtons[m[K = (int)buttons;
+[0.467s]          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[0.526s] make[2]: *** [src/UsbInputDevice/CMakeFiles/UsbInputDevice.dir/build.make:63: src/UsbInputDevice/CMakeFiles/UsbInputDevice.dir/UsbInputDevice.cpp.o] Error 1
+[0.526s] make[1]: *** [CMakeFiles/Makefile2:197: src/UsbInputDevice/CMakeFiles/UsbInputDevice.dir/all] Error 2
+[0.526s] make: *** [Makefile:141: all] Error 2
+[0.530s] Invoked command in '/home/tofstudent/sa_zhao/build/tod_input_devices' returned '2': CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/tod_msgs:/home/tofstudent/sa_zhao/install/pure_pursuit:/home/tofstudent/sa_zhao/install/vehicle_info_util:/home/tofstudent/sa_zhao/install/interactive_trajectory:/home/tofstudent/sa_zhao/install/tod_command_creation:/home/tofstudent/sa_zhao/install/random_trajectory:/home/tofstudent/sa_zhao/install/traj_interfaces:/home/tofstudent/sa_zhao/install/tod_input_devices:/home/tofstudent/sa_zhao/install/carla_ackermann_msgs:/home/tofstudent/sa_zhao/install/carla_msgs:/home/tofstudent/sa_zhao/install/autoware_cmake:/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs:/home/tofstudent/sa_zhao/install/carla_ackermann_control:/home/tofstudent/sa_zhao/install/carla_ros_bridge:/home/tofstudent/sa_zhao/install/carla_spawn_objects:/home/tofstudent/sa_zhao/install/ros_compatibility:/home/tofstudent/sa_zhao/install/carla_common:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/tod_msgs/lib:/home/tofstudent/sa_zhao/install/pure_pursuit/lib:/home/tofstudent/sa_zhao/install/vehicle_info_util/lib:/home/tofstudent/sa_zhao/install/traj_interfaces/lib:/home/tofstudent/sa_zhao/install/carla_ackermann_msgs/lib:/home/tofstudent/sa_zhao/install/carla_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/tofstudent/sa_zhao/install/tod_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/traj_interfaces/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_ackermann_control/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_spawn_objects/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/ros_compatibility/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_ackermann_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_common/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/tod_input_devices -- -j8 -l8

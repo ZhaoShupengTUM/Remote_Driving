@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tofstudent/sa_zhao/src/random_trajectory/include/pfas_head/Pose.hpp
+
+/home/tofstudent/sa_zhao/src/random_trajectory/include/pfas_head/TrajectoryPrediction.hpp
+iostream
+-
+math.h
+-
+VehicleParams.h
+/home/tofstudent/sa_zhao/src/random_trajectory/include/pfas_head/VehicleParams.h
+vector
+-
+Pose.hpp
+/home/tofstudent/sa_zhao/src/random_trajectory/include/pfas_head/Pose.hpp
+
+/home/tofstudent/sa_zhao/src/random_trajectory/include/pfas_head/VehicleParams.h
+
+/home/tofstudent/sa_zhao/src/random_trajectory/include/pfas_src/TrajectoryPrediction.cpp
+pfas_head/TrajectoryPrediction.hpp
+/home/tofstudent/sa_zhao/src/random_trajectory/include/pfas_src/pfas_head/TrajectoryPrediction.hpp
+

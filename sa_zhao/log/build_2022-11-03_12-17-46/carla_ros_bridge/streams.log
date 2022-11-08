@@ -1,0 +1,133 @@
+[0.801s] Invoking command in '/home/tofstudent/sa_zhao/src/carla_ros_bridge': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/carla_spawn_objects:/home/tofstudent/sa_zhao/install/ros_compatibility:/home/tofstudent/sa_zhao/install/carla_msgs:/home/tofstudent/sa_zhao/install/carla_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/carla_msgs LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/carla_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_spawn_objects/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/ros_compatibility/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/carla_ros_bridge build --build-base /home/tofstudent/sa_zhao/build/carla_ros_bridge/build install --prefix /home/tofstudent/sa_zhao/install/carla_ros_bridge --record /home/tofstudent/sa_zhao/build/carla_ros_bridge/install.log --single-version-externally-managed
+[1.026s] running egg_info
+[1.027s] creating ../../build/carla_ros_bridge/carla_ros_bridge.egg-info
+[1.028s] writing ../../build/carla_ros_bridge/carla_ros_bridge.egg-info/PKG-INFO
+[1.028s] writing dependency_links to ../../build/carla_ros_bridge/carla_ros_bridge.egg-info/dependency_links.txt
+[1.029s] writing entry points to ../../build/carla_ros_bridge/carla_ros_bridge.egg-info/entry_points.txt
+[1.029s] writing requirements to ../../build/carla_ros_bridge/carla_ros_bridge.egg-info/requires.txt
+[1.029s] writing top-level names to ../../build/carla_ros_bridge/carla_ros_bridge.egg-info/top_level.txt
+[1.030s] writing manifest file '../../build/carla_ros_bridge/carla_ros_bridge.egg-info/SOURCES.txt'
+[1.074s] reading manifest file '../../build/carla_ros_bridge/carla_ros_bridge.egg-info/SOURCES.txt'
+[1.075s] writing manifest file '../../build/carla_ros_bridge/carla_ros_bridge.egg-info/SOURCES.txt'
+[1.075s] running build
+[1.076s] running build_py
+[1.076s] creating /home/tofstudent/sa_zhao/build/carla_ros_bridge/build
+[1.076s] creating /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib
+[1.077s] creating /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge
+[1.077s] copying src/carla_ros_bridge/bridge.py -> /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge
+[1.078s] copying src/carla_ros_bridge/rss_sensor.py -> /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge
+[1.079s] copying src/carla_ros_bridge/imu.py -> /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge
+[1.079s] copying src/carla_ros_bridge/debug_helper.py -> /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge
+[1.079s] copying src/carla_ros_bridge/odom_sensor.py -> /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge
+[1.080s] copying src/carla_ros_bridge/speedometer_sensor.py -> /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge
+[1.080s] copying src/carla_ros_bridge/actor_factory.py -> /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge
+[1.080s] copying src/carla_ros_bridge/lidar.py -> /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge
+[1.081s] copying src/carla_ros_bridge/ego_vehicle.py -> /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge
+[1.081s] copying src/carla_ros_bridge/collision_sensor.py -> /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge
+[1.081s] copying src/carla_ros_bridge/actor.py -> /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge
+[1.081s] copying src/carla_ros_bridge/traffic_participant.py -> /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge
+[1.082s] copying src/carla_ros_bridge/world_info.py -> /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge
+[1.082s] copying src/carla_ros_bridge/object_sensor.py -> /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge
+[1.082s] copying src/carla_ros_bridge/actor_list_sensor.py -> /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge
+[1.083s] copying src/carla_ros_bridge/radar.py -> /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge
+[1.083s] copying src/carla_ros_bridge/lane_invasion_sensor.py -> /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge
+[1.083s] copying src/carla_ros_bridge/pseudo_actor.py -> /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge
+[1.084s] copying src/carla_ros_bridge/walker.py -> /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge
+[1.084s] copying src/carla_ros_bridge/gnss.py -> /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge
+[1.084s] copying src/carla_ros_bridge/carla_status_publisher.py -> /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge
+[1.085s] copying src/carla_ros_bridge/traffic_lights_sensor.py -> /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge
+[1.085s] copying src/carla_ros_bridge/spectator.py -> /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge
+[1.085s] copying src/carla_ros_bridge/__init__.py -> /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge
+[1.085s] copying src/carla_ros_bridge/sensor.py -> /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge
+[1.085s] copying src/carla_ros_bridge/vehicle.py -> /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge
+[1.086s] copying src/carla_ros_bridge/actor_control.py -> /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge
+[1.086s] copying src/carla_ros_bridge/opendrive_sensor.py -> /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge
+[1.086s] copying src/carla_ros_bridge/tf_sensor.py -> /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge
+[1.086s] copying src/carla_ros_bridge/traffic.py -> /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge
+[1.086s] copying src/carla_ros_bridge/marker_sensor.py -> /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge
+[1.087s] copying src/carla_ros_bridge/camera.py -> /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge
+[1.087s] copying src/carla_ros_bridge/CARLA_VERSION -> /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge
+[1.087s] running install
+[1.088s] running install_lib
+[1.088s] creating /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge
+[1.088s] copying /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge/bridge.py -> /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge
+[1.088s] copying /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge/rss_sensor.py -> /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge
+[1.088s] copying /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge/imu.py -> /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge
+[1.089s] copying /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge/debug_helper.py -> /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge
+[1.089s] copying /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge/odom_sensor.py -> /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge
+[1.089s] copying /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge/speedometer_sensor.py -> /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge
+[1.089s] copying /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge/actor_factory.py -> /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge
+[1.090s] copying /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge/lidar.py -> /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge
+[1.090s] copying /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge/ego_vehicle.py -> /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge
+[1.090s] copying /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge/collision_sensor.py -> /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge
+[1.090s] copying /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge/actor.py -> /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge
+[1.091s] copying /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge/traffic_participant.py -> /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge
+[1.091s] copying /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge/world_info.py -> /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge
+[1.091s] copying /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge/object_sensor.py -> /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge
+[1.091s] copying /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge/actor_list_sensor.py -> /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge
+[1.092s] copying /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge/radar.py -> /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge
+[1.092s] copying /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge/lane_invasion_sensor.py -> /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge
+[1.092s] copying /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge/pseudo_actor.py -> /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge
+[1.092s] copying /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge/walker.py -> /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge
+[1.092s] copying /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge/CARLA_VERSION -> /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge
+[1.092s] copying /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge/gnss.py -> /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge
+[1.093s] copying /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge/carla_status_publisher.py -> /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge
+[1.093s] copying /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge/traffic_lights_sensor.py -> /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge
+[1.093s] copying /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge/spectator.py -> /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge
+[1.093s] copying /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge/__init__.py -> /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge
+[1.094s] copying /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge/sensor.py -> /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge
+[1.094s] copying /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge/vehicle.py -> /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge
+[1.094s] copying /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge/actor_control.py -> /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge
+[1.094s] copying /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge/opendrive_sensor.py -> /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge
+[1.095s] copying /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge/tf_sensor.py -> /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge
+[1.095s] copying /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge/traffic.py -> /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge
+[1.095s] copying /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge/marker_sensor.py -> /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge
+[1.095s] copying /home/tofstudent/sa_zhao/build/carla_ros_bridge/build/lib/carla_ros_bridge/camera.py -> /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge
+[1.095s] byte-compiling /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge/bridge.py to bridge.cpython-38.pyc
+[1.095s] byte-compiling /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge/rss_sensor.py to rss_sensor.cpython-38.pyc
+[1.095s] byte-compiling /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge/imu.py to imu.cpython-38.pyc
+[1.096s] byte-compiling /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge/debug_helper.py to debug_helper.cpython-38.pyc
+[1.096s] byte-compiling /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge/odom_sensor.py to odom_sensor.cpython-38.pyc
+[1.096s] byte-compiling /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge/speedometer_sensor.py to speedometer_sensor.cpython-38.pyc
+[1.096s] byte-compiling /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge/actor_factory.py to actor_factory.cpython-38.pyc
+[1.099s] byte-compiling /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge/lidar.py to lidar.cpython-38.pyc
+[1.100s] byte-compiling /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge/ego_vehicle.py to ego_vehicle.cpython-38.pyc
+[1.102s] byte-compiling /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge/collision_sensor.py to collision_sensor.cpython-38.pyc
+[1.102s] byte-compiling /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge/actor.py to actor.cpython-38.pyc
+[1.103s] byte-compiling /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge/traffic_participant.py to traffic_participant.cpython-38.pyc
+[1.103s] byte-compiling /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge/world_info.py to world_info.cpython-38.pyc
+[1.104s] byte-compiling /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge/object_sensor.py to object_sensor.cpython-38.pyc
+[1.104s] byte-compiling /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge/actor_list_sensor.py to actor_list_sensor.cpython-38.pyc
+[1.105s] byte-compiling /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge/radar.py to radar.cpython-38.pyc
+[1.105s] byte-compiling /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge/lane_invasion_sensor.py to lane_invasion_sensor.cpython-38.pyc
+[1.106s] byte-compiling /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge/pseudo_actor.py to pseudo_actor.cpython-38.pyc
+[1.106s] byte-compiling /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge/walker.py to walker.cpython-38.pyc
+[1.107s] byte-compiling /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge/gnss.py to gnss.cpython-38.pyc
+[1.107s] byte-compiling /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge/carla_status_publisher.py to carla_status_publisher.cpython-38.pyc
+[1.108s] byte-compiling /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge/traffic_lights_sensor.py to traffic_lights_sensor.cpython-38.pyc
+[1.109s] byte-compiling /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge/spectator.py to spectator.cpython-38.pyc
+[1.109s] byte-compiling /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge/__init__.py to __init__.cpython-38.pyc
+[1.109s] byte-compiling /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge/sensor.py to sensor.cpython-38.pyc
+[1.111s] byte-compiling /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge/vehicle.py to vehicle.cpython-38.pyc
+[1.112s] byte-compiling /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge/actor_control.py to actor_control.cpython-38.pyc
+[1.112s] byte-compiling /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge/opendrive_sensor.py to opendrive_sensor.cpython-38.pyc
+[1.113s] byte-compiling /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge/tf_sensor.py to tf_sensor.cpython-38.pyc
+[1.113s] byte-compiling /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge/traffic.py to traffic.cpython-38.pyc
+[1.114s] byte-compiling /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge/marker_sensor.py to marker_sensor.cpython-38.pyc
+[1.115s] byte-compiling /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge/camera.py to camera.cpython-38.pyc
+[1.116s] running install_data
+[1.117s] creating /home/tofstudent/sa_zhao/install/carla_ros_bridge/share/ament_index
+[1.117s] creating /home/tofstudent/sa_zhao/install/carla_ros_bridge/share/ament_index/resource_index
+[1.117s] creating /home/tofstudent/sa_zhao/install/carla_ros_bridge/share/ament_index/resource_index/packages
+[1.117s] copying resource/carla_ros_bridge -> /home/tofstudent/sa_zhao/install/carla_ros_bridge/share/ament_index/resource_index/packages
+[1.118s] copying package.xml -> /home/tofstudent/sa_zhao/install/carla_ros_bridge/share/carla_ros_bridge
+[1.118s] copying launch/carla_ros_bridge.launch.py -> /home/tofstudent/sa_zhao/install/carla_ros_bridge/share/carla_ros_bridge
+[1.118s] copying launch/carla_ros_bridge_with_example_ego_vehicle.launch.py -> /home/tofstudent/sa_zhao/install/carla_ros_bridge/share/carla_ros_bridge
+[1.118s] creating /home/tofstudent/sa_zhao/install/carla_ros_bridge/share/carla_ros_bridge/test
+[1.118s] copying test/test_objects.json -> /home/tofstudent/sa_zhao/install/carla_ros_bridge/share/carla_ros_bridge/test
+[1.118s] running install_egg_info
+[1.120s] Copying ../../build/carla_ros_bridge/carla_ros_bridge.egg-info to /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages/carla_ros_bridge-0.0.0-py3.8.egg-info
+[1.121s] running install_scripts
+[1.141s] Installing bridge script to /home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/carla_ros_bridge
+[1.142s] writing list of installed files to '/home/tofstudent/sa_zhao/build/carla_ros_bridge/install.log'
+[1.175s] Invoked command in '/home/tofstudent/sa_zhao/src/carla_ros_bridge' returned '0': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/carla_spawn_objects:/home/tofstudent/sa_zhao/install/ros_compatibility:/home/tofstudent/sa_zhao/install/carla_msgs:/home/tofstudent/sa_zhao/install/carla_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/carla_msgs LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/carla_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_spawn_objects/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/ros_compatibility/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/carla_ros_bridge build --build-base /home/tofstudent/sa_zhao/build/carla_ros_bridge/build install --prefix /home/tofstudent/sa_zhao/install/carla_ros_bridge --record /home/tofstudent/sa_zhao/build/carla_ros_bridge/install.log --single-version-externally-managed

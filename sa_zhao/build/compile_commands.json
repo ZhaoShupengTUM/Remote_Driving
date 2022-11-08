@@ -1,0 +1,43 @@
+[
+{
+  "directory": "/home/tofstudent/sa_zhao/build/tod_command_creation/src/operator",
+  "command": "/usr/bin/c++  -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -DSPDLOG_COMPILED_LIB -isystem /home/tofstudent/sa_zhao/install/traj_interfaces/include -isystem /home/tofstudent/sa_zhao/install/tod_msgs/include -isystem /opt/ros/foxy/include    -std=gnu++14 -o CMakeFiles/OperatorCommandCreator.dir/CommandCreatorNode.cpp.o -c /home/tofstudent/sa_zhao/src/tod_command_creation/src/operator/CommandCreatorNode.cpp",
+  "file": "/home/tofstudent/sa_zhao/src/tod_command_creation/src/operator/CommandCreatorNode.cpp"
+},
+{
+  "directory": "/home/tofstudent/sa_zhao/build/tod_command_creation/src/operator",
+  "command": "/usr/bin/c++  -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -DSPDLOG_COMPILED_LIB -isystem /home/tofstudent/sa_zhao/install/traj_interfaces/include -isystem /home/tofstudent/sa_zhao/install/tod_msgs/include -isystem /opt/ros/foxy/include    -std=gnu++14 -o CMakeFiles/OperatorCommandCreator.dir/CommandCreator.cpp.o -c /home/tofstudent/sa_zhao/src/tod_command_creation/src/operator/CommandCreator.cpp",
+  "file": "/home/tofstudent/sa_zhao/src/tod_command_creation/src/operator/CommandCreator.cpp"
+},
+
+{
+  "directory": "/home/tofstudent/sa_zhao/build/tod_input_devices/src",
+  "command": "/usr/bin/c++  -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DRCUTILS_ENABLE_FAULT_INJECTION -DSENSO_MACRO=0 -DSPDLOG_COMPILED_LIB -I/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice -I/home/tofstudent/sa_zhao/src/tod_input_devices/src/General -isystem /home/tofstudent/sa_zhao/install/tod_msgs/include -isystem /opt/ros/foxy/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++   -Wno-deprecated-declarations -Wno-format   -fPIC -std=gnu++17 -o CMakeFiles/InputDevice.dir/InputDeviceController.cpp.o -c /home/tofstudent/sa_zhao/src/tod_input_devices/src/InputDeviceController.cpp",
+  "file": "/home/tofstudent/sa_zhao/src/tod_input_devices/src/InputDeviceController.cpp"
+},
+{
+  "directory": "/home/tofstudent/sa_zhao/build/tod_input_devices/src",
+  "command": "/usr/bin/c++  -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DRCUTILS_ENABLE_FAULT_INJECTION -DSENSO_MACRO=0 -DSPDLOG_COMPILED_LIB -I/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice -I/home/tofstudent/sa_zhao/src/tod_input_devices/src/General -isystem /home/tofstudent/sa_zhao/install/tod_msgs/include -isystem /opt/ros/foxy/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++   -Wno-deprecated-declarations -Wno-format   -fPIC -std=gnu++17 -o CMakeFiles/InputDevice.dir/RosInterface.cpp.o -c /home/tofstudent/sa_zhao/src/tod_input_devices/src/RosInterface.cpp",
+  "file": "/home/tofstudent/sa_zhao/src/tod_input_devices/src/RosInterface.cpp"
+},
+{
+  "directory": "/home/tofstudent/sa_zhao/build/tod_input_devices/src",
+  "command": "/usr/bin/c++  -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DRCUTILS_ENABLE_FAULT_INJECTION -DSENSO_MACRO=0 -DSPDLOG_COMPILED_LIB -I/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice -I/home/tofstudent/sa_zhao/src/tod_input_devices/src/General -isystem /home/tofstudent/sa_zhao/install/tod_msgs/include -isystem /opt/ros/foxy/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++   -Wno-deprecated-declarations -Wno-format   -fPIC -std=gnu++17 -o CMakeFiles/InputDevice.dir/InputDeviceNode.cpp.o -c /home/tofstudent/sa_zhao/src/tod_input_devices/src/InputDeviceNode.cpp",
+  "file": "/home/tofstudent/sa_zhao/src/tod_input_devices/src/InputDeviceNode.cpp"
+},
+{
+  "directory": "/home/tofstudent/sa_zhao/build/tod_input_devices/src",
+  "command": "/usr/bin/c++  -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DRCUTILS_ENABLE_FAULT_INJECTION -DSENSO_MACRO=0 -DSPDLOG_COMPILED_LIB -I/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice -I/home/tofstudent/sa_zhao/src/tod_input_devices/src/General -isystem /home/tofstudent/sa_zhao/install/tod_msgs/include -isystem /opt/ros/foxy/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++   -Wno-deprecated-declarations -Wno-format   -fPIC -std=gnu++17 -o CMakeFiles/InputDevice.dir/General/MyInputDevice.cpp.o -c /home/tofstudent/sa_zhao/src/tod_input_devices/src/General/MyInputDevice.cpp",
+  "file": "/home/tofstudent/sa_zhao/src/tod_input_devices/src/General/MyInputDevice.cpp"
+},
+{
+  "directory": "/home/tofstudent/sa_zhao/build/tod_input_devices/src/UsbInputDevice",
+  "command": "/usr/bin/c++   -I/home/tofstudent/sa_zhao/build/tod_input_devices/src/UsbInputDevice -I/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/../General -I/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice   -Wno-deprecated-declarations -Wno-format   -std=gnu++14 -o CMakeFiles/UsbInputDevice.dir/UsbInputDevice.cpp.o -c /home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/UsbInputDevice.cpp",
+  "file": "/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/UsbInputDevice.cpp"
+},
+{
+  "directory": "/home/tofstudent/sa_zhao/build/tod_input_devices/src/UsbInputDevice",
+  "command": "/usr/bin/c++   -I/home/tofstudent/sa_zhao/build/tod_input_devices/src/UsbInputDevice -I/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/../General -I/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice   -Wno-deprecated-declarations -Wno-format   -std=gnu++14 -o CMakeFiles/UsbInputDevice.dir/__/General/MyInputDevice.cpp.o -c /home/tofstudent/sa_zhao/src/tod_input_devices/src/General/MyInputDevice.cpp",
+  "file": "/home/tofstudent/sa_zhao/src/tod_input_devices/src/General/MyInputDevice.cpp"
+}
+]

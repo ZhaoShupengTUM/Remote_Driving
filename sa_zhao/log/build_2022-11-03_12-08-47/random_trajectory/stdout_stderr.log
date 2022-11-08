@@ -1,0 +1,130 @@
+-- The C compiler identification is GNU 8.4.0
+-- The CXX compiler identification is GNU 8.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+-- Found FastRTPS: /opt/ros/foxy/include  
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found rclpy: 1.0.10 (/opt/ros/foxy/share/rclpy/cmake)
+-- Found traj_interfaces: 0.0.0 (/home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/cmake)
+-- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+-- Found tf2: 0.13.13 (/opt/ros/foxy/share/tf2/cmake)
+-- Found tf2_ros: 0.13.13 (/opt/ros/foxy/share/tf2_ros/cmake)
+-- Found tf2_geometry_msgs: 0.13.13 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+-- Found Eigen3: TRUE (found version "3.3.7") 
+-- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)
+-- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/tofstudent/sa_zhao/src/random_trajectory/include
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/tofstudent/sa_zhao/build/random_trajectory
+[35m[1mScanning dependencies of target Lenkrad[0m
+[35m[1mScanning dependencies of target Gaspedal[0m
+[35m[1mScanning dependencies of target Taster[0m
+[35m[1mScanning dependencies of target TrajCollect[0m
+[35m[1mScanning dependencies of target pfas[0m
+[35m[1mScanning dependencies of target VehicleMarker[0m
+[35m[1mScanning dependencies of target TrajParam[0m
+[35m[1mScanning dependencies of target TfPath[0m
+[  5%] [32mBuilding CXX object CMakeFiles/pfas.dir/include/pfas_src/TrajectoryPrediction.cpp.o[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/Gaspedal.dir/src/GaspedalPub.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/TrajCollect.dir/src/TrajCollectNode.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/Lenkrad.dir/src/LenkradPub.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/Taster.dir/src/TasterPub.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/TrajParam.dir/src/TrajPramNode.cpp.o[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/VehicleMarker.dir/src/VehicleMarkerNode.cpp.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/TfPath.dir/src/TfPathStartNode.cpp.o[0m
+[ 50%] [32m[1mLinking CXX static library libpfas.a[0m
+[ 50%] Built target pfas
+[35m[1mScanning dependencies of target TrajGeneration[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/TrajGeneration.dir/src/TrajCalcNode.cpp.o[0m
+[ 61%] [32m[1mLinking CXX executable Taster[0m
+[ 66%] [32m[1mLinking CXX executable Gaspedal[0m
+[ 66%] Built target Taster
+[ 66%] Built target Gaspedal
+[ 72%] [32m[1mLinking CXX executable Lenkrad[0m
+[ 72%] Built target Lenkrad
+[ 77%] [32m[1mLinking CXX executable TrajCollect[0m
+[ 83%] [32m[1mLinking CXX executable VehicleMarker[0m
+[ 83%] Built target TrajCollect
+[ 83%] Built target VehicleMarker
+[ 88%] [32m[1mLinking CXX executable TrajGeneration[0m
+[ 94%] [32m[1mLinking CXX executable TrajParam[0m
+[100%] [32m[1mLinking CXX executable TfPath[0m
+[100%] Built target TrajGeneration
+[100%] Built target TrajParam
+[100%] Built target TfPath
+-- Install configuration: ""
+-- Installing: /home/tofstudent/sa_zhao/install/random_trajectory/lib/random_trajectory/Lenkrad
+-- Set runtime path of "/home/tofstudent/sa_zhao/install/random_trajectory/lib/random_trajectory/Lenkrad" to ""
+-- Installing: /home/tofstudent/sa_zhao/install/random_trajectory/lib/random_trajectory/Gaspedal
+-- Set runtime path of "/home/tofstudent/sa_zhao/install/random_trajectory/lib/random_trajectory/Gaspedal" to ""
+-- Installing: /home/tofstudent/sa_zhao/install/random_trajectory/lib/random_trajectory/Taster
+-- Set runtime path of "/home/tofstudent/sa_zhao/install/random_trajectory/lib/random_trajectory/Taster" to ""
+-- Installing: /home/tofstudent/sa_zhao/install/random_trajectory/lib/random_trajectory/TrajParam
+-- Set runtime path of "/home/tofstudent/sa_zhao/install/random_trajectory/lib/random_trajectory/TrajParam" to ""
+-- Installing: /home/tofstudent/sa_zhao/install/random_trajectory/lib/random_trajectory/TrajGeneration
+-- Set runtime path of "/home/tofstudent/sa_zhao/install/random_trajectory/lib/random_trajectory/TrajGeneration" to ""
+-- Installing: /home/tofstudent/sa_zhao/install/random_trajectory/lib/random_trajectory/TrajCollect
+-- Set runtime path of "/home/tofstudent/sa_zhao/install/random_trajectory/lib/random_trajectory/TrajCollect" to ""
+-- Installing: /home/tofstudent/sa_zhao/install/random_trajectory/lib/random_trajectory/VehicleMarker
+-- Set runtime path of "/home/tofstudent/sa_zhao/install/random_trajectory/lib/random_trajectory/VehicleMarker" to ""
+-- Installing: /home/tofstudent/sa_zhao/install/random_trajectory/lib/random_trajectory/TfPath
+-- Set runtime path of "/home/tofstudent/sa_zhao/install/random_trajectory/lib/random_trajectory/TfPath" to ""
+-- Installing: /home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory//launch
+-- Installing: /home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory//launch/sensor_launch.py
+-- Installing: /home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory//launch/pathplanning_launch.py
+-- Installing: /home/tofstudent/sa_zhao/install/random_trajectory/share/ament_index/resource_index/package_run_dependencies/random_trajectory
+-- Installing: /home/tofstudent/sa_zhao/install/random_trajectory/share/ament_index/resource_index/parent_prefix_path/random_trajectory
+-- Installing: /home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory/environment/ament_prefix_path.sh
+-- Installing: /home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory/environment/ament_prefix_path.dsv
+-- Installing: /home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory/environment/path.sh
+-- Installing: /home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory/environment/path.dsv
+-- Installing: /home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory/local_setup.bash
+-- Installing: /home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory/local_setup.sh
+-- Installing: /home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory/local_setup.zsh
+-- Installing: /home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory/local_setup.dsv
+-- Installing: /home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory/package.dsv
+-- Installing: /home/tofstudent/sa_zhao/install/random_trajectory/share/ament_index/resource_index/packages/random_trajectory
+-- Installing: /home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory/cmake/random_trajectoryConfig.cmake
+-- Installing: /home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory/cmake/random_trajectoryConfig-version.cmake
+-- Installing: /home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory/package.xml

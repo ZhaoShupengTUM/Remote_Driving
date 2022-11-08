@@ -1,0 +1,2 @@
+/usr/bin/ar qc libUsbInputDevice.a  CMakeFiles/UsbInputDevice.dir/UsbInputDevice.cpp.o CMakeFiles/UsbInputDevice.dir/__/General/MyInputDevice.cpp.o
+/usr/bin/ranlib libUsbInputDevice.a

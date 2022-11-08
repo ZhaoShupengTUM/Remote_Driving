@@ -1,0 +1,27 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/opt/ros/foxy/include/**",
+                "/usr/include/**",
+                "/home/tofstudent/sa_zhao/src/random_trajectory/include/**",
+                "${workspaceFolder}/src/interactive_trajectory/include/",
+                "${workspaceFolder}/src/pure_pursuit/include/",
+                "/home/tofstudent/sa_zhao/install/traj_interfaces/include/**",
+                "/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/**",
+                "/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/include/**",
+                "/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/include/**",
+                "/home/tofstudent/sa_zhao/install/carla_msgs/include/**",
+                "/home/tofstudent/sa_zhao/install/carla_ackermann_msgs/include/**"
+            ],
+            "defines": [],
+            "cStandard": "gnu17",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "linux-clang-x64",
+            "configurationProvider": "ms-vscode.cmake-tools"
+        }
+    ],
+    "version": 4
+}

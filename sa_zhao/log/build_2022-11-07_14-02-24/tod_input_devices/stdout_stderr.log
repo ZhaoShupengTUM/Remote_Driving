@@ -1,0 +1,26 @@
+[35m[1mScanning dependencies of target UsbInputDevice[0m
+[ 12%] [32mBuilding CXX object src/UsbInputDevice/CMakeFiles/UsbInputDevice.dir/UsbInputDevice.cpp.o[0m
+[01m[K/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/UsbInputDevice.cpp:[m[K In constructor ‘[01m[KUsbInputDevice::UsbInputDevice(std::function<void(int, double)>, std::function<void(int, int)>, std::function<void(const std::__cxx11::basic_string<char>&)>)[m[K’:
+[01m[K/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/UsbInputDevice.cpp:7:12:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KUsbInputDevice[m[K’ does not have any field named ‘[01m[KInputDevice[m[K’
+          : [01;31m[KInputDevice[m[K(axisCb, buttonCb, errorCb) {
+            [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/UsbInputDevice.cpp:7:49:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMyInputDevice::MyInputDevice()[m[K’
+          : InputDevice(axisCb, buttonCb, errorCb[01;31m[K)[m[K {
+                                                 [01;31m[K^[m[K
+In file included from [01m[K/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/UsbInputDevice.h:11[m[K,
+                 from [01m[K/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/UsbInputDevice.cpp:2[m[K:
+[01m[K/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/../General/MyInputDevice.h:13:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KMyInputDevice::MyInputDevice(std::function<void(int, double)>, std::function<void(int, int)>, std::function<void(const std::__cxx11::basic_string<char>&)>)[m[K’
+     explicit [01;36m[KMyInputDevice[m[K(std::function<void(const int, const double)> axisCb,
+              [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/../General/MyInputDevice.h:13:14:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[01m[K/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/../General/MyInputDevice.h:11:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KMyInputDevice::MyInputDevice(std::function<void(int, double)>, std::function<void(int, int)>)[m[K’
+     explicit [01;36m[KMyInputDevice[m[K(std::function<void(const int, const double)> axisCb,
+              [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/../General/MyInputDevice.h:11:14:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[K/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/../General/MyInputDevice.h:9:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KMyInputDevice::MyInputDevice(const MyInputDevice&)[m[K’
+ class [01;36m[KMyInputDevice[m[K{
+       [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/../General/MyInputDevice.h:9:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+make[2]: *** [src/UsbInputDevice/CMakeFiles/UsbInputDevice.dir/build.make:63: src/UsbInputDevice/CMakeFiles/UsbInputDevice.dir/UsbInputDevice.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:197: src/UsbInputDevice/CMakeFiles/UsbInputDevice.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

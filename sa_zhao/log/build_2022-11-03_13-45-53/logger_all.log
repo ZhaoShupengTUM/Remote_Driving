@@ -1,0 +1,348 @@
+[0.133s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'carla_spawn_objects']
+[0.133s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f122c7c0190>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=['carla_spawn_objects'], packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=8, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f122c7c0190>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f122c7c06d0>)
+[0.157s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.157s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.157s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.157s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.157s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.157s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.157s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/tofstudent/sa_zhao'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['ignore', 'ignore_ament_install']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'ignore'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'ignore_ament_install'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['colcon_pkg']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'colcon_pkg'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['colcon_meta']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'colcon_meta'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['ros']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'ros'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['cmake', 'python']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'cmake'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'python'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['python_setup_py']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'python_setup_py'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_control_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_control_msgs) by extension 'ignore'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_control_msgs) by extension 'ignore_ament_install'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_control_msgs) by extensions ['colcon_pkg']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_control_msgs) by extension 'colcon_pkg'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_control_msgs) by extensions ['colcon_meta']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_control_msgs) by extension 'colcon_meta'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_control_msgs) by extensions ['ros']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_control_msgs) by extension 'ros'
+[0.178s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autoware_auto_control_msgs' with type 'ros.ament_cmake' and name 'autoware_auto_control_msgs'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_planning_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_planning_msgs) by extension 'ignore'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_planning_msgs) by extension 'ignore_ament_install'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_planning_msgs) by extensions ['colcon_pkg']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_planning_msgs) by extension 'colcon_pkg'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_planning_msgs) by extensions ['colcon_meta']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_planning_msgs) by extension 'colcon_meta'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_planning_msgs) by extensions ['ros']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_planning_msgs) by extension 'ros'
+[0.180s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autoware_auto_planning_msgs' with type 'ros.ament_cmake' and name 'autoware_auto_planning_msgs'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_vehicle_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_vehicle_msgs) by extension 'ignore'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_vehicle_msgs) by extension 'ignore_ament_install'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_vehicle_msgs) by extensions ['colcon_pkg']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_vehicle_msgs) by extension 'colcon_pkg'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_vehicle_msgs) by extensions ['colcon_meta']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_vehicle_msgs) by extension 'colcon_meta'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_vehicle_msgs) by extensions ['ros']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_vehicle_msgs) by extension 'ros'
+[0.182s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autoware_auto_vehicle_msgs' with type 'ros.ament_cmake' and name 'autoware_auto_vehicle_msgs'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_cmake) by extensions ['ignore', 'ignore_ament_install']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_cmake) by extension 'ignore'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_cmake) by extension 'ignore_ament_install'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_cmake) by extensions ['colcon_pkg']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_cmake) by extension 'colcon_pkg'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_cmake) by extensions ['colcon_meta']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_cmake) by extension 'colcon_meta'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_cmake) by extensions ['ros']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_cmake) by extension 'ros'
+[0.183s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autoware_cmake' with type 'ros.ament_cmake' and name 'autoware_cmake'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ackermann_control) by extensions ['ignore', 'ignore_ament_install']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ackermann_control) by extension 'ignore'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ackermann_control) by extension 'ignore_ament_install'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ackermann_control) by extensions ['colcon_pkg']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ackermann_control) by extension 'colcon_pkg'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ackermann_control) by extensions ['colcon_meta']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ackermann_control) by extension 'colcon_meta'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ackermann_control) by extensions ['ros']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ackermann_control) by extension 'ros'
+[0.200s] DEBUG:colcon.colcon_core.package_identification:Package 'src/carla_ackermann_control' with type 'ros.ament_python' and name 'carla_ackermann_control'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ackermann_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ackermann_msgs) by extension 'ignore'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ackermann_msgs) by extension 'ignore_ament_install'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ackermann_msgs) by extensions ['colcon_pkg']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ackermann_msgs) by extension 'colcon_pkg'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ackermann_msgs) by extensions ['colcon_meta']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ackermann_msgs) by extension 'colcon_meta'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ackermann_msgs) by extensions ['ros']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ackermann_msgs) by extension 'ros'
+[0.207s] DEBUG:colcon.colcon_core.package_identification:Package 'src/carla_ackermann_msgs' with type 'ros.ament_cmake' and name 'carla_ackermann_msgs'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_common) by extensions ['ignore', 'ignore_ament_install']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_common) by extension 'ignore'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_common) by extension 'ignore_ament_install'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_common) by extensions ['colcon_pkg']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_common) by extension 'colcon_pkg'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_common) by extensions ['colcon_meta']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_common) by extension 'colcon_meta'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_common) by extensions ['ros']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_common) by extension 'ros'
+[0.209s] DEBUG:colcon.colcon_core.package_identification:Package 'src/carla_common' with type 'ros.ament_python' and name 'carla_common'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_msgs) by extension 'ignore'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_msgs) by extension 'ignore_ament_install'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_msgs) by extensions ['colcon_pkg']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_msgs) by extension 'colcon_pkg'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_msgs) by extensions ['colcon_meta']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_msgs) by extension 'colcon_meta'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_msgs) by extensions ['ros']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_msgs) by extension 'ros'
+[0.216s] DEBUG:colcon.colcon_core.package_identification:Package 'src/carla_msgs' with type 'ros.ament_cmake' and name 'carla_msgs'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ros_bridge) by extensions ['ignore', 'ignore_ament_install']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ros_bridge) by extension 'ignore'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ros_bridge) by extension 'ignore_ament_install'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ros_bridge) by extensions ['colcon_pkg']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ros_bridge) by extension 'colcon_pkg'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ros_bridge) by extensions ['colcon_meta']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ros_bridge) by extension 'colcon_meta'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ros_bridge) by extensions ['ros']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ros_bridge) by extension 'ros'
+[0.224s] DEBUG:colcon.colcon_core.package_identification:Package 'src/carla_ros_bridge' with type 'ros.ament_python' and name 'carla_ros_bridge'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_spawn_objects) by extensions ['ignore', 'ignore_ament_install']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_spawn_objects) by extension 'ignore'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_spawn_objects) by extension 'ignore_ament_install'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_spawn_objects) by extensions ['colcon_pkg']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_spawn_objects) by extension 'colcon_pkg'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_spawn_objects) by extensions ['colcon_meta']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_spawn_objects) by extension 'colcon_meta'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_spawn_objects) by extensions ['ros']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_spawn_objects) by extension 'ros'
+[0.230s] DEBUG:colcon.colcon_core.package_identification:Package 'src/carla_spawn_objects' with type 'ros.ament_python' and name 'carla_spawn_objects'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/interactive_trajectory) by extensions ['ignore', 'ignore_ament_install']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/interactive_trajectory) by extension 'ignore'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/interactive_trajectory) by extension 'ignore_ament_install'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/interactive_trajectory) by extensions ['colcon_pkg']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/interactive_trajectory) by extension 'colcon_pkg'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/interactive_trajectory) by extensions ['colcon_meta']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/interactive_trajectory) by extension 'colcon_meta'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/interactive_trajectory) by extensions ['ros']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/interactive_trajectory) by extension 'ros'
+[0.234s] DEBUG:colcon.colcon_core.package_identification:Package 'src/interactive_trajectory' with type 'ros.ament_cmake' and name 'interactive_trajectory'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/pure_pursuit) by extensions ['ignore', 'ignore_ament_install']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/pure_pursuit) by extension 'ignore'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/pure_pursuit) by extension 'ignore_ament_install'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/pure_pursuit) by extensions ['colcon_pkg']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/pure_pursuit) by extension 'colcon_pkg'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/pure_pursuit) by extensions ['colcon_meta']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/pure_pursuit) by extension 'colcon_meta'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/pure_pursuit) by extensions ['ros']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/pure_pursuit) by extension 'ros'
+[0.238s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pure_pursuit' with type 'ros.ament_cmake' and name 'pure_pursuit'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/random_trajectory) by extensions ['ignore', 'ignore_ament_install']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/random_trajectory) by extension 'ignore'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/random_trajectory) by extension 'ignore_ament_install'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/random_trajectory) by extensions ['colcon_pkg']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/random_trajectory) by extension 'colcon_pkg'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/random_trajectory) by extensions ['colcon_meta']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/random_trajectory) by extension 'colcon_meta'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/random_trajectory) by extensions ['ros']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/random_trajectory) by extension 'ros'
+[0.240s] DEBUG:colcon.colcon_core.package_identification:Package 'src/random_trajectory' with type 'ros.ament_cmake' and name 'random_trajectory'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_compatibility) by extensions ['ignore', 'ignore_ament_install']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_compatibility) by extension 'ignore'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_compatibility) by extension 'ignore_ament_install'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_compatibility) by extensions ['colcon_pkg']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_compatibility) by extension 'colcon_pkg'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_compatibility) by extensions ['colcon_meta']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_compatibility) by extension 'colcon_meta'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_compatibility) by extensions ['ros']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_compatibility) by extension 'ros'
+[0.246s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros_compatibility' with type 'ros.ament_python' and name 'ros_compatibility'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_command_creation) by extensions ['ignore', 'ignore_ament_install']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_command_creation) by extension 'ignore'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_command_creation) by extension 'ignore_ament_install'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_command_creation) by extensions ['colcon_pkg']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_command_creation) by extension 'colcon_pkg'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_command_creation) by extensions ['colcon_meta']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_command_creation) by extension 'colcon_meta'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_command_creation) by extensions ['ros']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_command_creation) by extension 'ros'
+[0.248s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tod_command_creation' with type 'ros.ament_cmake' and name 'tod_command_creation'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_input_devices) by extensions ['ignore', 'ignore_ament_install']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_input_devices) by extension 'ignore'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_input_devices) by extension 'ignore_ament_install'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_input_devices) by extensions ['colcon_pkg']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_input_devices) by extension 'colcon_pkg'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_input_devices) by extensions ['colcon_meta']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_input_devices) by extension 'colcon_meta'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_input_devices) by extensions ['ros']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_input_devices) by extension 'ros'
+[0.250s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tod_input_devices' with type 'ros.ament_cmake' and name 'tod_input_devices'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_msgs) by extension 'ignore'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_msgs) by extension 'ignore_ament_install'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_msgs) by extensions ['colcon_pkg']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_msgs) by extension 'colcon_pkg'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_msgs) by extensions ['colcon_meta']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_msgs) by extension 'colcon_meta'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_msgs) by extensions ['ros']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_msgs) by extension 'ros'
+[0.252s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tod_msgs' with type 'ros.ament_cmake' and name 'tod_msgs'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/traj_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/traj_interfaces) by extension 'ignore'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/traj_interfaces) by extension 'ignore_ament_install'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/traj_interfaces) by extensions ['colcon_pkg']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/traj_interfaces) by extension 'colcon_pkg'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/traj_interfaces) by extensions ['colcon_meta']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/traj_interfaces) by extension 'colcon_meta'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/traj_interfaces) by extensions ['ros']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/traj_interfaces) by extension 'ros'
+[0.253s] DEBUG:colcon.colcon_core.package_identification:Package 'src/traj_interfaces' with type 'ros.ament_cmake' and name 'traj_interfaces'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src/vehicle_info_util) by extensions ['ignore', 'ignore_ament_install']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src/vehicle_info_util) by extension 'ignore'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src/vehicle_info_util) by extension 'ignore_ament_install'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src/vehicle_info_util) by extensions ['colcon_pkg']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src/vehicle_info_util) by extension 'colcon_pkg'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/vehicle_info_util) by extensions ['colcon_meta']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/vehicle_info_util) by extension 'colcon_meta'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/vehicle_info_util) by extensions ['ros']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/vehicle_info_util) by extension 'ros'
+[0.254s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vehicle_info_util' with type 'ros.ament_cmake' and name 'vehicle_info_util'
+[0.254s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.255s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.255s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.255s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.255s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.274s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'autoware_auto_control_msgs' in 'src/autoware_auto_control_msgs'
+[0.274s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'autoware_auto_planning_msgs' in 'src/autoware_auto_planning_msgs'
+[0.274s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'autoware_auto_vehicle_msgs' in 'src/autoware_auto_vehicle_msgs'
+[0.274s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'autoware_cmake' in 'src/autoware_cmake'
+[0.274s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'carla_common' in 'src/carla_common'
+[0.274s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'carla_msgs' in 'src/carla_msgs'
+[0.274s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ros_compatibility' in 'src/ros_compatibility'
+[0.274s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'tod_msgs' in 'src/tod_msgs'
+[0.274s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'traj_interfaces' in 'src/traj_interfaces'
+[0.274s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'carla_ackermann_msgs' in 'src/carla_ackermann_msgs'
+[0.275s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'random_trajectory' in 'src/random_trajectory'
+[0.275s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'tod_command_creation' in 'src/tod_command_creation'
+[0.275s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'tod_input_devices' in 'src/tod_input_devices'
+[0.275s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'vehicle_info_util' in 'src/vehicle_info_util'
+[0.275s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'carla_ros_bridge' in 'src/carla_ros_bridge'
+[0.275s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'interactive_trajectory' in 'src/interactive_trajectory'
+[0.275s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'pure_pursuit' in 'src/pure_pursuit'
+[0.275s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'carla_ackermann_control' in 'src/carla_ackermann_control'
+[0.276s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.276s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.281s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 19 installed packages in /home/tofstudent/sa_zhao/install
+[0.283s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 258 installed packages in /opt/ros/foxy
+[0.284s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.342s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'carla_spawn_objects' is in: /home/tofstudent/sa_zhao/install/carla_spawn_objects
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding carla_spawn_objects
+
+This may be promoted to an error in a future release of colcon-override-check.
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'carla_spawn_objects' build argument 'cmake_args' from command line to 'None'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'carla_spawn_objects' build argument 'cmake_target' from command line to 'None'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'carla_spawn_objects' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'carla_spawn_objects' build argument 'cmake_clean_cache' from command line to 'False'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'carla_spawn_objects' build argument 'cmake_clean_first' from command line to 'False'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'carla_spawn_objects' build argument 'cmake_force_configure' from command line to 'False'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'carla_spawn_objects' build argument 'ament_cmake_args' from command line to 'None'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'carla_spawn_objects' build argument 'catkin_cmake_args' from command line to 'None'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'carla_spawn_objects' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.344s] DEBUG:colcon.colcon_core.verb:Building package 'carla_spawn_objects' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tofstudent/sa_zhao/build/carla_spawn_objects', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tofstudent/sa_zhao/install/carla_spawn_objects', 'merge_install': False, 'path': '/home/tofstudent/sa_zhao/src/carla_spawn_objects', 'symlink_install': False, 'test_result_base': None}
+[0.345s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.352s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.352s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/tofstudent/sa_zhao/src/carla_spawn_objects' with build type 'ament_python'
+[0.352s] Level 1:colcon.colcon_core.shell:create_environment_hook('carla_spawn_objects', 'ament_prefix_path')
+[0.359s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.359s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/carla_spawn_objects/share/carla_spawn_objects/hook/ament_prefix_path.ps1'
+[0.360s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/carla_spawn_objects/share/carla_spawn_objects/hook/ament_prefix_path.dsv'
+[0.360s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/carla_spawn_objects/share/carla_spawn_objects/hook/ament_prefix_path.sh'
+[0.363s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.363s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.624s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/tofstudent/sa_zhao/src/carla_spawn_objects'
+[0.629s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.629s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.100s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tofstudent/sa_zhao/src/carla_spawn_objects': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/ros_compatibility:/home/tofstudent/sa_zhao/install/pure_pursuit:/home/tofstudent/sa_zhao/install/vehicle_info_util:/home/tofstudent/sa_zhao/install/interactive_trajectory:/home/tofstudent/sa_zhao/install/tod_command_creation:/home/tofstudent/sa_zhao/install/random_trajectory:/home/tofstudent/sa_zhao/install/traj_interfaces:/home/tofstudent/sa_zhao/install/tod_input_devices:/home/tofstudent/sa_zhao/install/tod_msgs:/home/tofstudent/sa_zhao/install/carla_ackermann_control:/home/tofstudent/sa_zhao/install/carla_ros_bridge:/home/tofstudent/sa_zhao/install/carla_spawn_objects:/home/tofstudent/sa_zhao/install/carla_ackermann_msgs:/home/tofstudent/sa_zhao/install/carla_msgs:/home/tofstudent/sa_zhao/install/carla_common:/home/tofstudent/sa_zhao/install/autoware_cmake:/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs:/opt/ros/foxy CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/carla_msgs:/home/tofstudent/sa_zhao/install/pure_pursuit:/home/tofstudent/sa_zhao/install/vehicle_info_util:/home/tofstudent/sa_zhao/install/interactive_trajectory:/home/tofstudent/sa_zhao/install/tod_command_creation:/home/tofstudent/sa_zhao/install/random_trajectory:/home/tofstudent/sa_zhao/install/traj_interfaces:/home/tofstudent/sa_zhao/install/tod_input_devices:/home/tofstudent/sa_zhao/install/tod_msgs:/home/tofstudent/sa_zhao/install/carla_ackermann_msgs:/home/tofstudent/sa_zhao/install/autoware_cmake:/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/carla_msgs/lib:/home/tofstudent/sa_zhao/install/pure_pursuit/lib:/home/tofstudent/sa_zhao/install/vehicle_info_util/lib:/home/tofstudent/sa_zhao/install/traj_interfaces/lib:/home/tofstudent/sa_zhao/install/tod_msgs/lib:/home/tofstudent/sa_zhao/install/carla_ackermann_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/tofstudent/sa_zhao/install/carla_spawn_objects/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/ros_compatibility/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/traj_interfaces/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/tod_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_ackermann_control/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_spawn_objects/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_ackermann_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_common/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/carla_spawn_objects build --build-base /home/tofstudent/sa_zhao/build/carla_spawn_objects/build install --prefix /home/tofstudent/sa_zhao/install/carla_spawn_objects --record /home/tofstudent/sa_zhao/build/carla_spawn_objects/install.log --single-version-externally-managed
+[1.407s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tofstudent/sa_zhao/src/carla_spawn_objects' returned '0': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/ros_compatibility:/home/tofstudent/sa_zhao/install/pure_pursuit:/home/tofstudent/sa_zhao/install/vehicle_info_util:/home/tofstudent/sa_zhao/install/interactive_trajectory:/home/tofstudent/sa_zhao/install/tod_command_creation:/home/tofstudent/sa_zhao/install/random_trajectory:/home/tofstudent/sa_zhao/install/traj_interfaces:/home/tofstudent/sa_zhao/install/tod_input_devices:/home/tofstudent/sa_zhao/install/tod_msgs:/home/tofstudent/sa_zhao/install/carla_ackermann_control:/home/tofstudent/sa_zhao/install/carla_ros_bridge:/home/tofstudent/sa_zhao/install/carla_spawn_objects:/home/tofstudent/sa_zhao/install/carla_ackermann_msgs:/home/tofstudent/sa_zhao/install/carla_msgs:/home/tofstudent/sa_zhao/install/carla_common:/home/tofstudent/sa_zhao/install/autoware_cmake:/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs:/opt/ros/foxy CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/carla_msgs:/home/tofstudent/sa_zhao/install/pure_pursuit:/home/tofstudent/sa_zhao/install/vehicle_info_util:/home/tofstudent/sa_zhao/install/interactive_trajectory:/home/tofstudent/sa_zhao/install/tod_command_creation:/home/tofstudent/sa_zhao/install/random_trajectory:/home/tofstudent/sa_zhao/install/traj_interfaces:/home/tofstudent/sa_zhao/install/tod_input_devices:/home/tofstudent/sa_zhao/install/tod_msgs:/home/tofstudent/sa_zhao/install/carla_ackermann_msgs:/home/tofstudent/sa_zhao/install/autoware_cmake:/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/carla_msgs/lib:/home/tofstudent/sa_zhao/install/pure_pursuit/lib:/home/tofstudent/sa_zhao/install/vehicle_info_util/lib:/home/tofstudent/sa_zhao/install/traj_interfaces/lib:/home/tofstudent/sa_zhao/install/tod_msgs/lib:/home/tofstudent/sa_zhao/install/carla_ackermann_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/tofstudent/sa_zhao/install/carla_spawn_objects/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/ros_compatibility/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/traj_interfaces/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/tod_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_ackermann_control/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_spawn_objects/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_ackermann_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_common/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/carla_spawn_objects build --build-base /home/tofstudent/sa_zhao/build/carla_spawn_objects/build install --prefix /home/tofstudent/sa_zhao/install/carla_spawn_objects --record /home/tofstudent/sa_zhao/build/carla_spawn_objects/install.log --single-version-externally-managed
+[1.412s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/carla_spawn_objects' for CMake module files
+[1.412s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/carla_spawn_objects' for CMake config files
+[1.413s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/carla_spawn_objects/lib'
+[1.413s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/carla_spawn_objects/bin'
+[1.413s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/carla_spawn_objects/lib/pkgconfig/carla_spawn_objects.pc'
+[1.413s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/carla_spawn_objects/lib/python3.8/site-packages'
+[1.414s] Level 1:colcon.colcon_core.shell:create_environment_hook('carla_spawn_objects', 'pythonpath')
+[1.415s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/carla_spawn_objects/share/carla_spawn_objects/hook/pythonpath.ps1'
+[1.415s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/carla_spawn_objects/share/carla_spawn_objects/hook/pythonpath.dsv'
+[1.416s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/carla_spawn_objects/share/carla_spawn_objects/hook/pythonpath.sh'
+[1.416s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/carla_spawn_objects/bin'
+[1.416s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(carla_spawn_objects)
+[1.419s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/carla_spawn_objects/share/carla_spawn_objects/package.ps1'
+[1.420s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tofstudent/sa_zhao/install/carla_spawn_objects/share/carla_spawn_objects/package.dsv'
+[1.421s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/carla_spawn_objects/share/carla_spawn_objects/package.sh'
+[1.422s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/carla_spawn_objects/share/carla_spawn_objects/package.bash'
+[1.422s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/carla_spawn_objects/share/carla_spawn_objects/package.zsh'
+[1.423s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tofstudent/sa_zhao/install/carla_spawn_objects/share/colcon-core/packages/carla_spawn_objects)
+[1.423s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.424s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.424s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.424s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.432s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.432s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.432s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.453s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.456s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tofstudent/sa_zhao/install/local_setup.ps1'
+[1.458s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/tofstudent/sa_zhao/install/_local_setup_util_ps1.py'
+[1.460s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tofstudent/sa_zhao/install/setup.ps1'
+[1.463s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tofstudent/sa_zhao/install/local_setup.sh'
+[1.464s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/tofstudent/sa_zhao/install/_local_setup_util_sh.py'
+[1.465s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tofstudent/sa_zhao/install/setup.sh'
+[1.468s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tofstudent/sa_zhao/install/local_setup.bash'
+[1.469s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tofstudent/sa_zhao/install/setup.bash'
+[1.472s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tofstudent/sa_zhao/install/local_setup.zsh'
+[1.473s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tofstudent/sa_zhao/install/setup.zsh'

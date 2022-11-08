@@ -1,0 +1,41 @@
+-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found tod_msgs: 1.0.0 (/home/tofstudent/sa_zhao/install/tod_msgs/share/tod_msgs/cmake)
+-- Found traj_interfaces: 0.0.0 (/home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/tofstudent/sa_zhao/build/tod_command_creation
+[35m[1mScanning dependencies of target OperatorCommandCreator[0m
+[ 33%] [32mBuilding CXX object src/operator/CMakeFiles/OperatorCommandCreator.dir/CommandCreatorNode.cpp.o[0m
+[ 66%] [32mBuilding CXX object src/operator/CMakeFiles/OperatorCommandCreator.dir/CommandCreator.cpp.o[0m
+[100%] [32m[1mLinking CXX executable OperatorCommandCreator[0m
+[100%] Built target OperatorCommandCreator
+-- Install configuration: ""
+-- Installing: /home/tofstudent/sa_zhao/install/tod_command_creation/share/tod_command_creation/launch
+-- Installing: /home/tofstudent/sa_zhao/install/tod_command_creation/share/tod_command_creation/launch/tod_command_creation.launch.xml
+-- Installing: /home/tofstudent/sa_zhao/install/tod_command_creation/share/tod_command_creation/config
+-- Installing: /home/tofstudent/sa_zhao/install/tod_command_creation/share/tod_command_creation/config/tod_command_creation.param.yaml
+-- Installing: /home/tofstudent/sa_zhao/install/tod_command_creation/share/ament_index/resource_index/package_run_dependencies/tod_command_creation
+-- Installing: /home/tofstudent/sa_zhao/install/tod_command_creation/share/ament_index/resource_index/parent_prefix_path/tod_command_creation
+-- Installing: /home/tofstudent/sa_zhao/install/tod_command_creation/share/tod_command_creation/environment/ament_prefix_path.sh
+-- Installing: /home/tofstudent/sa_zhao/install/tod_command_creation/share/tod_command_creation/environment/ament_prefix_path.dsv
+-- Installing: /home/tofstudent/sa_zhao/install/tod_command_creation/share/tod_command_creation/environment/path.sh
+-- Installing: /home/tofstudent/sa_zhao/install/tod_command_creation/share/tod_command_creation/environment/path.dsv
+-- Installing: /home/tofstudent/sa_zhao/install/tod_command_creation/share/tod_command_creation/local_setup.bash
+-- Installing: /home/tofstudent/sa_zhao/install/tod_command_creation/share/tod_command_creation/local_setup.sh
+-- Installing: /home/tofstudent/sa_zhao/install/tod_command_creation/share/tod_command_creation/local_setup.zsh
+-- Installing: /home/tofstudent/sa_zhao/install/tod_command_creation/share/tod_command_creation/local_setup.dsv
+-- Installing: /home/tofstudent/sa_zhao/install/tod_command_creation/share/tod_command_creation/package.dsv
+-- Installing: /home/tofstudent/sa_zhao/install/tod_command_creation/share/ament_index/resource_index/packages/tod_command_creation
+-- Installing: /home/tofstudent/sa_zhao/install/tod_command_creation/share/tod_command_creation/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/tofstudent/sa_zhao/install/tod_command_creation/share/tod_command_creation/cmake/tod_command_creationConfig.cmake
+-- Installing: /home/tofstudent/sa_zhao/install/tod_command_creation/share/tod_command_creation/cmake/tod_command_creationConfig-version.cmake
+-- Installing: /home/tofstudent/sa_zhao/install/tod_command_creation/share/tod_command_creation/package.xml
+-- Installing: /home/tofstudent/sa_zhao/install/tod_command_creation/lib/tod_command_creation/OperatorCommandCreator
+-- Set runtime path of "/home/tofstudent/sa_zhao/install/tod_command_creation/lib/tod_command_creation/OperatorCommandCreator" to ""

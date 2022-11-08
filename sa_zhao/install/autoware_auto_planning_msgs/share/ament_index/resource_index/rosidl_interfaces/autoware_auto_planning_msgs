@@ -1,0 +1,4 @@
+msg/Path.idl
+msg/PathPoint.idl
+msg/Trajectory.idl
+msg/TrajectoryPoint.idl

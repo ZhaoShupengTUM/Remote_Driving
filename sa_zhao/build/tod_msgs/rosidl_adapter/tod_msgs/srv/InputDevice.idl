@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from tod_msgs/srv/InputDevice.srv
+// generated code does not contain a copyright notice
+
+
+module tod_msgs {
+  module srv {
+    struct InputDevice_Request {
+      string input_device_directory;
+    };
+    struct InputDevice_Response {
+      boolean successfully_changed;
+    };
+  };
+};

@@ -1,0 +1,43 @@
+[0.777s] Invoking command in '/home/tofstudent/sa_zhao/src/carla_ackermann_control': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/carla_ros_bridge:/home/tofstudent/sa_zhao/install/carla_spawn_objects:/home/tofstudent/sa_zhao/install/carla_ackermann_msgs:/home/tofstudent/sa_zhao/install/ros_compatibility:/home/tofstudent/sa_zhao/install/carla_msgs:/home/tofstudent/sa_zhao/install/carla_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/carla_ackermann_msgs:/home/tofstudent/sa_zhao/install/carla_msgs LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/carla_ackermann_msgs/lib:/home/tofstudent/sa_zhao/install/carla_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/carla_ackermann_control/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_spawn_objects/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_ackermann_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/ros_compatibility/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/carla_ackermann_control build --build-base /home/tofstudent/sa_zhao/build/carla_ackermann_control/build install --prefix /home/tofstudent/sa_zhao/install/carla_ackermann_control --record /home/tofstudent/sa_zhao/build/carla_ackermann_control/install.log --single-version-externally-managed
+[0.988s] running egg_info
+[0.989s] creating ../../build/carla_ackermann_control/carla_ackermann_control.egg-info
+[0.989s] writing ../../build/carla_ackermann_control/carla_ackermann_control.egg-info/PKG-INFO
+[0.989s] writing dependency_links to ../../build/carla_ackermann_control/carla_ackermann_control.egg-info/dependency_links.txt
+[0.990s] writing entry points to ../../build/carla_ackermann_control/carla_ackermann_control.egg-info/entry_points.txt
+[0.990s] writing requirements to ../../build/carla_ackermann_control/carla_ackermann_control.egg-info/requires.txt
+[0.990s] writing top-level names to ../../build/carla_ackermann_control/carla_ackermann_control.egg-info/top_level.txt
+[0.991s] writing manifest file '../../build/carla_ackermann_control/carla_ackermann_control.egg-info/SOURCES.txt'
+[1.033s] reading manifest file '../../build/carla_ackermann_control/carla_ackermann_control.egg-info/SOURCES.txt'
+[1.034s] writing manifest file '../../build/carla_ackermann_control/carla_ackermann_control.egg-info/SOURCES.txt'
+[1.034s] running build
+[1.034s] running build_py
+[1.034s] creating /home/tofstudent/sa_zhao/build/carla_ackermann_control/build
+[1.035s] creating /home/tofstudent/sa_zhao/build/carla_ackermann_control/build/lib
+[1.035s] creating /home/tofstudent/sa_zhao/build/carla_ackermann_control/build/lib/carla_ackermann_control
+[1.035s] copying src/carla_ackermann_control/carla_ackermann_control_node.py -> /home/tofstudent/sa_zhao/build/carla_ackermann_control/build/lib/carla_ackermann_control
+[1.035s] copying src/carla_ackermann_control/carla_control_physics.py -> /home/tofstudent/sa_zhao/build/carla_ackermann_control/build/lib/carla_ackermann_control
+[1.035s] copying src/carla_ackermann_control/__init__.py -> /home/tofstudent/sa_zhao/build/carla_ackermann_control/build/lib/carla_ackermann_control
+[1.035s] running install
+[1.036s] running install_lib
+[1.037s] creating /home/tofstudent/sa_zhao/install/carla_ackermann_control/lib/python3.8/site-packages/carla_ackermann_control
+[1.038s] copying /home/tofstudent/sa_zhao/build/carla_ackermann_control/build/lib/carla_ackermann_control/carla_ackermann_control_node.py -> /home/tofstudent/sa_zhao/install/carla_ackermann_control/lib/python3.8/site-packages/carla_ackermann_control
+[1.038s] copying /home/tofstudent/sa_zhao/build/carla_ackermann_control/build/lib/carla_ackermann_control/carla_control_physics.py -> /home/tofstudent/sa_zhao/install/carla_ackermann_control/lib/python3.8/site-packages/carla_ackermann_control
+[1.038s] copying /home/tofstudent/sa_zhao/build/carla_ackermann_control/build/lib/carla_ackermann_control/__init__.py -> /home/tofstudent/sa_zhao/install/carla_ackermann_control/lib/python3.8/site-packages/carla_ackermann_control
+[1.038s] byte-compiling /home/tofstudent/sa_zhao/install/carla_ackermann_control/lib/python3.8/site-packages/carla_ackermann_control/carla_ackermann_control_node.py to carla_ackermann_control_node.cpython-38.pyc
+[1.043s] byte-compiling /home/tofstudent/sa_zhao/install/carla_ackermann_control/lib/python3.8/site-packages/carla_ackermann_control/carla_control_physics.py to carla_control_physics.cpython-38.pyc
+[1.043s] byte-compiling /home/tofstudent/sa_zhao/install/carla_ackermann_control/lib/python3.8/site-packages/carla_ackermann_control/__init__.py to __init__.cpython-38.pyc
+[1.044s] running install_data
+[1.044s] creating /home/tofstudent/sa_zhao/install/carla_ackermann_control/share/ament_index
+[1.045s] creating /home/tofstudent/sa_zhao/install/carla_ackermann_control/share/ament_index/resource_index
+[1.045s] creating /home/tofstudent/sa_zhao/install/carla_ackermann_control/share/ament_index/resource_index/packages
+[1.045s] copying resource/carla_ackermann_control -> /home/tofstudent/sa_zhao/install/carla_ackermann_control/share/ament_index/resource_index/packages
+[1.045s] copying package.xml -> /home/tofstudent/sa_zhao/install/carla_ackermann_control/share/carla_ackermann_control
+[1.045s] copying launch/carla_ackermann_control.launch.py -> /home/tofstudent/sa_zhao/install/carla_ackermann_control/share/carla_ackermann_control
+[1.045s] copying launch/carla_ros_bridge_with_ackermann_control.launch.py -> /home/tofstudent/sa_zhao/install/carla_ackermann_control/share/carla_ackermann_control
+[1.045s] copying config/settings.yaml -> /home/tofstudent/sa_zhao/install/carla_ackermann_control/share/carla_ackermann_control
+[1.045s] running install_egg_info
+[1.048s] Copying ../../build/carla_ackermann_control/carla_ackermann_control.egg-info to /home/tofstudent/sa_zhao/install/carla_ackermann_control/lib/python3.8/site-packages/carla_ackermann_control-0.0.0-py3.8.egg-info
+[1.048s] running install_scripts
+[1.069s] Installing carla_ackermann_control_node script to /home/tofstudent/sa_zhao/install/carla_ackermann_control/lib/carla_ackermann_control
+[1.069s] writing list of installed files to '/home/tofstudent/sa_zhao/build/carla_ackermann_control/install.log'
+[1.100s] Invoked command in '/home/tofstudent/sa_zhao/src/carla_ackermann_control' returned '0': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/carla_ros_bridge:/home/tofstudent/sa_zhao/install/carla_spawn_objects:/home/tofstudent/sa_zhao/install/carla_ackermann_msgs:/home/tofstudent/sa_zhao/install/ros_compatibility:/home/tofstudent/sa_zhao/install/carla_msgs:/home/tofstudent/sa_zhao/install/carla_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/carla_ackermann_msgs:/home/tofstudent/sa_zhao/install/carla_msgs LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/carla_ackermann_msgs/lib:/home/tofstudent/sa_zhao/install/carla_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/carla_ackermann_control/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_ros_bridge/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_spawn_objects/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_ackermann_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/ros_compatibility/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/carla_ackermann_control build --build-base /home/tofstudent/sa_zhao/build/carla_ackermann_control/build install --prefix /home/tofstudent/sa_zhao/install/carla_ackermann_control --record /home/tofstudent/sa_zhao/build/carla_ackermann_control/install.log --single-version-externally-managed

@@ -1,0 +1,54 @@
+-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found ament_index_cpp: 1.1.0 (/opt/ros/foxy/share/ament_index_cpp/cmake)
+-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found tod_msgs: 1.0.0 (/home/tofstudent/sa_zhao/install/tod_msgs/share/tod_msgs/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/tofstudent/sa_zhao/build/tod_input_devices
+[ 61%] Built target VirtualInputDevice
+[35m[1mScanning dependencies of target InputDevice[0m
+[ 69%] [32mBuilding CXX object src/CMakeFiles/InputDevice.dir/InputDeviceNode.cpp.o[0m
+[ 76%] [32mBuilding CXX object src/CMakeFiles/InputDevice.dir/General/MyInputDevice.cpp.o[0m
+[ 84%] [32mBuilding CXX object src/CMakeFiles/InputDevice.dir/InputDeviceController.cpp.o[0m
+[ 92%] [32mBuilding CXX object src/CMakeFiles/InputDevice.dir/RosInterface.cpp.o[0m
+[100%] [32m[1mLinking CXX executable InputDevice[0m
+[100%] Built target InputDevice
+-- Install configuration: ""
+-- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/launch
+-- Installing: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/launch/tod_input_devices.launch.xml
+-- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/config
+-- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/config/virtual_ros2.yaml
+-- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/config/template.yaml
+-- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/config/fanatec_ff.yaml
+-- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/config/fanatec.yaml
+-- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/config/senso.yaml
+-- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/config/xboxcontroller.yaml
+-- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/config/joystick.yaml
+-- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/config/stormjoystick.yaml
+-- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/config/virtual.yaml
+-- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/ament_index/resource_index/package_run_dependencies/tod_input_devices
+-- Installing: /home/tofstudent/sa_zhao/install/tod_input_devices/share/ament_index/resource_index/parent_prefix_path/tod_input_devices
+-- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/environment/ament_prefix_path.sh
+-- Installing: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/environment/path.sh
+-- Installing: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/environment/path.dsv
+-- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/local_setup.bash
+-- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/local_setup.sh
+-- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/local_setup.zsh
+-- Installing: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/local_setup.dsv
+-- Installing: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/package.dsv
+-- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/ament_index/resource_index/packages/tod_input_devices
+-- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/cmake/tod_input_devicesConfig.cmake
+-- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/cmake/tod_input_devicesConfig-version.cmake
+-- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/package.xml
+-- Installing: /home/tofstudent/sa_zhao/install/tod_input_devices/lib/tod_input_devices/InputDevice
+-- Set runtime path of "/home/tofstudent/sa_zhao/install/tod_input_devices/lib/tod_input_devices/InputDevice" to ""
+-- Up-to-date: /home/tofstudent/sa_zhao/install/tod_input_devices/lib/libVirtualInputDevice.a

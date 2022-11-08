@@ -1,0 +1,41 @@
+[0.078s] Invoking command in '/home/tofstudent/sa_zhao/build/tod_input_devices': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/tod_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/tod_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/tod_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/tod_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/tofstudent/sa_zhao/src/tod_input_devices -DCMAKE_INSTALL_PREFIX=/home/tofstudent/sa_zhao/install/tod_input_devices
+[0.243s] -- The C compiler identification is GNU 8.4.0
+[0.347s] -- The CXX compiler identification is GNU 8.4.0
+[0.355s] -- Check for working C compiler: /usr/bin/cc
+[0.525s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.526s] -- Detecting C compiler ABI info
+[0.645s] -- Detecting C compiler ABI info - done
+[0.669s] -- Detecting C compile features
+[0.669s] -- Detecting C compile features - done
+[0.673s] -- Check for working CXX compiler: /usr/bin/c++
+[0.849s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.851s] -- Detecting CXX compiler ABI info
+[1.032s] -- Detecting CXX compiler ABI info - done
+[1.052s] -- Detecting CXX compile features
+[1.052s] -- Detecting CXX compile features - done
+[1.056s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.094s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.094s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.395s] -- Found ament_index_cpp: 1.1.0 (/opt/ros/foxy/share/ament_index_cpp/cmake)
+[1.400s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.467s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.477s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.641s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.691s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.815s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.909s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.911s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.913s] -- Looking for pthread.h
+[2.033s] -- Looking for pthread.h - found
+[2.033s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.153s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[2.156s] -- Looking for pthread_create in pthreads
+[2.241s] -- Looking for pthread_create in pthreads - not found
+[2.247s] -- Looking for pthread_create in pthread
+[2.338s] -- Looking for pthread_create in pthread - found
+[2.340s] -- Found Threads: TRUE  
+[2.551s] -- Found tod_msgs: 1.0.0 (/home/tofstudent/sa_zhao/install/tod_msgs/share/tod_msgs/cmake)
+[3.137s] skipping SENSO build in tod_input_devices
+[3.229s] -- Configuring done
+[3.257s] -- Generating done
+[3.260s] -- Build files have been written to: /home/tofstudent/sa_zhao/build/tod_input_devices

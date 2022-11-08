@@ -1,0 +1,21 @@
+[0.964s] Invoking command in '/home/tofstudent/sa_zhao/src/carla_spawn_objects': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/ros_compatibility:/home/tofstudent/sa_zhao/install/carla_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/carla_msgs LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/carla_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/carla_spawn_objects/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/ros_compatibility/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/carla_spawn_objects build --build-base /home/tofstudent/sa_zhao/build/carla_spawn_objects/build install --prefix /home/tofstudent/sa_zhao/install/carla_spawn_objects --record /home/tofstudent/sa_zhao/build/carla_spawn_objects/install.log --single-version-externally-managed
+[1.279s] running egg_info
+[1.279s] writing ../../build/carla_spawn_objects/carla_spawn_objects.egg-info/PKG-INFO
+[1.280s] writing dependency_links to ../../build/carla_spawn_objects/carla_spawn_objects.egg-info/dependency_links.txt
+[1.280s] writing entry points to ../../build/carla_spawn_objects/carla_spawn_objects.egg-info/entry_points.txt
+[1.281s] writing requirements to ../../build/carla_spawn_objects/carla_spawn_objects.egg-info/requires.txt
+[1.281s] writing top-level names to ../../build/carla_spawn_objects/carla_spawn_objects.egg-info/top_level.txt
+[1.336s] reading manifest file '../../build/carla_spawn_objects/carla_spawn_objects.egg-info/SOURCES.txt'
+[1.338s] writing manifest file '../../build/carla_spawn_objects/carla_spawn_objects.egg-info/SOURCES.txt'
+[1.338s] running build
+[1.338s] running build_py
+[1.339s] running install
+[1.339s] running install_lib
+[1.341s] running install_data
+[1.342s] running install_egg_info
+[1.344s] removing '/home/tofstudent/sa_zhao/install/carla_spawn_objects/lib/python3.8/site-packages/carla_spawn_objects-0.0.0-py3.8.egg-info' (and everything under it)
+[1.345s] Copying ../../build/carla_spawn_objects/carla_spawn_objects.egg-info to /home/tofstudent/sa_zhao/install/carla_spawn_objects/lib/python3.8/site-packages/carla_spawn_objects-0.0.0-py3.8.egg-info
+[1.346s] running install_scripts
+[1.372s] Installing carla_spawn_objects script to /home/tofstudent/sa_zhao/install/carla_spawn_objects/lib/carla_spawn_objects
+[1.372s] Installing set_initial_pose script to /home/tofstudent/sa_zhao/install/carla_spawn_objects/lib/carla_spawn_objects
+[1.372s] writing list of installed files to '/home/tofstudent/sa_zhao/build/carla_spawn_objects/install.log'

@@ -1,0 +1,21 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/autoware_auto_planning_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autoware_auto_planning_msgs/msg/detail/path__type_support.c.o"
+  "CMakeFiles/autoware_auto_planning_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autoware_auto_planning_msgs/msg/detail/path_point__type_support.c.o"
+  "CMakeFiles/autoware_auto_planning_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autoware_auto_planning_msgs/msg/detail/trajectory__type_support.c.o"
+  "CMakeFiles/autoware_auto_planning_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/autoware_auto_planning_msgs/msg/detail/trajectory_point__type_support.c.o"
+  "libautoware_auto_planning_msgs__rosidl_typesupport_introspection_c.pdb"
+  "libautoware_auto_planning_msgs__rosidl_typesupport_introspection_c.so"
+  "rosidl_typesupport_introspection_c/autoware_auto_planning_msgs/msg/detail/path__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/autoware_auto_planning_msgs/msg/detail/path__type_support.c"
+  "rosidl_typesupport_introspection_c/autoware_auto_planning_msgs/msg/detail/path_point__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/autoware_auto_planning_msgs/msg/detail/path_point__type_support.c"
+  "rosidl_typesupport_introspection_c/autoware_auto_planning_msgs/msg/detail/trajectory__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/autoware_auto_planning_msgs/msg/detail/trajectory__type_support.c"
+  "rosidl_typesupport_introspection_c/autoware_auto_planning_msgs/msg/detail/trajectory_point__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/autoware_auto_planning_msgs/msg/detail/trajectory_point__type_support.c"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/autoware_auto_planning_msgs__rosidl_typesupport_introspection_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

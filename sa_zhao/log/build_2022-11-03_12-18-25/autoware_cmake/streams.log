@@ -1,0 +1,23 @@
+[0.308s] Invoking command in '/home/tofstudent/sa_zhao/build/autoware_cmake': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/autoware_cmake -- -j8 -l8
+[0.731s] Invoked command in '/home/tofstudent/sa_zhao/build/autoware_cmake' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/autoware_cmake -- -j8 -l8
+[0.788s] Invoking command in '/home/tofstudent/sa_zhao/build/autoware_cmake': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/autoware_cmake
+[0.800s] -- Install configuration: ""
+[0.800s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_cmake/share/autoware_cmake/cmake
+[0.801s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_cmake/share/autoware_cmake/cmake/autoware_package.cmake
+[0.801s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_cmake/share/ament_index/resource_index/package_run_dependencies/autoware_cmake
+[0.801s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_cmake/share/ament_index/resource_index/parent_prefix_path/autoware_cmake
+[0.802s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_cmake/share/autoware_cmake/environment/ament_prefix_path.sh
+[0.802s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_cmake/share/autoware_cmake/environment/ament_prefix_path.dsv
+[0.802s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_cmake/share/autoware_cmake/environment/path.sh
+[0.802s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_cmake/share/autoware_cmake/environment/path.dsv
+[0.802s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_cmake/share/autoware_cmake/local_setup.bash
+[0.802s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_cmake/share/autoware_cmake/local_setup.sh
+[0.802s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_cmake/share/autoware_cmake/local_setup.zsh
+[0.803s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_cmake/share/autoware_cmake/local_setup.dsv
+[0.803s] -- Installing: /home/tofstudent/sa_zhao/install/autoware_cmake/share/autoware_cmake/package.dsv
+[0.804s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_cmake/share/ament_index/resource_index/packages/autoware_cmake
+[0.805s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_cmake/share/autoware_cmake/cmake/autoware_cmake-extras.cmake
+[0.805s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_cmake/share/autoware_cmake/cmake/autoware_cmakeConfig.cmake
+[0.805s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_cmake/share/autoware_cmake/cmake/autoware_cmakeConfig-version.cmake
+[0.806s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_cmake/share/autoware_cmake/package.xml
+[0.806s] Invoked command in '/home/tofstudent/sa_zhao/build/autoware_cmake' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/autoware_cmake

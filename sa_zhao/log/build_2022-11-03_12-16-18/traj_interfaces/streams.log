@@ -1,0 +1,132 @@
+[0.342s] Invoking command in '/home/tofstudent/sa_zhao/build/traj_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/traj_interfaces -- -j8 -l8
+[0.501s] [  2%] Built target traj_interfaces__cpp
+[0.509s] [ 12%] Built target traj_interfaces__rosidl_generator_c
+[0.567s] [ 23%] Built target traj_interfaces__rosidl_typesupport_introspection_cpp
+[0.581s] [ 33%] Built target traj_interfaces__rosidl_typesupport_cpp
+[0.638s] [ 43%] Built target traj_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.658s] [ 53%] Built target traj_interfaces__rosidl_typesupport_introspection_c
+[0.665s] [ 64%] Built target traj_interfaces__rosidl_typesupport_c
+[0.685s] [ 74%] Built target traj_interfaces__rosidl_typesupport_fastrtps_c
+[0.713s] [ 74%] Built target traj_interfaces
+[0.743s] [ 76%] Built target traj_interfaces__py
+[0.781s] [ 84%] Built target traj_interfaces__python
+[0.824s] [ 89%] Built target traj_interfaces__rosidl_typesupport_introspection_c__pyext
+[0.847s] [ 94%] Built target traj_interfaces__rosidl_typesupport_c__pyext
+[0.856s] [100%] Built target traj_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.911s] Invoked command in '/home/tofstudent/sa_zhao/build/traj_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/traj_interfaces -- -j8 -l8
+[1.053s] Invoking command in '/home/tofstudent/sa_zhao/build/traj_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/traj_interfaces
+[1.067s] -- Install configuration: ""
+[1.071s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/ament_index/resource_index/rosidl_interfaces/traj_interfaces
+[1.071s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces
+[1.071s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg
+[1.071s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/detail
+[1.071s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/detail/state_machine__struct.h
+[1.072s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/detail/state_machine__functions.h
+[1.072s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/detail/state_machine__type_support.h
+[1.072s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/detail/traj_param__functions.c
+[1.072s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/detail/traj_param__functions.h
+[1.072s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/detail/traj_param__struct.h
+[1.072s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/detail/state_machine__functions.c
+[1.072s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/detail/traj_param__type_support.h
+[1.072s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/rosidl_generator_c__visibility_control.h
+[1.072s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/traj_param.h
+[1.073s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/state_machine.h
+[1.073s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/environment/library_path.sh
+[1.074s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/environment/library_path.dsv
+[1.074s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/lib/libtraj_interfaces__rosidl_generator_c.so
+[1.074s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces
+[1.074s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg
+[1.074s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.074s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/detail
+[1.074s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/detail/traj_param__rosidl_typesupport_fastrtps_c.h
+[1.075s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/detail/state_machine__rosidl_typesupport_fastrtps_c.h
+[1.075s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/lib/libtraj_interfaces__rosidl_typesupport_fastrtps_c.so
+[1.075s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces
+[1.075s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg
+[1.075s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.075s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/detail
+[1.075s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/detail/traj_param__rosidl_typesupport_fastrtps_cpp.hpp
+[1.076s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/detail/dds_fastrtps
+[1.076s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/detail/state_machine__rosidl_typesupport_fastrtps_cpp.hpp
+[1.076s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/lib/libtraj_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[1.076s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces
+[1.076s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg
+[1.076s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/detail
+[1.076s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/detail/traj_param__type_support.c
+[1.077s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/detail/state_machine__type_support.c
+[1.077s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/detail/state_machine__rosidl_typesupport_introspection_c.h
+[1.077s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/detail/traj_param__rosidl_typesupport_introspection_c.h
+[1.077s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.078s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/lib/libtraj_interfaces__rosidl_typesupport_introspection_c.so
+[1.078s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/lib/libtraj_interfaces__rosidl_typesupport_c.so
+[1.078s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces
+[1.078s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg
+[1.079s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/traj_param.hpp
+[1.079s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/detail
+[1.079s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/detail/state_machine__traits.hpp
+[1.079s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/detail/state_machine__builder.hpp
+[1.080s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/detail/state_machine__struct.hpp
+[1.080s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/detail/traj_param__struct.hpp
+[1.080s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/detail/traj_param__traits.hpp
+[1.080s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/detail/traj_param__builder.hpp
+[1.081s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/state_machine.hpp
+[1.081s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces
+[1.081s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg
+[1.082s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/detail
+[1.082s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/detail/traj_param__rosidl_typesupport_introspection_cpp.hpp
+[1.083s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/detail/traj_param__type_support.cpp
+[1.083s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/detail/state_machine__rosidl_typesupport_introspection_cpp.hpp
+[1.086s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/include/traj_interfaces/msg/detail/state_machine__type_support.cpp
+[1.087s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/lib/libtraj_interfaces__rosidl_typesupport_introspection_cpp.so
+[1.087s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/lib/libtraj_interfaces__rosidl_typesupport_cpp.so
+[1.088s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/environment/pythonpath.sh
+[1.088s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/environment/pythonpath.dsv
+[1.088s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/lib/python3.8/site-packages/traj_interfaces/__init__.py
+[1.144s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/lib/python3.8/site-packages/traj_interfaces/msg
+[1.145s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/lib/python3.8/site-packages/traj_interfaces/msg/_traj_param.py
+[1.145s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/lib/python3.8/site-packages/traj_interfaces/msg/_state_machine.py
+[1.145s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/lib/python3.8/site-packages/traj_interfaces/msg/_state_machine_s.c
+[1.145s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/lib/python3.8/site-packages/traj_interfaces/msg/_traj_param_s.c
+[1.145s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/lib/python3.8/site-packages/traj_interfaces/msg/__init__.py
+[1.146s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/lib/python3.8/site-packages/traj_interfaces/traj_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[1.146s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/lib/python3.8/site-packages/traj_interfaces/traj_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[1.146s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/lib/python3.8/site-packages/traj_interfaces/traj_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[1.146s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/lib/libtraj_interfaces__python.so
+[1.147s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/msg/TrajParam.idl
+[1.147s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/msg/StateMachine.idl
+[1.147s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/msg/TrajParam.msg
+[1.147s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/msg/StateMachine.msg
+[1.147s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/ament_index/resource_index/package_run_dependencies/traj_interfaces
+[1.147s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/ament_index/resource_index/parent_prefix_path/traj_interfaces
+[1.148s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/environment/ament_prefix_path.sh
+[1.148s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/environment/ament_prefix_path.dsv
+[1.148s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/environment/path.sh
+[1.148s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/environment/path.dsv
+[1.148s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/local_setup.bash
+[1.148s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/local_setup.sh
+[1.149s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/local_setup.zsh
+[1.149s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/local_setup.dsv
+[1.149s] -- Installing: /home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/package.dsv
+[1.149s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/ament_index/resource_index/packages/traj_interfaces
+[1.149s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/cmake/traj_interfaces__rosidl_generator_cExport.cmake
+[1.149s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/cmake/traj_interfaces__rosidl_generator_cExport-noconfig.cmake
+[1.150s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/cmake/traj_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[1.150s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/cmake/traj_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.153s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/cmake/traj_interfaces__rosidl_typesupport_cExport.cmake
+[1.153s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/cmake/traj_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[1.153s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/cmake/traj_interfaces__rosidl_generator_cppExport.cmake
+[1.153s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/cmake/traj_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[1.153s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/cmake/traj_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.153s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/cmake/traj_interfaces__rosidl_typesupport_cppExport.cmake
+[1.154s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/cmake/traj_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[1.154s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/cmake/rosidl_cmake-extras.cmake
+[1.154s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.154s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[1.154s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[1.154s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.154s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.154s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.155s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/cmake/traj_interfacesConfig.cmake
+[1.155s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/cmake/traj_interfacesConfig-version.cmake
+[1.155s] -- Up-to-date: /home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/package.xml
+[1.155s] Invoked command in '/home/tofstudent/sa_zhao/build/traj_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/traj_interfaces

@@ -1,0 +1,5 @@
+[ 37%] Built target UsbInputDevice
+[35m[1mScanning dependencies of target InputDevice[0m
+[ 50%] [32mBuilding CXX object src/CMakeFiles/InputDevice.dir/InputDeviceNode.cpp.o[0m
+[ 62%] [32mBuilding CXX object src/CMakeFiles/InputDevice.dir/RosInterface.cpp.o[0m
+[ 75%] [32mBuilding CXX object src/CMakeFiles/InputDevice.dir/InputDeviceController.cpp.o[0m

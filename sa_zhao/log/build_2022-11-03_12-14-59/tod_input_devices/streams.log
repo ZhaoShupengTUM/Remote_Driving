@@ -1,0 +1,39 @@
+[0.064s] Invoking command in '/home/tofstudent/sa_zhao/build/tod_input_devices': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/tod_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/tod_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/tod_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/tod_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/tod_input_devices -- -j8 -l8
+[0.138s] [ 61%] Built target VirtualInputDevice
+[0.191s] [100%] Built target InputDevice
+[0.205s] Invoked command in '/home/tofstudent/sa_zhao/build/tod_input_devices' returned '0': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/tod_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/tod_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/tod_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/tod_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/tod_input_devices -- -j8 -l8
+[0.238s] Invoking command in '/home/tofstudent/sa_zhao/build/tod_input_devices': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/tod_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/tod_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/tod_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/tod_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/tod_input_devices
+[0.249s] -- Install configuration: ""
+[0.249s] -- Installing: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/launch
+[0.250s] -- Installing: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/launch/tod_input_devices.launch.xml
+[0.250s] -- Installing: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/config
+[0.250s] -- Installing: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/config/virtual_ros2.yaml
+[0.250s] -- Installing: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/config/template.yaml
+[0.251s] -- Installing: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/config/fanatec_ff.yaml
+[0.251s] -- Installing: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/config/fanatec.yaml
+[0.251s] -- Installing: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/config/senso.yaml
+[0.251s] -- Installing: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/config/xboxcontroller.yaml
+[0.252s] -- Installing: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/config/joystick.yaml
+[0.252s] -- Installing: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/config/stormjoystick.yaml
+[0.252s] -- Installing: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/config/virtual.yaml
+[0.252s] -- Installing: /home/tofstudent/sa_zhao/install/tod_input_devices/share/ament_index/resource_index/package_run_dependencies/tod_input_devices
+[0.252s] -- Installing: /home/tofstudent/sa_zhao/install/tod_input_devices/share/ament_index/resource_index/parent_prefix_path/tod_input_devices
+[0.253s] -- Installing: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/environment/ament_prefix_path.sh
+[0.253s] -- Installing: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/environment/ament_prefix_path.dsv
+[0.253s] -- Installing: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/environment/path.sh
+[0.253s] -- Installing: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/environment/path.dsv
+[0.253s] -- Installing: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/local_setup.bash
+[0.253s] -- Installing: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/local_setup.sh
+[0.254s] -- Installing: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/local_setup.zsh
+[0.254s] -- Installing: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/local_setup.dsv
+[0.254s] -- Installing: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/package.dsv
+[0.254s] -- Installing: /home/tofstudent/sa_zhao/install/tod_input_devices/share/ament_index/resource_index/packages/tod_input_devices
+[0.254s] -- Installing: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.254s] -- Installing: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.254s] -- Installing: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/cmake/tod_input_devicesConfig.cmake
+[0.254s] -- Installing: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/cmake/tod_input_devicesConfig-version.cmake
+[0.254s] -- Installing: /home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/package.xml
+[0.255s] -- Installing: /home/tofstudent/sa_zhao/install/tod_input_devices/lib/tod_input_devices/InputDevice
+[0.256s] -- Set runtime path of "/home/tofstudent/sa_zhao/install/tod_input_devices/lib/tod_input_devices/InputDevice" to ""
+[0.257s] -- Installing: /home/tofstudent/sa_zhao/install/tod_input_devices/lib/libVirtualInputDevice.a
+[0.264s] Invoked command in '/home/tofstudent/sa_zhao/build/tod_input_devices' returned '0': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/tod_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/tod_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/tod_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/tod_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/tod_input_devices

@@ -1,0 +1,211 @@
+[0.055s] Invoking command in '/home/tofstudent/sa_zhao/build/interactive_trajectory': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/tod_command_creation:/home/tofstudent/sa_zhao/install/traj_interfaces:/home/tofstudent/sa_zhao/install/tod_msgs:/home/tofstudent/sa_zhao/install/carla_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/tod_command_creation:/home/tofstudent/sa_zhao/install/traj_interfaces:/home/tofstudent/sa_zhao/install/tod_msgs:/home/tofstudent/sa_zhao/install/carla_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces/lib:/home/tofstudent/sa_zhao/install/tod_msgs/lib:/home/tofstudent/sa_zhao/install/carla_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/traj_interfaces/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/tod_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/tofstudent/sa_zhao/src/interactive_trajectory -DCMAKE_INSTALL_PREFIX=/home/tofstudent/sa_zhao/install/interactive_trajectory
+[0.184s] -- The C compiler identification is GNU 8.4.0
+[0.304s] -- The CXX compiler identification is GNU 8.4.0
+[0.316s] -- Check for working C compiler: /usr/bin/cc
+[0.462s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.463s] -- Detecting C compiler ABI info
+[0.604s] -- Detecting C compiler ABI info - done
+[0.630s] -- Detecting C compile features
+[0.631s] -- Detecting C compile features - done
+[0.636s] -- Check for working CXX compiler: /usr/bin/c++
+[0.795s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.800s] -- Detecting CXX compiler ABI info
+[0.991s] -- Detecting CXX compiler ABI info - done
+[1.004s] -- Detecting CXX compile features
+[1.005s] -- Detecting CXX compile features - done
+[1.008s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.051s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.051s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.290s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.340s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.348s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.552s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.589s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.688s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.761s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.762s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.763s] -- Looking for pthread.h
+[1.896s] -- Looking for pthread.h - found
+[1.897s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.057s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[2.058s] -- Looking for pthread_create in pthreads
+[2.204s] -- Looking for pthread_create in pthreads - not found
+[2.205s] -- Looking for pthread_create in pthread
+[2.355s] -- Looking for pthread_create in pthread - found
+[2.358s] -- Found Threads: TRUE  
+[2.519s] -- Found rclpy: 1.0.10 (/opt/ros/foxy/share/rclpy/cmake)
+[2.519s] -- Found traj_interfaces: 0.0.0 (/home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/cmake)
+[2.527s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[2.665s] -- Found tf2: 0.13.13 (/opt/ros/foxy/share/tf2/cmake)
+[2.677s] -- Found tf2_ros: 0.13.13 (/opt/ros/foxy/share/tf2_ros/cmake)
+[3.019s] -- Found tf2_geometry_msgs: 0.13.13 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)
+[3.028s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+[3.031s] -- Found Eigen3: TRUE (found version "3.3.7") 
+[3.056s] -- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)
+[3.126s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[3.195s] -- Found ackermann_msgs: 2.0.2 (/opt/ros/foxy/share/ackermann_msgs/cmake)
+[3.246s] -- Found autoware_auto_planning_msgs: 0.0.0 (/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/cmake)
+[3.385s] -- Found autoware_auto_control_msgs: 1.0.0 (/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/cmake)
+[3.404s] -- Found carla_msgs: 1.3.0 (/home/tofstudent/sa_zhao/install/carla_msgs/share/carla_msgs/cmake)
+[3.578s] -- Checking for module 'eigen3'
+[3.625s] --   Found eigen3, version 3.3.7
+[3.749s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[3.750s] -- Eigen found (include: /usr/include/eigen3, version: 3.3.7)
+[3.823s] -- Found Boost: /usr/include (found suitable version "1.71.0", minimum required is "1.55.0") found components: system filesystem date_time iostreams regex 
+[3.833s] -- Checking for module 'libusb-1.0'
+[3.842s] --   No package 'libusb-1.0' found
+[3.848s] -- Could NOT find USB_10 (missing: USB_10_LIBRARY USB_10_INCLUDE_DIR) 
+[3.848s] -- OpenNI disabled because libusb-1.0 not found.
+[3.848s] ** WARNING ** io features related to openni will be disabled
+[3.859s] -- Checking for module 'libusb-1.0'
+[3.868s] --   No package 'libusb-1.0' found
+[3.878s] -- Could NOT find USB_10 (missing: USB_10_LIBRARY USB_10_INCLUDE_DIR) 
+[3.878s] -- OpenNI 2 disabled because libusb-1.0 not found.
+[3.878s] ** WARNING ** io features related to openni2 will be disabled
+[3.879s] ** WARNING ** io features related to pcap will be disabled
+[3.879s] ** WARNING ** io features related to png will be disabled
+[3.948s] -- The imported target "vtkParseOGLExt" references the file
+[3.948s]    "/usr/bin/vtkParseOGLExt-7.1"
+[3.949s] but this file does not exist.  Possible reasons include:
+[3.949s] * The file was deleted, renamed, or moved to another location.
+[3.949s] * An install or uninstall procedure did not complete successfully.
+[3.950s] * The installation package was faulty and contained
+[3.950s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[3.950s] but not all the files it references.
+[3.950s] 
+[3.950s] -- The imported target "vtkRenderingPythonTkWidgets" references the file
+[3.951s]    "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+[3.951s] but this file does not exist.  Possible reasons include:
+[3.951s] * The file was deleted, renamed, or moved to another location.
+[3.951s] * An install or uninstall procedure did not complete successfully.
+[3.951s] * The installation package was faulty and contained
+[3.951s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[3.952s] but not all the files it references.
+[3.952s] 
+[3.952s] -- The imported target "vtk" references the file
+[3.952s]    "/usr/bin/vtk"
+[3.952s] but this file does not exist.  Possible reasons include:
+[3.952s] * The file was deleted, renamed, or moved to another location.
+[3.952s] * An install or uninstall procedure did not complete successfully.
+[3.953s] * The installation package was faulty and contained
+[3.953s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[3.953s] but not all the files it references.
+[3.953s] 
+[3.953s] -- The imported target "pvtk" references the file
+[3.953s]    "/usr/bin/pvtk"
+[3.954s] but this file does not exist.  Possible reasons include:
+[3.954s] * The file was deleted, renamed, or moved to another location.
+[3.954s] * An install or uninstall procedure did not complete successfully.
+[3.954s] * The installation package was faulty and contained
+[3.954s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[3.954s] but not all the files it references.
+[3.955s] 
+[3.984s] -- LIBUSB_1_LIBRARY (missing: LIBUSB_1_INCLUDE_DIR) 
+[3.984s] ** WARNING ** io features related to libusb-1.0 will be disabled
+[3.984s] -- looking for PCL_COMMON
+[3.986s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[3.987s] -- looking for PCL_OCTREE
+[3.988s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[3.989s] -- looking for PCL_IO
+[3.990s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[3.991s] -- Found PCL: pcl_common;pcl_octree;pcl_io;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;/usr/lib/x86_64-linux-gnu/libboost_regex.so;vtkChartsCore;vtkCommonColor;vtkCommonCore;vtksys;vtkCommonDataModel;vtkCommonMath;vtkCommonMisc;vtkCommonSystem;vtkCommonTransforms;vtkCommonExecutionModel;vtkFiltersGeneral;vtkCommonComputationalGeometry;vtkFiltersCore;vtkInfovisCore;vtkFiltersExtraction;vtkFiltersStatistics;vtkImagingFourier;vtkImagingCore;vtkalglib;vtkRenderingContext2D;vtkRenderingCore;vtkFiltersGeometry;vtkFiltersSources;vtkRenderingFreeType;/usr/lib/x86_64-linux-gnu/libfreetype.so;/usr/lib/x86_64-linux-gnu/libz.so;vtkFiltersModeling;vtkImagingSources;vtkInteractionStyle;vtkInteractionWidgets;vtkFiltersHybrid;vtkImagingColor;vtkImagingGeneral;vtkImagingHybrid;vtkIOImage;vtkDICOMParser;vtkmetaio;/usr/lib/x86_64-linux-gnu/libjpeg.so;/usr/lib/x86_64-linux-gnu/libpng.so;/usr/lib/x86_64-linux-gnu/libtiff.so;vtkRenderingAnnotation;vtkRenderingVolume;vtkIOXML;vtkIOCore;vtkIOXMLParser;/usr/lib/x86_64-linux-gnu/libexpat.so;vtkIOGeometry;vtkIOLegacy;vtkIOPLY;vtkRenderingLOD;vtkViewsContext2D;vtkViewsCore;vtkRenderingContextOpenGL2;vtkRenderingOpenGL2 (Required is at least version "1.1") 
+[4.012s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[4.115s] -- Added test 'copyright' to check source files copyright and LICENSE
+[4.117s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.119s] -- Configured cppcheck include dirs: /home/tofstudent/sa_zhao/src/interactive_trajectory/include
+[4.119s] -- Configured cppcheck exclude dirs and/or files: 
+[4.121s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[4.121s] -- Configured cpplint exclude dirs and/or files: 
+[4.121s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.122s] -- Added test 'lint_cmake' to check CMake code style
+[4.123s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[4.124s] -- Added test 'uncrustify' to check C / C++ code style
+[4.124s] -- Configured uncrustify additional arguments: 
+[4.125s] -- Added test 'xmllint' to check XML markup files
+[4.130s] -- Configuring done
+[4.218s] -- Generating done
+[4.221s] -- Build files have been written to: /home/tofstudent/sa_zhao/build/interactive_trajectory
+[4.240s] Invoked command in '/home/tofstudent/sa_zhao/build/interactive_trajectory' returned '0': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/tod_command_creation:/home/tofstudent/sa_zhao/install/traj_interfaces:/home/tofstudent/sa_zhao/install/tod_msgs:/home/tofstudent/sa_zhao/install/carla_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/tod_command_creation:/home/tofstudent/sa_zhao/install/traj_interfaces:/home/tofstudent/sa_zhao/install/tod_msgs:/home/tofstudent/sa_zhao/install/carla_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces/lib:/home/tofstudent/sa_zhao/install/tod_msgs/lib:/home/tofstudent/sa_zhao/install/carla_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/traj_interfaces/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/tod_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/tofstudent/sa_zhao/src/interactive_trajectory -DCMAKE_INSTALL_PREFIX=/home/tofstudent/sa_zhao/install/interactive_trajectory
+[4.248s] Invoking command in '/home/tofstudent/sa_zhao/build/interactive_trajectory': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/tod_command_creation:/home/tofstudent/sa_zhao/install/traj_interfaces:/home/tofstudent/sa_zhao/install/tod_msgs:/home/tofstudent/sa_zhao/install/carla_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/tod_command_creation:/home/tofstudent/sa_zhao/install/traj_interfaces:/home/tofstudent/sa_zhao/install/tod_msgs:/home/tofstudent/sa_zhao/install/carla_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces/lib:/home/tofstudent/sa_zhao/install/tod_msgs/lib:/home/tofstudent/sa_zhao/install/carla_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/traj_interfaces/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/tod_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/interactive_trajectory -- -j8 -l8
+[4.337s] [35m[1mScanning dependencies of target auto_teleop_key[0m
+[4.346s] [35m[1mScanning dependencies of target util[0m
+[4.396s] [  4%] [32mBuilding CXX object CMakeFiles/auto_teleop_key.dir/src/telecontrolNode.cpp.o[0m
+[4.424s] [  8%] [32mBuilding CXX object CMakeFiles/util.dir/include/util/util_src/TrajectoryPrediction.cpp.o[0m
+[4.431s] [ 13%] [32mBuilding CXX object CMakeFiles/util.dir/include/util/util_src/DiscretePIDController.cpp.o[0m
+[4.433s] [ 17%] [32mBuilding CXX object CMakeFiles/util.dir/include/util/util_src/KosTransform.cpp.o[0m
+[4.439s] [ 21%] [32mBuilding CXX object CMakeFiles/util.dir/include/util/util_src/CollisionDetection.cpp.o[0m
+[4.441s] [ 26%] [32mBuilding CXX object CMakeFiles/util.dir/include/util/util_src/CorridorCreation.cpp.o[0m
+[4.448s] [ 30%] [32mBuilding CXX object CMakeFiles/util.dir/include/util/util_src/TrajectoryLength.cpp.o[0m
+[6.298s] [ 34%] [32m[1mLinking CXX static library libutil.a[0m
+[6.374s] [ 34%] Built target util
+[6.391s] [35m[1mScanning dependencies of target traj_visualization[0m
+[6.392s] [35m[1mScanning dependencies of target carla_bridge[0m
+[6.400s] [35m[1mScanning dependencies of target pid_longitudinal_control[0m
+[6.404s] [35m[1mScanning dependencies of target collsion_check[0m
+[6.405s] [35m[1mScanning dependencies of target traj_collect[0m
+[6.405s] [35m[1mScanning dependencies of target tf_path[0m
+[6.405s] [35m[1mScanning dependencies of target corridor[0m
+[6.475s] [ 39%] [32mBuilding CXX object CMakeFiles/traj_visualization.dir/src/TrajVisualisationNode.cpp.o[0m
+[6.488s] [ 43%] [32mBuilding CXX object CMakeFiles/corridor.dir/src/CorridorCreationNode.cpp.o[0m
+[6.499s] [ 47%] [32mBuilding CXX object CMakeFiles/pid_longitudinal_control.dir/src/LongitudinalControlNode.cpp.o[0m
+[6.514s] [ 52%] [32mBuilding CXX object CMakeFiles/tf_path.dir/src/TfPathStartNode.cpp.o[0m
+[6.528s] [ 56%] [32mBuilding CXX object CMakeFiles/traj_collect.dir/src/TrajCollectNode.cpp.o[0m
+[6.544s] [ 60%] [32mBuilding CXX object CMakeFiles/carla_bridge.dir/src/CarlaBridgeNode.cpp.o[0m
+[6.592s] [ 65%] [32mBuilding CXX object CMakeFiles/collsion_check.dir/src/CollisionDetectionNode.cpp.o[0m
+[10.987s] [ 69%] [32m[1mLinking CXX executable auto_teleop_key[0m
+[11.495s] [ 69%] Built target auto_teleop_key
+[14.887s] [ 73%] [32m[1mLinking CXX executable traj_visualization[0m
+[15.429s] [ 73%] Built target traj_visualization
+[15.817s] [ 78%] [32m[1mLinking CXX executable corridor[0m
+[15.867s] [ 82%] [32m[1mLinking CXX executable tf_path[0m
+[16.392s] [ 82%] Built target tf_path
+[16.423s] [ 82%] Built target corridor
+[18.807s] [ 86%] [32m[1mLinking CXX executable traj_collect[0m
+[18.885s] [ 91%] [32m[1mLinking CXX executable pid_longitudinal_control[0m
+[19.544s] [ 91%] Built target traj_collect
+[19.618s] [ 91%] Built target pid_longitudinal_control
+[19.884s] [ 95%] [32m[1mLinking CXX executable collsion_check[0m
+[20.580s] [ 95%] Built target collsion_check
+[22.451s] [100%] [32m[1mLinking CXX executable carla_bridge[0m
+[23.226s] [100%] Built target carla_bridge
+[23.254s] Invoked command in '/home/tofstudent/sa_zhao/build/interactive_trajectory' returned '0': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/tod_command_creation:/home/tofstudent/sa_zhao/install/traj_interfaces:/home/tofstudent/sa_zhao/install/tod_msgs:/home/tofstudent/sa_zhao/install/carla_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/tod_command_creation:/home/tofstudent/sa_zhao/install/traj_interfaces:/home/tofstudent/sa_zhao/install/tod_msgs:/home/tofstudent/sa_zhao/install/carla_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces/lib:/home/tofstudent/sa_zhao/install/tod_msgs/lib:/home/tofstudent/sa_zhao/install/carla_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/traj_interfaces/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/tod_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/interactive_trajectory -- -j8 -l8
+[23.413s] Invoking command in '/home/tofstudent/sa_zhao/build/interactive_trajectory': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/tod_command_creation:/home/tofstudent/sa_zhao/install/traj_interfaces:/home/tofstudent/sa_zhao/install/tod_msgs:/home/tofstudent/sa_zhao/install/carla_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/tod_command_creation:/home/tofstudent/sa_zhao/install/traj_interfaces:/home/tofstudent/sa_zhao/install/tod_msgs:/home/tofstudent/sa_zhao/install/carla_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces/lib:/home/tofstudent/sa_zhao/install/tod_msgs/lib:/home/tofstudent/sa_zhao/install/carla_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/traj_interfaces/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/tod_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/interactive_trajectory
+[23.436s] -- Install configuration: ""
+[23.437s] -- Installing: /home/tofstudent/sa_zhao/install/interactive_trajectory/lib/interactive_trajectory/auto_teleop_key
+[23.440s] -- Set runtime path of "/home/tofstudent/sa_zhao/install/interactive_trajectory/lib/interactive_trajectory/auto_teleop_key" to ""
+[23.441s] -- Installing: /home/tofstudent/sa_zhao/install/interactive_trajectory/lib/interactive_trajectory/traj_visualization
+[23.444s] -- Set runtime path of "/home/tofstudent/sa_zhao/install/interactive_trajectory/lib/interactive_trajectory/traj_visualization" to ""
+[23.444s] -- Installing: /home/tofstudent/sa_zhao/install/interactive_trajectory/lib/interactive_trajectory/tf_path
+[23.448s] -- Set runtime path of "/home/tofstudent/sa_zhao/install/interactive_trajectory/lib/interactive_trajectory/tf_path" to ""
+[23.449s] -- Installing: /home/tofstudent/sa_zhao/install/interactive_trajectory/lib/interactive_trajectory/traj_collect
+[23.454s] -- Set runtime path of "/home/tofstudent/sa_zhao/install/interactive_trajectory/lib/interactive_trajectory/traj_collect" to ""
+[23.455s] -- Installing: /home/tofstudent/sa_zhao/install/interactive_trajectory/lib/interactive_trajectory/corridor
+[23.458s] -- Set runtime path of "/home/tofstudent/sa_zhao/install/interactive_trajectory/lib/interactive_trajectory/corridor" to ""
+[23.458s] -- Installing: /home/tofstudent/sa_zhao/install/interactive_trajectory/lib/interactive_trajectory/carla_bridge
+[23.465s] -- Set runtime path of "/home/tofstudent/sa_zhao/install/interactive_trajectory/lib/interactive_trajectory/carla_bridge" to ""
+[23.466s] -- Installing: /home/tofstudent/sa_zhao/install/interactive_trajectory/lib/interactive_trajectory/pid_longitudinal_control
+[23.471s] -- Set runtime path of "/home/tofstudent/sa_zhao/install/interactive_trajectory/lib/interactive_trajectory/pid_longitudinal_control" to ""
+[23.471s] -- Installing: /home/tofstudent/sa_zhao/install/interactive_trajectory/lib/interactive_trajectory/collsion_check
+[23.475s] -- Set runtime path of "/home/tofstudent/sa_zhao/install/interactive_trajectory/lib/interactive_trajectory/collsion_check" to ""
+[23.475s] -- Installing: /home/tofstudent/sa_zhao/install/interactive_trajectory/share/interactive_trajectory//launch
+[23.476s] -- Installing: /home/tofstudent/sa_zhao/install/interactive_trajectory/share/interactive_trajectory//launch/pure_pursuit.launch.py
+[23.476s] -- Installing: /home/tofstudent/sa_zhao/install/interactive_trajectory/share/interactive_trajectory//launch/tele_driving_fanatec.launch.py
+[23.476s] -- Installing: /home/tofstudent/sa_zhao/install/interactive_trajectory/share/interactive_trajectory//launch/trajectory_generation_test.launch.py
+[23.476s] -- Installing: /home/tofstudent/sa_zhao/install/interactive_trajectory/share/interactive_trajectory//launch/carla.launch.py
+[23.477s] -- Installing: /home/tofstudent/sa_zhao/install/interactive_trajectory/share/interactive_trajectory//launch/tele_driving_keyboard.launch.py
+[23.477s] -- Installing: /home/tofstudent/sa_zhao/install/interactive_trajectory/share/ament_index/resource_index/package_run_dependencies/interactive_trajectory
+[23.477s] -- Installing: /home/tofstudent/sa_zhao/install/interactive_trajectory/share/ament_index/resource_index/parent_prefix_path/interactive_trajectory
+[23.477s] -- Installing: /home/tofstudent/sa_zhao/install/interactive_trajectory/share/interactive_trajectory/environment/ament_prefix_path.sh
+[23.477s] -- Installing: /home/tofstudent/sa_zhao/install/interactive_trajectory/share/interactive_trajectory/environment/ament_prefix_path.dsv
+[23.478s] -- Installing: /home/tofstudent/sa_zhao/install/interactive_trajectory/share/interactive_trajectory/environment/path.sh
+[23.478s] -- Installing: /home/tofstudent/sa_zhao/install/interactive_trajectory/share/interactive_trajectory/environment/path.dsv
+[23.478s] -- Installing: /home/tofstudent/sa_zhao/install/interactive_trajectory/share/interactive_trajectory/local_setup.bash
+[23.478s] -- Installing: /home/tofstudent/sa_zhao/install/interactive_trajectory/share/interactive_trajectory/local_setup.sh
+[23.479s] -- Installing: /home/tofstudent/sa_zhao/install/interactive_trajectory/share/interactive_trajectory/local_setup.zsh
+[23.479s] -- Installing: /home/tofstudent/sa_zhao/install/interactive_trajectory/share/interactive_trajectory/local_setup.dsv
+[23.479s] -- Installing: /home/tofstudent/sa_zhao/install/interactive_trajectory/share/interactive_trajectory/package.dsv
+[23.479s] -- Installing: /home/tofstudent/sa_zhao/install/interactive_trajectory/share/ament_index/resource_index/packages/interactive_trajectory
+[23.479s] -- Installing: /home/tofstudent/sa_zhao/install/interactive_trajectory/share/interactive_trajectory/cmake/interactive_trajectoryConfig.cmake
+[23.479s] -- Installing: /home/tofstudent/sa_zhao/install/interactive_trajectory/share/interactive_trajectory/cmake/interactive_trajectoryConfig-version.cmake
+[23.479s] -- Installing: /home/tofstudent/sa_zhao/install/interactive_trajectory/share/interactive_trajectory/package.xml
+[23.487s] Invoked command in '/home/tofstudent/sa_zhao/build/interactive_trajectory' returned '0': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/tod_command_creation:/home/tofstudent/sa_zhao/install/traj_interfaces:/home/tofstudent/sa_zhao/install/tod_msgs:/home/tofstudent/sa_zhao/install/carla_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/tod_command_creation:/home/tofstudent/sa_zhao/install/traj_interfaces:/home/tofstudent/sa_zhao/install/tod_msgs:/home/tofstudent/sa_zhao/install/carla_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces/lib:/home/tofstudent/sa_zhao/install/tod_msgs/lib:/home/tofstudent/sa_zhao/install/carla_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/traj_interfaces/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/tod_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/interactive_trajectory

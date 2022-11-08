@@ -1,0 +1,1188 @@
+[0.147s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.147s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7efd87961b80>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=8, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7efd87961b80>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7efd8796b130>)
+[0.172s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.172s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.172s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.172s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.172s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.172s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.172s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/tofstudent/sa_zhao'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['ignore', 'ignore_ament_install']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'ignore'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'ignore_ament_install'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['colcon_pkg']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'colcon_pkg'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['colcon_meta']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'colcon_meta'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['ros']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'ros'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['cmake', 'python']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'cmake'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'python'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extensions ['python_setup_py']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(config) by extension 'python_setup_py'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_control_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_control_msgs) by extension 'ignore'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_control_msgs) by extension 'ignore_ament_install'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_control_msgs) by extensions ['colcon_pkg']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_control_msgs) by extension 'colcon_pkg'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_control_msgs) by extensions ['colcon_meta']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_control_msgs) by extension 'colcon_meta'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_control_msgs) by extensions ['ros']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_control_msgs) by extension 'ros'
+[0.189s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autoware_auto_control_msgs' with type 'ros.ament_cmake' and name 'autoware_auto_control_msgs'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_planning_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_planning_msgs) by extension 'ignore'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_planning_msgs) by extension 'ignore_ament_install'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_planning_msgs) by extensions ['colcon_pkg']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_planning_msgs) by extension 'colcon_pkg'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_planning_msgs) by extensions ['colcon_meta']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_planning_msgs) by extension 'colcon_meta'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_planning_msgs) by extensions ['ros']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_planning_msgs) by extension 'ros'
+[0.190s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autoware_auto_planning_msgs' with type 'ros.ament_cmake' and name 'autoware_auto_planning_msgs'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_vehicle_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_vehicle_msgs) by extension 'ignore'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_vehicle_msgs) by extension 'ignore_ament_install'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_vehicle_msgs) by extensions ['colcon_pkg']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_vehicle_msgs) by extension 'colcon_pkg'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_vehicle_msgs) by extensions ['colcon_meta']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_vehicle_msgs) by extension 'colcon_meta'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_vehicle_msgs) by extensions ['ros']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_auto_vehicle_msgs) by extension 'ros'
+[0.202s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autoware_auto_vehicle_msgs' with type 'ros.ament_cmake' and name 'autoware_auto_vehicle_msgs'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_cmake) by extensions ['ignore', 'ignore_ament_install']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_cmake) by extension 'ignore'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_cmake) by extension 'ignore_ament_install'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_cmake) by extensions ['colcon_pkg']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_cmake) by extension 'colcon_pkg'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_cmake) by extensions ['colcon_meta']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_cmake) by extension 'colcon_meta'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_cmake) by extensions ['ros']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src/autoware_cmake) by extension 'ros'
+[0.204s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autoware_cmake' with type 'ros.ament_cmake' and name 'autoware_cmake'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ackermann_control) by extensions ['ignore', 'ignore_ament_install']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ackermann_control) by extension 'ignore'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ackermann_control) by extension 'ignore_ament_install'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ackermann_control) by extensions ['colcon_pkg']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ackermann_control) by extension 'colcon_pkg'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ackermann_control) by extensions ['colcon_meta']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ackermann_control) by extension 'colcon_meta'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ackermann_control) by extensions ['ros']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ackermann_control) by extension 'ros'
+[0.208s] DEBUG:colcon.colcon_core.package_identification:Package 'src/carla_ackermann_control' with type 'ros.ament_python' and name 'carla_ackermann_control'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ackermann_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ackermann_msgs) by extension 'ignore'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ackermann_msgs) by extension 'ignore_ament_install'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ackermann_msgs) by extensions ['colcon_pkg']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ackermann_msgs) by extension 'colcon_pkg'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ackermann_msgs) by extensions ['colcon_meta']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ackermann_msgs) by extension 'colcon_meta'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ackermann_msgs) by extensions ['ros']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ackermann_msgs) by extension 'ros'
+[0.212s] DEBUG:colcon.colcon_core.package_identification:Package 'src/carla_ackermann_msgs' with type 'ros.ament_cmake' and name 'carla_ackermann_msgs'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_common) by extensions ['ignore', 'ignore_ament_install']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_common) by extension 'ignore'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_common) by extension 'ignore_ament_install'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_common) by extensions ['colcon_pkg']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_common) by extension 'colcon_pkg'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_common) by extensions ['colcon_meta']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_common) by extension 'colcon_meta'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_common) by extensions ['ros']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_common) by extension 'ros'
+[0.213s] DEBUG:colcon.colcon_core.package_identification:Package 'src/carla_common' with type 'ros.ament_python' and name 'carla_common'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_msgs) by extension 'ignore'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_msgs) by extension 'ignore_ament_install'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_msgs) by extensions ['colcon_pkg']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_msgs) by extension 'colcon_pkg'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_msgs) by extensions ['colcon_meta']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_msgs) by extension 'colcon_meta'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_msgs) by extensions ['ros']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_msgs) by extension 'ros'
+[0.217s] DEBUG:colcon.colcon_core.package_identification:Package 'src/carla_msgs' with type 'ros.ament_cmake' and name 'carla_msgs'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ros_bridge) by extensions ['ignore', 'ignore_ament_install']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ros_bridge) by extension 'ignore'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ros_bridge) by extension 'ignore_ament_install'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ros_bridge) by extensions ['colcon_pkg']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ros_bridge) by extension 'colcon_pkg'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ros_bridge) by extensions ['colcon_meta']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ros_bridge) by extension 'colcon_meta'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ros_bridge) by extensions ['ros']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_ros_bridge) by extension 'ros'
+[0.221s] DEBUG:colcon.colcon_core.package_identification:Package 'src/carla_ros_bridge' with type 'ros.ament_python' and name 'carla_ros_bridge'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_spawn_objects) by extensions ['ignore', 'ignore_ament_install']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_spawn_objects) by extension 'ignore'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_spawn_objects) by extension 'ignore_ament_install'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_spawn_objects) by extensions ['colcon_pkg']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_spawn_objects) by extension 'colcon_pkg'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_spawn_objects) by extensions ['colcon_meta']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_spawn_objects) by extension 'colcon_meta'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_spawn_objects) by extensions ['ros']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/carla_spawn_objects) by extension 'ros'
+[0.224s] DEBUG:colcon.colcon_core.package_identification:Package 'src/carla_spawn_objects' with type 'ros.ament_python' and name 'carla_spawn_objects'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/interactive_trajectory) by extensions ['ignore', 'ignore_ament_install']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/interactive_trajectory) by extension 'ignore'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/interactive_trajectory) by extension 'ignore_ament_install'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/interactive_trajectory) by extensions ['colcon_pkg']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/interactive_trajectory) by extension 'colcon_pkg'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/interactive_trajectory) by extensions ['colcon_meta']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/interactive_trajectory) by extension 'colcon_meta'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/interactive_trajectory) by extensions ['ros']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/interactive_trajectory) by extension 'ros'
+[0.226s] DEBUG:colcon.colcon_core.package_identification:Package 'src/interactive_trajectory' with type 'ros.ament_cmake' and name 'interactive_trajectory'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/pure_pursuit) by extensions ['ignore', 'ignore_ament_install']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/pure_pursuit) by extension 'ignore'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/pure_pursuit) by extension 'ignore_ament_install'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/pure_pursuit) by extensions ['colcon_pkg']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/pure_pursuit) by extension 'colcon_pkg'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/pure_pursuit) by extensions ['colcon_meta']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/pure_pursuit) by extension 'colcon_meta'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/pure_pursuit) by extensions ['ros']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/pure_pursuit) by extension 'ros'
+[0.228s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pure_pursuit' with type 'ros.ament_cmake' and name 'pure_pursuit'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/random_trajectory) by extensions ['ignore', 'ignore_ament_install']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/random_trajectory) by extension 'ignore'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/random_trajectory) by extension 'ignore_ament_install'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/random_trajectory) by extensions ['colcon_pkg']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/random_trajectory) by extension 'colcon_pkg'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/random_trajectory) by extensions ['colcon_meta']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/random_trajectory) by extension 'colcon_meta'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/random_trajectory) by extensions ['ros']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/random_trajectory) by extension 'ros'
+[0.230s] DEBUG:colcon.colcon_core.package_identification:Package 'src/random_trajectory' with type 'ros.ament_cmake' and name 'random_trajectory'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_compatibility) by extensions ['ignore', 'ignore_ament_install']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_compatibility) by extension 'ignore'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_compatibility) by extension 'ignore_ament_install'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_compatibility) by extensions ['colcon_pkg']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_compatibility) by extension 'colcon_pkg'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_compatibility) by extensions ['colcon_meta']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_compatibility) by extension 'colcon_meta'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_compatibility) by extensions ['ros']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_compatibility) by extension 'ros'
+[0.234s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros_compatibility' with type 'ros.ament_python' and name 'ros_compatibility'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_command_creation) by extensions ['ignore', 'ignore_ament_install']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_command_creation) by extension 'ignore'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_command_creation) by extension 'ignore_ament_install'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_command_creation) by extensions ['colcon_pkg']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_command_creation) by extension 'colcon_pkg'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_command_creation) by extensions ['colcon_meta']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_command_creation) by extension 'colcon_meta'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_command_creation) by extensions ['ros']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_command_creation) by extension 'ros'
+[0.235s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tod_command_creation' with type 'ros.ament_cmake' and name 'tod_command_creation'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_input_devices) by extensions ['ignore', 'ignore_ament_install']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_input_devices) by extension 'ignore'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_input_devices) by extension 'ignore_ament_install'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_input_devices) by extensions ['colcon_pkg']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_input_devices) by extension 'colcon_pkg'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_input_devices) by extensions ['colcon_meta']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_input_devices) by extension 'colcon_meta'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_input_devices) by extensions ['ros']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_input_devices) by extension 'ros'
+[0.237s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tod_input_devices' with type 'ros.ament_cmake' and name 'tod_input_devices'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_msgs) by extension 'ignore'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_msgs) by extension 'ignore_ament_install'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_msgs) by extensions ['colcon_pkg']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_msgs) by extension 'colcon_pkg'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_msgs) by extensions ['colcon_meta']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_msgs) by extension 'colcon_meta'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_msgs) by extensions ['ros']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/tod_msgs) by extension 'ros'
+[0.238s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tod_msgs' with type 'ros.ament_cmake' and name 'tod_msgs'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/traj_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/traj_interfaces) by extension 'ignore'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/traj_interfaces) by extension 'ignore_ament_install'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/traj_interfaces) by extensions ['colcon_pkg']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/traj_interfaces) by extension 'colcon_pkg'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/traj_interfaces) by extensions ['colcon_meta']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/traj_interfaces) by extension 'colcon_meta'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/traj_interfaces) by extensions ['ros']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/traj_interfaces) by extension 'ros'
+[0.239s] DEBUG:colcon.colcon_core.package_identification:Package 'src/traj_interfaces' with type 'ros.ament_cmake' and name 'traj_interfaces'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/vehicle_info_util) by extensions ['ignore', 'ignore_ament_install']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/vehicle_info_util) by extension 'ignore'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/vehicle_info_util) by extension 'ignore_ament_install'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/vehicle_info_util) by extensions ['colcon_pkg']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/vehicle_info_util) by extension 'colcon_pkg'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/vehicle_info_util) by extensions ['colcon_meta']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/vehicle_info_util) by extension 'colcon_meta'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/vehicle_info_util) by extensions ['ros']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/vehicle_info_util) by extension 'ros'
+[0.240s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vehicle_info_util' with type 'ros.ament_cmake' and name 'vehicle_info_util'
+[0.240s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.240s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.240s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.240s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.240s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.262s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 258 installed packages in /opt/ros/foxy
+[0.263s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'autoware_auto_control_msgs' build argument 'cmake_args' from command line to 'None'
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'autoware_auto_control_msgs' build argument 'cmake_target' from command line to 'None'
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'autoware_auto_control_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'autoware_auto_control_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'autoware_auto_control_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'autoware_auto_control_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'autoware_auto_control_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'autoware_auto_control_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.325s] Level 5:colcon.colcon_core.verb:set package 'autoware_auto_control_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.325s] DEBUG:colcon.colcon_core.verb:Building package 'autoware_auto_control_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tofstudent/sa_zhao/build/autoware_auto_control_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs', 'merge_install': False, 'path': '/home/tofstudent/sa_zhao/src/autoware_auto_control_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'autoware_auto_planning_msgs' build argument 'cmake_args' from command line to 'None'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'autoware_auto_planning_msgs' build argument 'cmake_target' from command line to 'None'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'autoware_auto_planning_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'autoware_auto_planning_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'autoware_auto_planning_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'autoware_auto_planning_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'autoware_auto_planning_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'autoware_auto_planning_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'autoware_auto_planning_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.326s] DEBUG:colcon.colcon_core.verb:Building package 'autoware_auto_planning_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tofstudent/sa_zhao/build/autoware_auto_planning_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs', 'merge_install': False, 'path': '/home/tofstudent/sa_zhao/src/autoware_auto_planning_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'autoware_auto_vehicle_msgs' build argument 'cmake_args' from command line to 'None'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'autoware_auto_vehicle_msgs' build argument 'cmake_target' from command line to 'None'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'autoware_auto_vehicle_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'autoware_auto_vehicle_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'autoware_auto_vehicle_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'autoware_auto_vehicle_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'autoware_auto_vehicle_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'autoware_auto_vehicle_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'autoware_auto_vehicle_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.327s] DEBUG:colcon.colcon_core.verb:Building package 'autoware_auto_vehicle_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tofstudent/sa_zhao/build/autoware_auto_vehicle_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs', 'merge_install': False, 'path': '/home/tofstudent/sa_zhao/src/autoware_auto_vehicle_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'autoware_cmake' build argument 'cmake_args' from command line to 'None'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'autoware_cmake' build argument 'cmake_target' from command line to 'None'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'autoware_cmake' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'autoware_cmake' build argument 'cmake_clean_cache' from command line to 'False'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'autoware_cmake' build argument 'cmake_clean_first' from command line to 'False'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'autoware_cmake' build argument 'cmake_force_configure' from command line to 'False'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'autoware_cmake' build argument 'ament_cmake_args' from command line to 'None'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'autoware_cmake' build argument 'catkin_cmake_args' from command line to 'None'
+[0.328s] Level 5:colcon.colcon_core.verb:set package 'autoware_cmake' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.328s] DEBUG:colcon.colcon_core.verb:Building package 'autoware_cmake' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tofstudent/sa_zhao/build/autoware_cmake', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tofstudent/sa_zhao/install/autoware_cmake', 'merge_install': False, 'path': '/home/tofstudent/sa_zhao/src/autoware_cmake', 'symlink_install': False, 'test_result_base': None}
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'carla_common' build argument 'cmake_args' from command line to 'None'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'carla_common' build argument 'cmake_target' from command line to 'None'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'carla_common' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'carla_common' build argument 'cmake_clean_cache' from command line to 'False'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'carla_common' build argument 'cmake_clean_first' from command line to 'False'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'carla_common' build argument 'cmake_force_configure' from command line to 'False'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'carla_common' build argument 'ament_cmake_args' from command line to 'None'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'carla_common' build argument 'catkin_cmake_args' from command line to 'None'
+[0.329s] Level 5:colcon.colcon_core.verb:set package 'carla_common' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.329s] DEBUG:colcon.colcon_core.verb:Building package 'carla_common' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tofstudent/sa_zhao/build/carla_common', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tofstudent/sa_zhao/install/carla_common', 'merge_install': False, 'path': '/home/tofstudent/sa_zhao/src/carla_common', 'symlink_install': False, 'test_result_base': None}
+[0.330s] Level 5:colcon.colcon_core.verb:set package 'carla_msgs' build argument 'cmake_args' from command line to 'None'
+[0.330s] Level 5:colcon.colcon_core.verb:set package 'carla_msgs' build argument 'cmake_target' from command line to 'None'
+[0.330s] Level 5:colcon.colcon_core.verb:set package 'carla_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.330s] Level 5:colcon.colcon_core.verb:set package 'carla_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.330s] Level 5:colcon.colcon_core.verb:set package 'carla_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.330s] Level 5:colcon.colcon_core.verb:set package 'carla_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.330s] Level 5:colcon.colcon_core.verb:set package 'carla_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.330s] Level 5:colcon.colcon_core.verb:set package 'carla_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.330s] Level 5:colcon.colcon_core.verb:set package 'carla_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.330s] DEBUG:colcon.colcon_core.verb:Building package 'carla_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tofstudent/sa_zhao/build/carla_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tofstudent/sa_zhao/install/carla_msgs', 'merge_install': False, 'path': '/home/tofstudent/sa_zhao/src/carla_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.331s] Level 5:colcon.colcon_core.verb:set package 'ros_compatibility' build argument 'cmake_args' from command line to 'None'
+[0.331s] Level 5:colcon.colcon_core.verb:set package 'ros_compatibility' build argument 'cmake_target' from command line to 'None'
+[0.331s] Level 5:colcon.colcon_core.verb:set package 'ros_compatibility' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.331s] Level 5:colcon.colcon_core.verb:set package 'ros_compatibility' build argument 'cmake_clean_cache' from command line to 'False'
+[0.331s] Level 5:colcon.colcon_core.verb:set package 'ros_compatibility' build argument 'cmake_clean_first' from command line to 'False'
+[0.331s] Level 5:colcon.colcon_core.verb:set package 'ros_compatibility' build argument 'cmake_force_configure' from command line to 'False'
+[0.331s] Level 5:colcon.colcon_core.verb:set package 'ros_compatibility' build argument 'ament_cmake_args' from command line to 'None'
+[0.331s] Level 5:colcon.colcon_core.verb:set package 'ros_compatibility' build argument 'catkin_cmake_args' from command line to 'None'
+[0.331s] Level 5:colcon.colcon_core.verb:set package 'ros_compatibility' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.331s] DEBUG:colcon.colcon_core.verb:Building package 'ros_compatibility' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tofstudent/sa_zhao/build/ros_compatibility', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tofstudent/sa_zhao/install/ros_compatibility', 'merge_install': False, 'path': '/home/tofstudent/sa_zhao/src/ros_compatibility', 'symlink_install': False, 'test_result_base': None}
+[0.332s] Level 5:colcon.colcon_core.verb:set package 'tod_msgs' build argument 'cmake_args' from command line to 'None'
+[0.332s] Level 5:colcon.colcon_core.verb:set package 'tod_msgs' build argument 'cmake_target' from command line to 'None'
+[0.332s] Level 5:colcon.colcon_core.verb:set package 'tod_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.332s] Level 5:colcon.colcon_core.verb:set package 'tod_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.332s] Level 5:colcon.colcon_core.verb:set package 'tod_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.332s] Level 5:colcon.colcon_core.verb:set package 'tod_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.332s] Level 5:colcon.colcon_core.verb:set package 'tod_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.332s] Level 5:colcon.colcon_core.verb:set package 'tod_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.332s] Level 5:colcon.colcon_core.verb:set package 'tod_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.332s] DEBUG:colcon.colcon_core.verb:Building package 'tod_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tofstudent/sa_zhao/build/tod_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tofstudent/sa_zhao/install/tod_msgs', 'merge_install': False, 'path': '/home/tofstudent/sa_zhao/src/tod_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'traj_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'traj_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'traj_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'traj_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'traj_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'traj_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'traj_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'traj_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'traj_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.334s] DEBUG:colcon.colcon_core.verb:Building package 'traj_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tofstudent/sa_zhao/build/traj_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tofstudent/sa_zhao/install/traj_interfaces', 'merge_install': False, 'path': '/home/tofstudent/sa_zhao/src/traj_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'carla_ackermann_msgs' build argument 'cmake_args' from command line to 'None'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'carla_ackermann_msgs' build argument 'cmake_target' from command line to 'None'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'carla_ackermann_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'carla_ackermann_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'carla_ackermann_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'carla_ackermann_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'carla_ackermann_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'carla_ackermann_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'carla_ackermann_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.336s] DEBUG:colcon.colcon_core.verb:Building package 'carla_ackermann_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tofstudent/sa_zhao/build/carla_ackermann_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tofstudent/sa_zhao/install/carla_ackermann_msgs', 'merge_install': False, 'path': '/home/tofstudent/sa_zhao/src/carla_ackermann_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'carla_spawn_objects' build argument 'cmake_args' from command line to 'None'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'carla_spawn_objects' build argument 'cmake_target' from command line to 'None'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'carla_spawn_objects' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'carla_spawn_objects' build argument 'cmake_clean_cache' from command line to 'False'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'carla_spawn_objects' build argument 'cmake_clean_first' from command line to 'False'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'carla_spawn_objects' build argument 'cmake_force_configure' from command line to 'False'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'carla_spawn_objects' build argument 'ament_cmake_args' from command line to 'None'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'carla_spawn_objects' build argument 'catkin_cmake_args' from command line to 'None'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'carla_spawn_objects' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.337s] DEBUG:colcon.colcon_core.verb:Building package 'carla_spawn_objects' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tofstudent/sa_zhao/build/carla_spawn_objects', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tofstudent/sa_zhao/install/carla_spawn_objects', 'merge_install': False, 'path': '/home/tofstudent/sa_zhao/src/carla_spawn_objects', 'symlink_install': False, 'test_result_base': None}
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'random_trajectory' build argument 'cmake_args' from command line to 'None'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'random_trajectory' build argument 'cmake_target' from command line to 'None'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'random_trajectory' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'random_trajectory' build argument 'cmake_clean_cache' from command line to 'False'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'random_trajectory' build argument 'cmake_clean_first' from command line to 'False'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'random_trajectory' build argument 'cmake_force_configure' from command line to 'False'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'random_trajectory' build argument 'ament_cmake_args' from command line to 'None'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'random_trajectory' build argument 'catkin_cmake_args' from command line to 'None'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'random_trajectory' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.338s] DEBUG:colcon.colcon_core.verb:Building package 'random_trajectory' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tofstudent/sa_zhao/build/random_trajectory', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tofstudent/sa_zhao/install/random_trajectory', 'merge_install': False, 'path': '/home/tofstudent/sa_zhao/src/random_trajectory', 'symlink_install': False, 'test_result_base': None}
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'tod_command_creation' build argument 'cmake_args' from command line to 'None'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'tod_command_creation' build argument 'cmake_target' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'tod_command_creation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'tod_command_creation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'tod_command_creation' build argument 'cmake_clean_first' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'tod_command_creation' build argument 'cmake_force_configure' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'tod_command_creation' build argument 'ament_cmake_args' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'tod_command_creation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'tod_command_creation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.339s] DEBUG:colcon.colcon_core.verb:Building package 'tod_command_creation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tofstudent/sa_zhao/build/tod_command_creation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tofstudent/sa_zhao/install/tod_command_creation', 'merge_install': False, 'path': '/home/tofstudent/sa_zhao/src/tod_command_creation', 'symlink_install': False, 'test_result_base': None}
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'tod_input_devices' build argument 'cmake_args' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'tod_input_devices' build argument 'cmake_target' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'tod_input_devices' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'tod_input_devices' build argument 'cmake_clean_cache' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'tod_input_devices' build argument 'cmake_clean_first' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'tod_input_devices' build argument 'cmake_force_configure' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'tod_input_devices' build argument 'ament_cmake_args' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'tod_input_devices' build argument 'catkin_cmake_args' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'tod_input_devices' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.340s] DEBUG:colcon.colcon_core.verb:Building package 'tod_input_devices' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tofstudent/sa_zhao/build/tod_input_devices', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tofstudent/sa_zhao/install/tod_input_devices', 'merge_install': False, 'path': '/home/tofstudent/sa_zhao/src/tod_input_devices', 'symlink_install': False, 'test_result_base': None}
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'vehicle_info_util' build argument 'cmake_args' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'vehicle_info_util' build argument 'cmake_target' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'vehicle_info_util' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'vehicle_info_util' build argument 'cmake_clean_cache' from command line to 'False'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'vehicle_info_util' build argument 'cmake_clean_first' from command line to 'False'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'vehicle_info_util' build argument 'cmake_force_configure' from command line to 'False'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'vehicle_info_util' build argument 'ament_cmake_args' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'vehicle_info_util' build argument 'catkin_cmake_args' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'vehicle_info_util' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.341s] DEBUG:colcon.colcon_core.verb:Building package 'vehicle_info_util' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tofstudent/sa_zhao/build/vehicle_info_util', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tofstudent/sa_zhao/install/vehicle_info_util', 'merge_install': False, 'path': '/home/tofstudent/sa_zhao/src/vehicle_info_util', 'symlink_install': False, 'test_result_base': None}
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'carla_ros_bridge' build argument 'cmake_args' from command line to 'None'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'carla_ros_bridge' build argument 'cmake_target' from command line to 'None'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'carla_ros_bridge' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'carla_ros_bridge' build argument 'cmake_clean_cache' from command line to 'False'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'carla_ros_bridge' build argument 'cmake_clean_first' from command line to 'False'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'carla_ros_bridge' build argument 'cmake_force_configure' from command line to 'False'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'carla_ros_bridge' build argument 'ament_cmake_args' from command line to 'None'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'carla_ros_bridge' build argument 'catkin_cmake_args' from command line to 'None'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'carla_ros_bridge' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.342s] DEBUG:colcon.colcon_core.verb:Building package 'carla_ros_bridge' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tofstudent/sa_zhao/build/carla_ros_bridge', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tofstudent/sa_zhao/install/carla_ros_bridge', 'merge_install': False, 'path': '/home/tofstudent/sa_zhao/src/carla_ros_bridge', 'symlink_install': False, 'test_result_base': None}
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'interactive_trajectory' build argument 'cmake_args' from command line to 'None'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'interactive_trajectory' build argument 'cmake_target' from command line to 'None'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'interactive_trajectory' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'interactive_trajectory' build argument 'cmake_clean_cache' from command line to 'False'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'interactive_trajectory' build argument 'cmake_clean_first' from command line to 'False'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'interactive_trajectory' build argument 'cmake_force_configure' from command line to 'False'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'interactive_trajectory' build argument 'ament_cmake_args' from command line to 'None'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'interactive_trajectory' build argument 'catkin_cmake_args' from command line to 'None'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'interactive_trajectory' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.343s] DEBUG:colcon.colcon_core.verb:Building package 'interactive_trajectory' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tofstudent/sa_zhao/build/interactive_trajectory', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tofstudent/sa_zhao/install/interactive_trajectory', 'merge_install': False, 'path': '/home/tofstudent/sa_zhao/src/interactive_trajectory', 'symlink_install': False, 'test_result_base': None}
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'pure_pursuit' build argument 'cmake_args' from command line to 'None'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'pure_pursuit' build argument 'cmake_target' from command line to 'None'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'pure_pursuit' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'pure_pursuit' build argument 'cmake_clean_cache' from command line to 'False'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'pure_pursuit' build argument 'cmake_clean_first' from command line to 'False'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'pure_pursuit' build argument 'cmake_force_configure' from command line to 'False'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'pure_pursuit' build argument 'ament_cmake_args' from command line to 'None'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'pure_pursuit' build argument 'catkin_cmake_args' from command line to 'None'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'pure_pursuit' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.344s] DEBUG:colcon.colcon_core.verb:Building package 'pure_pursuit' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tofstudent/sa_zhao/build/pure_pursuit', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tofstudent/sa_zhao/install/pure_pursuit', 'merge_install': False, 'path': '/home/tofstudent/sa_zhao/src/pure_pursuit', 'symlink_install': False, 'test_result_base': None}
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'carla_ackermann_control' build argument 'cmake_args' from command line to 'None'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'carla_ackermann_control' build argument 'cmake_target' from command line to 'None'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'carla_ackermann_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'carla_ackermann_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'carla_ackermann_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'carla_ackermann_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'carla_ackermann_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'carla_ackermann_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'carla_ackermann_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.345s] DEBUG:colcon.colcon_core.verb:Building package 'carla_ackermann_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tofstudent/sa_zhao/build/carla_ackermann_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tofstudent/sa_zhao/install/carla_ackermann_control', 'merge_install': False, 'path': '/home/tofstudent/sa_zhao/src/carla_ackermann_control', 'symlink_install': False, 'test_result_base': None}
+[0.345s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.349s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.349s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tofstudent/sa_zhao/src/carla_msgs' with build type 'ament_cmake'
+[0.349s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tofstudent/sa_zhao/src/carla_msgs'
+[0.355s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.355s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.355s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.370s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/tofstudent/sa_zhao/src/ros_compatibility' with build type 'ament_python'
+[0.371s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros_compatibility', 'ament_prefix_path')
+[0.373s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/ros_compatibility/share/ros_compatibility/hook/ament_prefix_path.ps1'
+[0.375s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/ros_compatibility/share/ros_compatibility/hook/ament_prefix_path.dsv'
+[0.376s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/ros_compatibility/share/ros_compatibility/hook/ament_prefix_path.sh'
+[0.378s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.378s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.385s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tofstudent/sa_zhao/src/tod_msgs' with build type 'ament_cmake'
+[0.385s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tofstudent/sa_zhao/src/tod_msgs'
+[0.388s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.388s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.394s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tofstudent/sa_zhao/src/traj_interfaces' with build type 'ament_cmake'
+[0.394s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tofstudent/sa_zhao/src/traj_interfaces'
+[0.396s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.396s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.401s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tofstudent/sa_zhao/src/autoware_auto_control_msgs' with build type 'ament_cmake'
+[0.402s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tofstudent/sa_zhao/src/autoware_auto_control_msgs'
+[0.403s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.403s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.408s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tofstudent/sa_zhao/src/autoware_auto_planning_msgs' with build type 'ament_cmake'
+[0.409s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tofstudent/sa_zhao/src/autoware_auto_planning_msgs'
+[0.412s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.412s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.420s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tofstudent/sa_zhao/src/autoware_cmake' with build type 'ament_cmake'
+[0.420s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tofstudent/sa_zhao/src/autoware_cmake'
+[0.423s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.423s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.429s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/tofstudent/sa_zhao/src/carla_common' with build type 'ament_python'
+[0.430s] Level 1:colcon.colcon_core.shell:create_environment_hook('carla_common', 'ament_prefix_path')
+[0.431s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/carla_common/share/carla_common/hook/ament_prefix_path.ps1'
+[0.432s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/carla_common/share/carla_common/hook/ament_prefix_path.dsv'
+[0.433s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/carla_common/share/carla_common/hook/ament_prefix_path.sh'
+[0.435s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.435s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.452s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tofstudent/sa_zhao/build/carla_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/carla_msgs -- -j8 -l8
+[0.688s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/tofstudent/sa_zhao/src/ros_compatibility'
+[0.691s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.691s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.707s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tofstudent/sa_zhao/build/tod_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/tod_msgs -- -j8 -l8
+[0.716s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tofstudent/sa_zhao/build/traj_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/traj_interfaces -- -j8 -l8
+[0.722s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tofstudent/sa_zhao/build/autoware_auto_control_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/autoware_auto_control_msgs -- -j8 -l8
+[0.729s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tofstudent/sa_zhao/build/autoware_auto_planning_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/autoware_auto_planning_msgs -- -j8 -l8
+[0.735s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tofstudent/sa_zhao/build/autoware_cmake': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/autoware_cmake -- -j8 -l8
+[1.172s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/tofstudent/sa_zhao/src/carla_common'
+[1.175s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.176s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.199s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tofstudent/sa_zhao/build/autoware_cmake' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/autoware_cmake -- -j8 -l8
+[1.205s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tofstudent/sa_zhao/build/carla_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/carla_msgs -- -j8 -l8
+[1.209s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tofstudent/sa_zhao/build/autoware_auto_control_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/autoware_auto_control_msgs -- -j8 -l8
+[1.229s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tofstudent/sa_zhao/build/traj_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/traj_interfaces -- -j8 -l8
+[1.261s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tofstudent/sa_zhao/build/autoware_cmake': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/autoware_cmake
+[1.266s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tofstudent/sa_zhao/build/tod_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/tod_msgs -- -j8 -l8
+[1.273s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tofstudent/sa_zhao/build/autoware_auto_planning_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/autoware_auto_planning_msgs -- -j8 -l8
+[1.281s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(autoware_cmake)
+[1.285s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tofstudent/sa_zhao/build/autoware_cmake' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/autoware_cmake
+[1.290s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_cmake' for CMake module files
+[1.291s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_cmake' for CMake config files
+[1.292s] Level 1:colcon.colcon_core.shell:create_environment_hook('autoware_cmake', 'cmake_prefix_path')
+[1.294s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/autoware_cmake/share/autoware_cmake/hook/cmake_prefix_path.ps1'
+[1.295s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/autoware_cmake/share/autoware_cmake/hook/cmake_prefix_path.dsv'
+[1.295s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/autoware_cmake/share/autoware_cmake/hook/cmake_prefix_path.sh'
+[1.296s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_cmake/bin'
+[1.296s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_cmake/lib/pkgconfig/autoware_cmake.pc'
+[1.297s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_cmake/lib/python3.8/site-packages'
+[1.297s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_cmake/bin'
+[1.299s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/autoware_cmake/share/autoware_cmake/package.ps1'
+[1.301s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tofstudent/sa_zhao/install/autoware_cmake/share/autoware_cmake/package.dsv'
+[1.302s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/autoware_cmake/share/autoware_cmake/package.sh'
+[1.304s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/autoware_cmake/share/autoware_cmake/package.bash'
+[1.305s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/autoware_cmake/share/autoware_cmake/package.zsh'
+[1.306s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tofstudent/sa_zhao/install/autoware_cmake/share/colcon-core/packages/autoware_cmake)
+[1.332s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tofstudent/sa_zhao/build/autoware_auto_control_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/autoware_auto_control_msgs
+[1.359s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(autoware_cmake)
+[1.371s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_cmake' for CMake module files
+[1.373s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_cmake' for CMake config files
+[1.374s] Level 1:colcon.colcon_core.shell:create_environment_hook('autoware_cmake', 'cmake_prefix_path')
+[1.377s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/autoware_cmake/share/autoware_cmake/hook/cmake_prefix_path.ps1'
+[1.377s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/autoware_cmake/share/autoware_cmake/hook/cmake_prefix_path.dsv'
+[1.378s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/autoware_cmake/share/autoware_cmake/hook/cmake_prefix_path.sh'
+[1.379s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_cmake/bin'
+[1.379s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_cmake/lib/pkgconfig/autoware_cmake.pc'
+[1.379s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_cmake/lib/python3.8/site-packages'
+[1.380s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_cmake/bin'
+[1.382s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/autoware_cmake/share/autoware_cmake/package.ps1'
+[1.383s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tofstudent/sa_zhao/install/autoware_cmake/share/autoware_cmake/package.dsv'
+[1.384s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/autoware_cmake/share/autoware_cmake/package.sh'
+[1.384s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/autoware_cmake/share/autoware_cmake/package.bash'
+[1.385s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/autoware_cmake/share/autoware_cmake/package.zsh'
+[1.385s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tofstudent/sa_zhao/install/autoware_cmake/share/colcon-core/packages/autoware_cmake)
+[1.387s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tofstudent/sa_zhao/src/autoware_auto_vehicle_msgs' with build type 'ament_cmake'
+[1.387s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tofstudent/sa_zhao/src/autoware_auto_vehicle_msgs'
+[1.390s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.390s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.403s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tofstudent/sa_zhao/build/traj_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/traj_interfaces
+[1.418s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tofstudent/sa_zhao/build/autoware_auto_vehicle_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/autoware_auto_vehicle_msgs -- -j8 -l8
+[1.437s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tofstudent/sa_zhao/build/autoware_auto_planning_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/autoware_auto_planning_msgs
+[1.440s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(autoware_auto_control_msgs)
+[1.444s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs' for CMake module files
+[1.453s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs' for CMake config files
+[1.455s] Level 1:colcon.colcon_core.shell:create_environment_hook('autoware_auto_control_msgs', 'cmake_prefix_path')
+[1.454s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tofstudent/sa_zhao/build/autoware_auto_control_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/autoware_auto_control_msgs
+[1.458s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/hook/cmake_prefix_path.ps1'
+[1.460s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/hook/cmake_prefix_path.dsv'
+[1.460s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/hook/cmake_prefix_path.sh'
+[1.461s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib'
+[1.461s] Level 1:colcon.colcon_core.shell:create_environment_hook('autoware_auto_control_msgs', 'ld_library_path_lib')
+[1.463s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/hook/ld_library_path_lib.ps1'
+[1.464s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/hook/ld_library_path_lib.dsv'
+[1.464s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/hook/ld_library_path_lib.sh'
+[1.464s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/bin'
+[1.465s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib/pkgconfig/autoware_auto_control_msgs.pc'
+[1.465s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib/python3.8/site-packages'
+[1.465s] Level 1:colcon.colcon_core.shell:create_environment_hook('autoware_auto_control_msgs', 'pythonpath')
+[1.467s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/hook/pythonpath.ps1'
+[1.468s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/hook/pythonpath.dsv'
+[1.468s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/hook/pythonpath.sh'
+[1.469s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/bin'
+[1.473s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/package.ps1'
+[1.474s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/package.dsv'
+[1.475s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/package.sh'
+[1.476s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/package.bash'
+[1.476s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/package.zsh'
+[1.477s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/share/colcon-core/packages/autoware_auto_control_msgs)
+[1.501s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(traj_interfaces)
+[1.505s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/traj_interfaces' for CMake module files
+[1.509s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/traj_interfaces' for CMake config files
+[1.510s] Level 1:colcon.colcon_core.shell:create_environment_hook('traj_interfaces', 'cmake_prefix_path')
+[1.517s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/hook/cmake_prefix_path.ps1'
+[1.518s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/hook/cmake_prefix_path.dsv'
+[1.518s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/hook/cmake_prefix_path.sh'
+[1.520s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/traj_interfaces/lib'
+[1.520s] Level 1:colcon.colcon_core.shell:create_environment_hook('traj_interfaces', 'ld_library_path_lib')
+[1.522s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/hook/ld_library_path_lib.ps1'
+[1.522s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/hook/ld_library_path_lib.dsv'
+[1.523s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/hook/ld_library_path_lib.sh'
+[1.523s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/traj_interfaces/bin'
+[1.523s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/traj_interfaces/lib/pkgconfig/traj_interfaces.pc'
+[1.524s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/traj_interfaces/lib/python3.8/site-packages'
+[1.524s] Level 1:colcon.colcon_core.shell:create_environment_hook('traj_interfaces', 'pythonpath')
+[1.526s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/hook/pythonpath.ps1'
+[1.531s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tofstudent/sa_zhao/build/traj_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/traj_interfaces
+[1.539s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/hook/pythonpath.dsv'
+[1.540s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/hook/pythonpath.sh'
+[1.540s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/traj_interfaces/bin'
+[1.543s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/package.ps1'
+[1.544s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/package.dsv'
+[1.545s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/package.sh'
+[1.545s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/package.bash'
+[1.546s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/package.zsh'
+[1.566s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tofstudent/sa_zhao/install/traj_interfaces/share/colcon-core/packages/traj_interfaces)
+[1.576s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(autoware_auto_planning_msgs)
+[1.580s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs' for CMake module files
+[1.581s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tofstudent/sa_zhao/build/autoware_auto_planning_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/autoware_auto_planning_msgs
+[1.582s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs' for CMake config files
+[1.583s] Level 1:colcon.colcon_core.shell:create_environment_hook('autoware_auto_planning_msgs', 'cmake_prefix_path')
+[1.587s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/hook/cmake_prefix_path.ps1'
+[1.588s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/hook/cmake_prefix_path.dsv'
+[1.589s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/hook/cmake_prefix_path.sh'
+[1.589s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib'
+[1.590s] Level 1:colcon.colcon_core.shell:create_environment_hook('autoware_auto_planning_msgs', 'ld_library_path_lib')
+[1.593s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/hook/ld_library_path_lib.ps1'
+[1.593s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/hook/ld_library_path_lib.dsv'
+[1.594s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/hook/ld_library_path_lib.sh'
+[1.594s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/bin'
+[1.594s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/pkgconfig/autoware_auto_planning_msgs.pc'
+[1.595s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/python3.8/site-packages'
+[1.595s] Level 1:colcon.colcon_core.shell:create_environment_hook('autoware_auto_planning_msgs', 'pythonpath')
+[1.597s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/hook/pythonpath.ps1'
+[1.597s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/hook/pythonpath.dsv'
+[1.598s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/hook/pythonpath.sh'
+[1.599s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/bin'
+[1.601s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/package.ps1'
+[1.602s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/package.dsv'
+[1.602s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/package.sh'
+[1.603s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/package.bash'
+[1.604s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/package.zsh'
+[1.604s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/colcon-core/packages/autoware_auto_planning_msgs)
+[1.632s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(autoware_auto_control_msgs)
+[1.636s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs' for CMake module files
+[1.637s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs' for CMake config files
+[1.638s] Level 1:colcon.colcon_core.shell:create_environment_hook('autoware_auto_control_msgs', 'cmake_prefix_path')
+[1.640s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/hook/cmake_prefix_path.ps1'
+[1.642s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/hook/cmake_prefix_path.dsv'
+[1.642s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/hook/cmake_prefix_path.sh'
+[1.643s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib'
+[1.643s] Level 1:colcon.colcon_core.shell:create_environment_hook('autoware_auto_control_msgs', 'ld_library_path_lib')
+[1.646s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/hook/ld_library_path_lib.ps1'
+[1.647s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/hook/ld_library_path_lib.dsv'
+[1.648s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/hook/ld_library_path_lib.sh'
+[1.648s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/bin'
+[1.648s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib/pkgconfig/autoware_auto_control_msgs.pc'
+[1.649s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib/python3.8/site-packages'
+[1.649s] Level 1:colcon.colcon_core.shell:create_environment_hook('autoware_auto_control_msgs', 'pythonpath')
+[1.653s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/hook/pythonpath.ps1'
+[1.654s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/hook/pythonpath.dsv'
+[1.654s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/hook/pythonpath.sh'
+[1.655s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/bin'
+[1.658s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/package.ps1'
+[1.660s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/package.dsv'
+[1.661s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/package.sh'
+[1.662s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/package.bash'
+[1.663s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/share/autoware_auto_control_msgs/package.zsh'
+[1.664s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/share/colcon-core/packages/autoware_auto_control_msgs)
+[1.665s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tofstudent/sa_zhao/src/vehicle_info_util' with build type 'ament_cmake'
+[1.666s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tofstudent/sa_zhao/src/vehicle_info_util'
+[1.669s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.669s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.689s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(traj_interfaces)
+[1.694s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/traj_interfaces' for CMake module files
+[1.696s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/traj_interfaces' for CMake config files
+[1.697s] Level 1:colcon.colcon_core.shell:create_environment_hook('traj_interfaces', 'cmake_prefix_path')
+[1.701s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/hook/cmake_prefix_path.ps1'
+[1.702s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/hook/cmake_prefix_path.dsv'
+[1.703s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/hook/cmake_prefix_path.sh'
+[1.704s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/traj_interfaces/lib'
+[1.704s] Level 1:colcon.colcon_core.shell:create_environment_hook('traj_interfaces', 'ld_library_path_lib')
+[1.707s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/hook/ld_library_path_lib.ps1'
+[1.707s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/hook/ld_library_path_lib.dsv'
+[1.708s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/hook/ld_library_path_lib.sh'
+[1.708s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/traj_interfaces/bin'
+[1.709s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/traj_interfaces/lib/pkgconfig/traj_interfaces.pc'
+[1.709s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/traj_interfaces/lib/python3.8/site-packages'
+[1.709s] Level 1:colcon.colcon_core.shell:create_environment_hook('traj_interfaces', 'pythonpath')
+[1.712s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/hook/pythonpath.ps1'
+[1.712s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/hook/pythonpath.dsv'
+[1.713s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/hook/pythonpath.sh'
+[1.714s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/traj_interfaces/bin'
+[1.718s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/package.ps1'
+[1.719s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/package.dsv'
+[1.720s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/package.sh'
+[1.720s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/package.bash'
+[1.721s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/traj_interfaces/share/traj_interfaces/package.zsh'
+[1.722s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tofstudent/sa_zhao/install/traj_interfaces/share/colcon-core/packages/traj_interfaces)
+[1.723s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tofstudent/sa_zhao/src/random_trajectory' with build type 'ament_cmake'
+[1.724s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tofstudent/sa_zhao/src/random_trajectory'
+[1.727s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.727s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.750s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tofstudent/sa_zhao/build/vehicle_info_util': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/autoware_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/autoware_cmake:/opt/ros/foxy /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/vehicle_info_util -- -j8 -l8
+[1.767s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tofstudent/sa_zhao/build/tod_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/tod_msgs
+[1.798s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tofstudent/sa_zhao/build/random_trajectory': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/traj_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/random_trajectory -- -j8 -l8
+[1.845s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tofstudent/sa_zhao/build/autoware_auto_vehicle_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/autoware_auto_vehicle_msgs -- -j8 -l8
+[1.877s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tofstudent/sa_zhao/src/ros_compatibility': PYTHONPATH=/home/tofstudent/sa_zhao/install/ros_compatibility/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/ros_compatibility build --build-base /home/tofstudent/sa_zhao/build/ros_compatibility/build install --prefix /home/tofstudent/sa_zhao/install/ros_compatibility --record /home/tofstudent/sa_zhao/build/ros_compatibility/install.log --single-version-externally-managed
+[1.892s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tod_msgs)
+[1.897s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/tod_msgs' for CMake module files
+[1.898s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/tod_msgs' for CMake config files
+[1.899s] Level 1:colcon.colcon_core.shell:create_environment_hook('tod_msgs', 'cmake_prefix_path')
+[1.893s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tofstudent/sa_zhao/build/tod_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/tod_msgs
+[1.905s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/tod_msgs/share/tod_msgs/hook/cmake_prefix_path.ps1'
+[1.907s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/tod_msgs/share/tod_msgs/hook/cmake_prefix_path.dsv'
+[1.907s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/tod_msgs/share/tod_msgs/hook/cmake_prefix_path.sh'
+[1.908s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/tod_msgs/lib'
+[1.908s] Level 1:colcon.colcon_core.shell:create_environment_hook('tod_msgs', 'ld_library_path_lib')
+[1.911s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/tod_msgs/share/tod_msgs/hook/ld_library_path_lib.ps1'
+[1.911s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/tod_msgs/share/tod_msgs/hook/ld_library_path_lib.dsv'
+[1.912s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/tod_msgs/share/tod_msgs/hook/ld_library_path_lib.sh'
+[1.912s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/tod_msgs/bin'
+[1.912s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/tod_msgs/lib/pkgconfig/tod_msgs.pc'
+[1.913s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/tod_msgs/lib/python3.8/site-packages'
+[1.913s] Level 1:colcon.colcon_core.shell:create_environment_hook('tod_msgs', 'pythonpath')
+[1.919s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/tod_msgs/share/tod_msgs/hook/pythonpath.ps1'
+[1.920s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/tod_msgs/share/tod_msgs/hook/pythonpath.dsv'
+[1.920s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/tod_msgs/share/tod_msgs/hook/pythonpath.sh'
+[1.921s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/tod_msgs/bin'
+[1.924s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/tod_msgs/share/tod_msgs/package.ps1'
+[1.925s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tofstudent/sa_zhao/install/tod_msgs/share/tod_msgs/package.dsv'
+[1.926s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/tod_msgs/share/tod_msgs/package.sh'
+[1.926s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/tod_msgs/share/tod_msgs/package.bash'
+[1.927s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/tod_msgs/share/tod_msgs/package.zsh'
+[1.927s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tofstudent/sa_zhao/install/tod_msgs/share/colcon-core/packages/tod_msgs)
+[1.942s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tofstudent/sa_zhao/src/carla_common': PYTHONPATH=/home/tofstudent/sa_zhao/install/carla_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/carla_common build --build-base /home/tofstudent/sa_zhao/build/carla_common/build install --prefix /home/tofstudent/sa_zhao/install/carla_common --record /home/tofstudent/sa_zhao/build/carla_common/install.log --single-version-externally-managed
+[1.957s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(autoware_auto_planning_msgs)
+[1.961s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs' for CMake module files
+[1.963s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs' for CMake config files
+[1.964s] Level 1:colcon.colcon_core.shell:create_environment_hook('autoware_auto_planning_msgs', 'cmake_prefix_path')
+[1.966s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/hook/cmake_prefix_path.ps1'
+[1.967s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/hook/cmake_prefix_path.dsv'
+[1.967s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/hook/cmake_prefix_path.sh'
+[1.968s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib'
+[1.968s] Level 1:colcon.colcon_core.shell:create_environment_hook('autoware_auto_planning_msgs', 'ld_library_path_lib')
+[1.970s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/hook/ld_library_path_lib.ps1'
+[1.971s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/hook/ld_library_path_lib.dsv'
+[1.971s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/hook/ld_library_path_lib.sh'
+[1.972s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/bin'
+[1.972s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/pkgconfig/autoware_auto_planning_msgs.pc'
+[1.972s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/python3.8/site-packages'
+[1.972s] Level 1:colcon.colcon_core.shell:create_environment_hook('autoware_auto_planning_msgs', 'pythonpath')
+[1.975s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/hook/pythonpath.ps1'
+[1.976s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/hook/pythonpath.dsv'
+[1.976s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/hook/pythonpath.sh'
+[1.978s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/bin'
+[1.982s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/package.ps1'
+[1.984s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/package.dsv'
+[1.985s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/package.sh'
+[1.985s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/package.bash'
+[1.986s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/package.zsh'
+[1.987s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/colcon-core/packages/autoware_auto_planning_msgs)
+[1.999s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tofstudent/sa_zhao/build/vehicle_info_util' returned '0': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/autoware_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/autoware_cmake:/opt/ros/foxy /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/vehicle_info_util -- -j8 -l8
+[2.036s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tofstudent/sa_zhao/build/autoware_auto_vehicle_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/autoware_auto_vehicle_msgs
+[2.053s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tofstudent/sa_zhao/build/vehicle_info_util': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/autoware_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/autoware_cmake:/opt/ros/foxy /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/vehicle_info_util
+[2.093s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tofstudent/sa_zhao/build/random_trajectory' returned '0': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/traj_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/random_trajectory -- -j8 -l8
+[2.096s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vehicle_info_util)
+[2.101s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/vehicle_info_util' for CMake module files
+[2.101s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tofstudent/sa_zhao/build/vehicle_info_util' returned '0': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/autoware_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/autoware_cmake:/opt/ros/foxy /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/vehicle_info_util
+[2.102s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/vehicle_info_util' for CMake config files
+[2.102s] Level 1:colcon.colcon_core.shell:create_environment_hook('vehicle_info_util', 'cmake_prefix_path')
+[2.105s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/vehicle_info_util/share/vehicle_info_util/hook/cmake_prefix_path.ps1'
+[2.105s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/vehicle_info_util/share/vehicle_info_util/hook/cmake_prefix_path.dsv'
+[2.106s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/vehicle_info_util/share/vehicle_info_util/hook/cmake_prefix_path.sh'
+[2.107s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/vehicle_info_util/lib'
+[2.107s] Level 1:colcon.colcon_core.shell:create_environment_hook('vehicle_info_util', 'ld_library_path_lib')
+[2.109s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/vehicle_info_util/share/vehicle_info_util/hook/ld_library_path_lib.ps1'
+[2.109s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/vehicle_info_util/share/vehicle_info_util/hook/ld_library_path_lib.dsv'
+[2.110s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/vehicle_info_util/share/vehicle_info_util/hook/ld_library_path_lib.sh'
+[2.110s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/vehicle_info_util/bin'
+[2.111s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/vehicle_info_util/lib/pkgconfig/vehicle_info_util.pc'
+[2.111s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/vehicle_info_util/lib/python3.8/site-packages'
+[2.111s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/vehicle_info_util/bin'
+[2.116s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/vehicle_info_util/share/vehicle_info_util/package.ps1'
+[2.116s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tofstudent/sa_zhao/install/vehicle_info_util/share/vehicle_info_util/package.dsv'
+[2.117s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/vehicle_info_util/share/vehicle_info_util/package.sh'
+[2.118s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/vehicle_info_util/share/vehicle_info_util/package.bash'
+[2.118s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/vehicle_info_util/share/vehicle_info_util/package.zsh'
+[2.119s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tofstudent/sa_zhao/install/vehicle_info_util/share/colcon-core/packages/vehicle_info_util)
+[2.136s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tofstudent/sa_zhao/build/carla_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/carla_msgs
+[2.139s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(autoware_auto_vehicle_msgs)
+[2.144s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs' for CMake module files
+[2.145s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tofstudent/sa_zhao/build/autoware_auto_vehicle_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/autoware_auto_vehicle_msgs
+[2.146s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs' for CMake config files
+[2.148s] Level 1:colcon.colcon_core.shell:create_environment_hook('autoware_auto_vehicle_msgs', 'cmake_prefix_path')
+[2.150s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/hook/cmake_prefix_path.ps1'
+[2.163s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/hook/cmake_prefix_path.dsv'
+[2.164s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/hook/cmake_prefix_path.sh'
+[2.167s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/lib'
+[2.169s] Level 1:colcon.colcon_core.shell:create_environment_hook('autoware_auto_vehicle_msgs', 'ld_library_path_lib')
+[2.171s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/hook/ld_library_path_lib.ps1'
+[2.172s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/hook/ld_library_path_lib.dsv'
+[2.174s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/hook/ld_library_path_lib.sh'
+[2.175s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/bin'
+[2.175s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/lib/pkgconfig/autoware_auto_vehicle_msgs.pc'
+[2.176s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/lib/python3.8/site-packages'
+[2.176s] Level 1:colcon.colcon_core.shell:create_environment_hook('autoware_auto_vehicle_msgs', 'pythonpath')
+[2.178s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/hook/pythonpath.ps1'
+[2.179s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/hook/pythonpath.dsv'
+[2.180s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/hook/pythonpath.sh'
+[2.182s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/bin'
+[2.184s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/package.ps1'
+[2.186s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/package.dsv'
+[2.187s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/package.sh'
+[2.188s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/package.bash'
+[2.188s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/package.zsh'
+[2.189s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/share/colcon-core/packages/autoware_auto_vehicle_msgs)
+[2.217s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vehicle_info_util)
+[2.224s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/vehicle_info_util' for CMake module files
+[2.226s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/vehicle_info_util' for CMake config files
+[2.232s] Level 1:colcon.colcon_core.shell:create_environment_hook('vehicle_info_util', 'cmake_prefix_path')
+[2.234s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/vehicle_info_util/share/vehicle_info_util/hook/cmake_prefix_path.ps1'
+[2.238s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/vehicle_info_util/share/vehicle_info_util/hook/cmake_prefix_path.dsv'
+[2.240s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/vehicle_info_util/share/vehicle_info_util/hook/cmake_prefix_path.sh'
+[2.241s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/vehicle_info_util/lib'
+[2.241s] Level 1:colcon.colcon_core.shell:create_environment_hook('vehicle_info_util', 'ld_library_path_lib')
+[2.244s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/vehicle_info_util/share/vehicle_info_util/hook/ld_library_path_lib.ps1'
+[2.245s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/vehicle_info_util/share/vehicle_info_util/hook/ld_library_path_lib.dsv'
+[2.247s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/vehicle_info_util/share/vehicle_info_util/hook/ld_library_path_lib.sh'
+[2.248s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/vehicle_info_util/bin'
+[2.248s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/vehicle_info_util/lib/pkgconfig/vehicle_info_util.pc'
+[2.248s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/vehicle_info_util/lib/python3.8/site-packages'
+[2.249s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/vehicle_info_util/bin'
+[2.251s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/vehicle_info_util/share/vehicle_info_util/package.ps1'
+[2.253s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tofstudent/sa_zhao/install/vehicle_info_util/share/vehicle_info_util/package.dsv'
+[2.254s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/vehicle_info_util/share/vehicle_info_util/package.sh'
+[2.255s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/vehicle_info_util/share/vehicle_info_util/package.bash'
+[2.256s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/vehicle_info_util/share/vehicle_info_util/package.zsh'
+[2.257s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tofstudent/sa_zhao/install/vehicle_info_util/share/colcon-core/packages/vehicle_info_util)
+[2.265s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(carla_msgs)
+[2.269s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/carla_msgs' for CMake module files
+[2.272s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/carla_msgs' for CMake config files
+[2.283s] Level 1:colcon.colcon_core.shell:create_environment_hook('carla_msgs', 'cmake_prefix_path')
+[2.285s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/carla_msgs/share/carla_msgs/hook/cmake_prefix_path.ps1'
+[2.287s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/carla_msgs/share/carla_msgs/hook/cmake_prefix_path.dsv'
+[2.287s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/carla_msgs/share/carla_msgs/hook/cmake_prefix_path.sh'
+[2.290s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/carla_msgs/lib'
+[2.291s] Level 1:colcon.colcon_core.shell:create_environment_hook('carla_msgs', 'ld_library_path_lib')
+[2.293s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/carla_msgs/share/carla_msgs/hook/ld_library_path_lib.ps1'
+[2.294s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/carla_msgs/share/carla_msgs/hook/ld_library_path_lib.dsv'
+[2.295s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/carla_msgs/share/carla_msgs/hook/ld_library_path_lib.sh'
+[2.296s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/carla_msgs/bin'
+[2.297s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/carla_msgs/lib/pkgconfig/carla_msgs.pc'
+[2.297s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/carla_msgs/lib/python3.8/site-packages'
+[2.297s] Level 1:colcon.colcon_core.shell:create_environment_hook('carla_msgs', 'pythonpath')
+[2.300s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/carla_msgs/share/carla_msgs/hook/pythonpath.ps1'
+[2.301s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/carla_msgs/share/carla_msgs/hook/pythonpath.dsv'
+[2.302s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/carla_msgs/share/carla_msgs/hook/pythonpath.sh'
+[2.303s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/carla_msgs/bin'
+[2.305s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/carla_msgs/share/carla_msgs/package.ps1'
+[2.307s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tofstudent/sa_zhao/install/carla_msgs/share/carla_msgs/package.dsv'
+[2.308s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/carla_msgs/share/carla_msgs/package.sh'
+[2.309s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/carla_msgs/share/carla_msgs/package.bash'
+[2.310s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/carla_msgs/share/carla_msgs/package.zsh'
+[2.311s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tofstudent/sa_zhao/install/carla_msgs/share/colcon-core/packages/carla_msgs)
+[2.319s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(random_trajectory)
+[2.323s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/random_trajectory' for CMake module files
+[2.325s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/random_trajectory' for CMake config files
+[2.329s] Level 1:colcon.colcon_core.shell:create_environment_hook('random_trajectory', 'cmake_prefix_path')
+[2.332s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory/hook/cmake_prefix_path.ps1'
+[2.333s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory/hook/cmake_prefix_path.dsv'
+[2.334s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory/hook/cmake_prefix_path.sh'
+[2.336s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tofstudent/sa_zhao/build/random_trajectory': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/traj_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/random_trajectory
+[2.336s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/random_trajectory/lib'
+[2.337s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tofstudent/sa_zhao/build/carla_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/carla_msgs
+[2.338s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/random_trajectory/bin'
+[2.338s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/random_trajectory/lib/pkgconfig/random_trajectory.pc'
+[2.340s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/random_trajectory/lib/python3.8/site-packages'
+[2.341s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/random_trajectory/bin'
+[2.347s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory/package.ps1'
+[2.349s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory/package.dsv'
+[2.351s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory/package.sh'
+[2.353s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory/package.bash'
+[2.354s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory/package.zsh'
+[2.355s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tofstudent/sa_zhao/install/random_trajectory/share/colcon-core/packages/random_trajectory)
+[2.363s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(autoware_auto_vehicle_msgs)
+[2.367s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs' for CMake module files
+[2.371s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs' for CMake config files
+[2.372s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tofstudent/sa_zhao/build/random_trajectory' returned '0': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/traj_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/random_trajectory
+[2.375s] Level 1:colcon.colcon_core.shell:create_environment_hook('autoware_auto_vehicle_msgs', 'cmake_prefix_path')
+[2.377s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/hook/cmake_prefix_path.ps1'
+[2.378s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/hook/cmake_prefix_path.dsv'
+[2.378s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/hook/cmake_prefix_path.sh'
+[2.379s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/lib'
+[2.379s] Level 1:colcon.colcon_core.shell:create_environment_hook('autoware_auto_vehicle_msgs', 'ld_library_path_lib')
+[2.381s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/hook/ld_library_path_lib.ps1'
+[2.382s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/hook/ld_library_path_lib.dsv'
+[2.383s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/hook/ld_library_path_lib.sh'
+[2.383s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/bin'
+[2.383s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/lib/pkgconfig/autoware_auto_vehicle_msgs.pc'
+[2.384s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/lib/python3.8/site-packages'
+[2.384s] Level 1:colcon.colcon_core.shell:create_environment_hook('autoware_auto_vehicle_msgs', 'pythonpath')
+[2.386s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/hook/pythonpath.ps1'
+[2.386s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/hook/pythonpath.dsv'
+[2.387s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/hook/pythonpath.sh'
+[2.387s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/bin'
+[2.390s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/package.ps1'
+[2.390s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/package.dsv'
+[2.391s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/package.sh'
+[2.392s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/package.bash'
+[2.392s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/share/autoware_auto_vehicle_msgs/package.zsh'
+[2.393s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/share/colcon-core/packages/autoware_auto_vehicle_msgs)
+[2.396s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tod_msgs)
+[2.399s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/tod_msgs' for CMake module files
+[2.401s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/tod_msgs' for CMake config files
+[2.403s] Level 1:colcon.colcon_core.shell:create_environment_hook('tod_msgs', 'cmake_prefix_path')
+[2.405s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/tod_msgs/share/tod_msgs/hook/cmake_prefix_path.ps1'
+[2.406s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/tod_msgs/share/tod_msgs/hook/cmake_prefix_path.dsv'
+[2.406s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/tod_msgs/share/tod_msgs/hook/cmake_prefix_path.sh'
+[2.407s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/tod_msgs/lib'
+[2.407s] Level 1:colcon.colcon_core.shell:create_environment_hook('tod_msgs', 'ld_library_path_lib')
+[2.408s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/tod_msgs/share/tod_msgs/hook/ld_library_path_lib.ps1'
+[2.408s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/tod_msgs/share/tod_msgs/hook/ld_library_path_lib.dsv'
+[2.409s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/tod_msgs/share/tod_msgs/hook/ld_library_path_lib.sh'
+[2.409s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/tod_msgs/bin'
+[2.409s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/tod_msgs/lib/pkgconfig/tod_msgs.pc'
+[2.410s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/tod_msgs/lib/python3.8/site-packages'
+[2.410s] Level 1:colcon.colcon_core.shell:create_environment_hook('tod_msgs', 'pythonpath')
+[2.412s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/tod_msgs/share/tod_msgs/hook/pythonpath.ps1'
+[2.412s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/tod_msgs/share/tod_msgs/hook/pythonpath.dsv'
+[2.413s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/tod_msgs/share/tod_msgs/hook/pythonpath.sh'
+[2.414s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/tod_msgs/bin'
+[2.415s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/tod_msgs/share/tod_msgs/package.ps1'
+[2.416s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tofstudent/sa_zhao/install/tod_msgs/share/tod_msgs/package.dsv'
+[2.417s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/tod_msgs/share/tod_msgs/package.sh'
+[2.417s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/tod_msgs/share/tod_msgs/package.bash'
+[2.418s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/tod_msgs/share/tod_msgs/package.zsh'
+[2.418s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tofstudent/sa_zhao/install/tod_msgs/share/colcon-core/packages/tod_msgs)
+[2.420s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tofstudent/sa_zhao/src/tod_command_creation' with build type 'ament_cmake'
+[2.420s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tofstudent/sa_zhao/src/tod_command_creation'
+[2.422s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.425s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.433s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tofstudent/sa_zhao/src/tod_input_devices' with build type 'ament_cmake'
+[2.434s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tofstudent/sa_zhao/src/tod_input_devices'
+[2.437s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.437s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.446s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tofstudent/sa_zhao/src/pure_pursuit' with build type 'ament_cmake'
+[2.446s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tofstudent/sa_zhao/src/pure_pursuit'
+[2.449s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.450s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.461s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/ros_compatibility' for CMake module files
+[2.463s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tofstudent/sa_zhao/src/ros_compatibility' returned '0': PYTHONPATH=/home/tofstudent/sa_zhao/install/ros_compatibility/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/ros_compatibility build --build-base /home/tofstudent/sa_zhao/build/ros_compatibility/build install --prefix /home/tofstudent/sa_zhao/install/ros_compatibility --record /home/tofstudent/sa_zhao/build/ros_compatibility/install.log --single-version-externally-managed
+[2.463s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/ros_compatibility' for CMake config files
+[2.464s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/ros_compatibility/lib'
+[2.464s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/ros_compatibility/bin'
+[2.464s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/ros_compatibility/lib/pkgconfig/ros_compatibility.pc'
+[2.465s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/ros_compatibility/lib/python3.8/site-packages'
+[2.465s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros_compatibility', 'pythonpath')
+[2.467s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/ros_compatibility/share/ros_compatibility/hook/pythonpath.ps1'
+[2.468s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/ros_compatibility/share/ros_compatibility/hook/pythonpath.dsv'
+[2.468s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/ros_compatibility/share/ros_compatibility/hook/pythonpath.sh'
+[2.469s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/ros_compatibility/bin'
+[2.469s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros_compatibility)
+[2.471s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/ros_compatibility/share/ros_compatibility/package.ps1'
+[2.471s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tofstudent/sa_zhao/install/ros_compatibility/share/ros_compatibility/package.dsv'
+[2.472s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/ros_compatibility/share/ros_compatibility/package.sh'
+[2.472s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/ros_compatibility/share/ros_compatibility/package.bash'
+[2.473s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/ros_compatibility/share/ros_compatibility/package.zsh'
+[2.473s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tofstudent/sa_zhao/install/ros_compatibility/share/colcon-core/packages/ros_compatibility)
+[2.476s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(random_trajectory)
+[2.479s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/random_trajectory' for CMake module files
+[2.480s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/random_trajectory' for CMake config files
+[2.481s] Level 1:colcon.colcon_core.shell:create_environment_hook('random_trajectory', 'cmake_prefix_path')
+[2.483s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory/hook/cmake_prefix_path.ps1'
+[2.484s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory/hook/cmake_prefix_path.dsv'
+[2.484s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory/hook/cmake_prefix_path.sh'
+[2.485s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/random_trajectory/lib'
+[2.485s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/random_trajectory/bin'
+[2.485s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/random_trajectory/lib/pkgconfig/random_trajectory.pc'
+[2.485s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/random_trajectory/lib/python3.8/site-packages'
+[2.486s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/random_trajectory/bin'
+[2.487s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory/package.ps1'
+[2.488s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory/package.dsv'
+[2.488s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory/package.sh'
+[2.489s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory/package.bash'
+[2.489s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory/package.zsh'
+[2.490s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tofstudent/sa_zhao/install/random_trajectory/share/colcon-core/packages/random_trajectory)
+[2.492s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/carla_common' for CMake module files
+[2.493s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/carla_common' for CMake config files
+[2.494s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tofstudent/sa_zhao/src/carla_common' returned '0': PYTHONPATH=/home/tofstudent/sa_zhao/install/carla_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/carla_common build --build-base /home/tofstudent/sa_zhao/build/carla_common/build install --prefix /home/tofstudent/sa_zhao/install/carla_common --record /home/tofstudent/sa_zhao/build/carla_common/install.log --single-version-externally-managed
+[2.495s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/carla_common/lib'
+[2.495s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/carla_common/bin'
+[2.495s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/carla_common/lib/pkgconfig/carla_common.pc'
+[2.496s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/carla_common/lib/python3.8/site-packages'
+[2.496s] Level 1:colcon.colcon_core.shell:create_environment_hook('carla_common', 'pythonpath')
+[2.498s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/carla_common/share/carla_common/hook/pythonpath.ps1'
+[2.498s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/carla_common/share/carla_common/hook/pythonpath.dsv'
+[2.498s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/carla_common/share/carla_common/hook/pythonpath.sh'
+[2.499s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/carla_common/bin'
+[2.499s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(carla_common)
+[2.501s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/carla_common/share/carla_common/package.ps1'
+[2.501s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tofstudent/sa_zhao/install/carla_common/share/carla_common/package.dsv'
+[2.502s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/carla_common/share/carla_common/package.sh'
+[2.502s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/carla_common/share/carla_common/package.bash'
+[2.503s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/carla_common/share/carla_common/package.zsh'
+[2.503s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tofstudent/sa_zhao/install/carla_common/share/colcon-core/packages/carla_common)
+[2.510s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tofstudent/sa_zhao/build/tod_command_creation': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces:/home/tofstudent/sa_zhao/install/tod_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces:/home/tofstudent/sa_zhao/install/tod_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces/lib:/home/tofstudent/sa_zhao/install/tod_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/traj_interfaces/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/tod_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/tofstudent/sa_zhao/src/tod_command_creation -DCMAKE_INSTALL_PREFIX=/home/tofstudent/sa_zhao/install/tod_command_creation
+[2.519s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tofstudent/sa_zhao/build/tod_input_devices': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/tod_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/tod_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/tod_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/tod_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/tod_input_devices -- -j8 -l8
+[2.529s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tofstudent/sa_zhao/build/pure_pursuit': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/vehicle_info_util:/home/tofstudent/sa_zhao/install/autoware_cmake:/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/vehicle_info_util:/home/tofstudent/sa_zhao/install/autoware_cmake:/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/vehicle_info_util/lib:/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/pure_pursuit -- -j8 -l8
+[2.660s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tofstudent/sa_zhao/build/tod_input_devices' returned '0': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/tod_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/tod_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/tod_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/tod_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/tod_input_devices -- -j8 -l8
+[2.697s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tofstudent/sa_zhao/build/tod_input_devices': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/tod_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/tod_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/tod_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/tod_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/tod_input_devices
+[2.715s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tod_input_devices)
+[2.719s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/tod_input_devices' for CMake module files
+[2.721s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tofstudent/sa_zhao/build/tod_input_devices' returned '0': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/tod_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/tod_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/tod_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/tod_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/tod_input_devices
+[2.722s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/tod_input_devices' for CMake config files
+[2.722s] Level 1:colcon.colcon_core.shell:create_environment_hook('tod_input_devices', 'cmake_prefix_path')
+[2.724s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/hook/cmake_prefix_path.ps1'
+[2.725s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/hook/cmake_prefix_path.dsv'
+[2.726s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/hook/cmake_prefix_path.sh'
+[2.726s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/tod_input_devices/lib'
+[2.726s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/tod_input_devices/bin'
+[2.727s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/tod_input_devices/lib/pkgconfig/tod_input_devices.pc'
+[2.727s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/tod_input_devices/lib/python3.8/site-packages'
+[2.727s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/tod_input_devices/bin'
+[2.729s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/package.ps1'
+[2.730s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/package.dsv'
+[2.730s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/package.sh'
+[2.731s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/package.bash'
+[2.731s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/package.zsh'
+[2.732s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tofstudent/sa_zhao/install/tod_input_devices/share/colcon-core/packages/tod_input_devices)
+[2.738s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tofstudent/sa_zhao/build/pure_pursuit' returned '0': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/vehicle_info_util:/home/tofstudent/sa_zhao/install/autoware_cmake:/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/vehicle_info_util:/home/tofstudent/sa_zhao/install/autoware_cmake:/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/vehicle_info_util/lib:/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/pure_pursuit -- -j8 -l8
+[2.746s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(carla_msgs)
+[2.749s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/carla_msgs' for CMake module files
+[2.750s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/carla_msgs' for CMake config files
+[2.752s] Level 1:colcon.colcon_core.shell:create_environment_hook('carla_msgs', 'cmake_prefix_path')
+[2.754s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/carla_msgs/share/carla_msgs/hook/cmake_prefix_path.ps1'
+[2.755s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/carla_msgs/share/carla_msgs/hook/cmake_prefix_path.dsv'
+[2.755s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/carla_msgs/share/carla_msgs/hook/cmake_prefix_path.sh'
+[2.756s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/carla_msgs/lib'
+[2.756s] Level 1:colcon.colcon_core.shell:create_environment_hook('carla_msgs', 'ld_library_path_lib')
+[2.759s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/carla_msgs/share/carla_msgs/hook/ld_library_path_lib.ps1'
+[2.759s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/carla_msgs/share/carla_msgs/hook/ld_library_path_lib.dsv'
+[2.759s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/carla_msgs/share/carla_msgs/hook/ld_library_path_lib.sh'
+[2.760s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/carla_msgs/bin'
+[2.760s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/carla_msgs/lib/pkgconfig/carla_msgs.pc'
+[2.760s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/carla_msgs/lib/python3.8/site-packages'
+[2.760s] Level 1:colcon.colcon_core.shell:create_environment_hook('carla_msgs', 'pythonpath')
+[2.763s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/carla_msgs/share/carla_msgs/hook/pythonpath.ps1'
+[2.763s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/carla_msgs/share/carla_msgs/hook/pythonpath.dsv'
+[2.763s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/carla_msgs/share/carla_msgs/hook/pythonpath.sh'
+[2.764s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/carla_msgs/bin'
+[2.765s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/carla_msgs/share/carla_msgs/package.ps1'
+[2.766s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tofstudent/sa_zhao/install/carla_msgs/share/carla_msgs/package.dsv'
+[2.767s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/carla_msgs/share/carla_msgs/package.sh'
+[2.768s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/carla_msgs/share/carla_msgs/package.bash'
+[2.768s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/carla_msgs/share/carla_msgs/package.zsh'
+[2.768s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tofstudent/sa_zhao/install/carla_msgs/share/colcon-core/packages/carla_msgs)
+[2.769s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/tofstudent/sa_zhao/src/carla_spawn_objects' with build type 'ament_python'
+[2.770s] Level 1:colcon.colcon_core.shell:create_environment_hook('carla_spawn_objects', 'ament_prefix_path')
+[2.772s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/carla_spawn_objects/share/carla_spawn_objects/hook/ament_prefix_path.ps1'
+[2.773s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/carla_spawn_objects/share/carla_spawn_objects/hook/ament_prefix_path.dsv'
+[2.773s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/carla_spawn_objects/share/carla_spawn_objects/hook/ament_prefix_path.sh'
+[2.776s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.776s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.783s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tofstudent/sa_zhao/src/carla_ackermann_msgs' with build type 'ament_cmake'
+[2.784s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tofstudent/sa_zhao/src/carla_ackermann_msgs'
+[2.786s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.786s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.796s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tod_input_devices)
+[2.800s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/tod_input_devices' for CMake module files
+[2.801s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/tod_input_devices' for CMake config files
+[2.801s] Level 1:colcon.colcon_core.shell:create_environment_hook('tod_input_devices', 'cmake_prefix_path')
+[2.803s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/hook/cmake_prefix_path.ps1'
+[2.804s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/hook/cmake_prefix_path.dsv'
+[2.804s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/hook/cmake_prefix_path.sh'
+[2.805s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/tod_input_devices/lib'
+[2.805s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/tod_input_devices/bin'
+[2.805s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/tod_input_devices/lib/pkgconfig/tod_input_devices.pc'
+[2.805s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/tod_input_devices/lib/python3.8/site-packages'
+[2.806s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/tod_input_devices/bin'
+[2.807s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/package.ps1'
+[2.808s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/package.dsv'
+[2.808s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/package.sh'
+[2.809s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/package.bash'
+[2.809s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/tod_input_devices/share/tod_input_devices/package.zsh'
+[2.810s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tofstudent/sa_zhao/install/tod_input_devices/share/colcon-core/packages/tod_input_devices)
+[2.814s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tofstudent/sa_zhao/build/pure_pursuit': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/vehicle_info_util:/home/tofstudent/sa_zhao/install/autoware_cmake:/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/vehicle_info_util:/home/tofstudent/sa_zhao/install/autoware_cmake:/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/vehicle_info_util/lib:/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/pure_pursuit
+[3.070s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/tofstudent/sa_zhao/src/carla_spawn_objects'
+[3.075s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.076s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.099s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tofstudent/sa_zhao/build/carla_ackermann_msgs': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/carla_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/carla_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/carla_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/carla_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/carla_ackermann_msgs -- -j8 -l8
+[3.102s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pure_pursuit)
+[3.110s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/pure_pursuit' for CMake module files
+[3.111s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tofstudent/sa_zhao/build/pure_pursuit' returned '0': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/vehicle_info_util:/home/tofstudent/sa_zhao/install/autoware_cmake:/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/vehicle_info_util:/home/tofstudent/sa_zhao/install/autoware_cmake:/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/vehicle_info_util/lib:/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/pure_pursuit
+[3.112s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/pure_pursuit' for CMake config files
+[3.113s] Level 1:colcon.colcon_core.shell:create_environment_hook('pure_pursuit', 'cmake_prefix_path')
+[3.115s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/pure_pursuit/share/pure_pursuit/hook/cmake_prefix_path.ps1'
+[3.116s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/pure_pursuit/share/pure_pursuit/hook/cmake_prefix_path.dsv'
+[3.117s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/pure_pursuit/share/pure_pursuit/hook/cmake_prefix_path.sh'
+[3.118s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/pure_pursuit/lib'
+[3.118s] Level 1:colcon.colcon_core.shell:create_environment_hook('pure_pursuit', 'ld_library_path_lib')
+[3.120s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/pure_pursuit/share/pure_pursuit/hook/ld_library_path_lib.ps1'
+[3.120s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/pure_pursuit/share/pure_pursuit/hook/ld_library_path_lib.dsv'
+[3.121s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/pure_pursuit/share/pure_pursuit/hook/ld_library_path_lib.sh'
+[3.121s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/pure_pursuit/bin'
+[3.121s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/pure_pursuit/lib/pkgconfig/pure_pursuit.pc'
+[3.122s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/pure_pursuit/lib/python3.8/site-packages'
+[3.122s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/pure_pursuit/bin'
+[3.125s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/pure_pursuit/share/pure_pursuit/package.ps1'
+[3.125s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tofstudent/sa_zhao/install/pure_pursuit/share/pure_pursuit/package.dsv'
+[3.126s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/pure_pursuit/share/pure_pursuit/package.sh'
+[3.126s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/pure_pursuit/share/pure_pursuit/package.bash'
+[3.127s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/pure_pursuit/share/pure_pursuit/package.zsh'
+[3.127s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tofstudent/sa_zhao/install/pure_pursuit/share/colcon-core/packages/pure_pursuit)
+[3.271s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pure_pursuit)
+[3.274s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/pure_pursuit' for CMake module files
+[3.275s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/pure_pursuit' for CMake config files
+[3.276s] Level 1:colcon.colcon_core.shell:create_environment_hook('pure_pursuit', 'cmake_prefix_path')
+[3.278s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/pure_pursuit/share/pure_pursuit/hook/cmake_prefix_path.ps1'
+[3.279s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/pure_pursuit/share/pure_pursuit/hook/cmake_prefix_path.dsv'
+[3.279s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/pure_pursuit/share/pure_pursuit/hook/cmake_prefix_path.sh'
+[3.280s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/pure_pursuit/lib'
+[3.280s] Level 1:colcon.colcon_core.shell:create_environment_hook('pure_pursuit', 'ld_library_path_lib')
+[3.282s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/pure_pursuit/share/pure_pursuit/hook/ld_library_path_lib.ps1'
+[3.283s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/pure_pursuit/share/pure_pursuit/hook/ld_library_path_lib.dsv'
+[3.284s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/pure_pursuit/share/pure_pursuit/hook/ld_library_path_lib.sh'
+[3.285s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/pure_pursuit/bin'
+[3.285s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/pure_pursuit/lib/pkgconfig/pure_pursuit.pc'
+[3.286s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/pure_pursuit/lib/python3.8/site-packages'
+[3.286s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/pure_pursuit/bin'
+[3.288s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/pure_pursuit/share/pure_pursuit/package.ps1'
+[3.289s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tofstudent/sa_zhao/install/pure_pursuit/share/pure_pursuit/package.dsv'
+[3.290s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/pure_pursuit/share/pure_pursuit/package.sh'
+[3.290s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/pure_pursuit/share/pure_pursuit/package.bash'
+[3.291s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/pure_pursuit/share/pure_pursuit/package.zsh'
+[3.291s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tofstudent/sa_zhao/install/pure_pursuit/share/colcon-core/packages/pure_pursuit)
+[3.447s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tofstudent/sa_zhao/build/carla_ackermann_msgs' returned '0': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/carla_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/carla_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/carla_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/carla_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/carla_ackermann_msgs -- -j8 -l8
+[3.599s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tofstudent/sa_zhao/build/carla_ackermann_msgs': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/carla_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/carla_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/carla_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/carla_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/carla_ackermann_msgs
+[3.691s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(carla_ackermann_msgs)
+[3.694s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/carla_ackermann_msgs' for CMake module files
+[3.695s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tofstudent/sa_zhao/build/carla_ackermann_msgs' returned '0': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/carla_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/carla_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/carla_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/carla_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/carla_ackermann_msgs
+[3.696s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/carla_ackermann_msgs' for CMake config files
+[3.697s] Level 1:colcon.colcon_core.shell:create_environment_hook('carla_ackermann_msgs', 'cmake_prefix_path')
+[3.699s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/carla_ackermann_msgs/share/carla_ackermann_msgs/hook/cmake_prefix_path.ps1'
+[3.699s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/carla_ackermann_msgs/share/carla_ackermann_msgs/hook/cmake_prefix_path.dsv'
+[3.700s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/carla_ackermann_msgs/share/carla_ackermann_msgs/hook/cmake_prefix_path.sh'
+[3.701s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/carla_ackermann_msgs/lib'
+[3.701s] Level 1:colcon.colcon_core.shell:create_environment_hook('carla_ackermann_msgs', 'ld_library_path_lib')
+[3.703s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/carla_ackermann_msgs/share/carla_ackermann_msgs/hook/ld_library_path_lib.ps1'
+[3.703s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/carla_ackermann_msgs/share/carla_ackermann_msgs/hook/ld_library_path_lib.dsv'
+[3.703s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/carla_ackermann_msgs/share/carla_ackermann_msgs/hook/ld_library_path_lib.sh'
+[3.704s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/carla_ackermann_msgs/bin'
+[3.704s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/carla_ackermann_msgs/lib/pkgconfig/carla_ackermann_msgs.pc'
+[3.704s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/carla_ackermann_msgs/lib/python3.8/site-packages'
+[3.704s] Level 1:colcon.colcon_core.shell:create_environment_hook('carla_ackermann_msgs', 'pythonpath')
+[3.706s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/carla_ackermann_msgs/share/carla_ackermann_msgs/hook/pythonpath.ps1'
+[3.707s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofstudent/sa_zhao/install/carla_ackermann_msgs/share/carla_ackermann_msgs/hook/pythonpath.dsv'
+[3.707s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofstudent/sa_zhao/install/carla_ackermann_msgs/share/carla_ackermann_msgs/hook/pythonpath.sh'
+[3.707s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/carla_ackermann_msgs/bin'
+[3.710s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/carla_ackermann_msgs/share/carla_ackermann_msgs/package.ps1'
+[3.711s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tofstudent/sa_zhao/install/carla_ackermann_msgs/share/carla_ackermann_msgs/package.dsv'
+[3.711s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/carla_ackermann_msgs/share/carla_ackermann_msgs/package.sh'
+[3.712s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/carla_ackermann_msgs/share/carla_ackermann_msgs/package.bash'
+[3.712s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/carla_ackermann_msgs/share/carla_ackermann_msgs/package.zsh'
+[3.712s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tofstudent/sa_zhao/install/carla_ackermann_msgs/share/colcon-core/packages/carla_ackermann_msgs)
+[3.737s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tofstudent/sa_zhao/src/carla_spawn_objects': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/ros_compatibility:/home/tofstudent/sa_zhao/install/carla_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/carla_msgs LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/carla_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/carla_spawn_objects/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/ros_compatibility/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/carla_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/carla_spawn_objects build --build-base /home/tofstudent/sa_zhao/build/carla_spawn_objects/build install --prefix /home/tofstudent/sa_zhao/install/carla_spawn_objects --record /home/tofstudent/sa_zhao/build/carla_spawn_objects/install.log --single-version-externally-managed
+[3.742s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tofstudent/sa_zhao/build/tod_command_creation' returned '1': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces:/home/tofstudent/sa_zhao/install/tod_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces:/home/tofstudent/sa_zhao/install/tod_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces/lib:/home/tofstudent/sa_zhao/install/tod_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/traj_interfaces/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/tod_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/tofstudent/sa_zhao/src/tod_command_creation -DCMAKE_INSTALL_PREFIX=/home/tofstudent/sa_zhao/install/tod_command_creation
+[3.759s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tod_command_creation)
+[3.763s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/tod_command_creation' for CMake module files
+[3.763s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/tod_command_creation' for CMake config files
+[3.764s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/tod_command_creation/bin'
+[3.764s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/tod_command_creation/lib/pkgconfig/tod_command_creation.pc'
+[3.764s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/tod_command_creation/lib/python3.8/site-packages'
+[3.765s] Level 1:colcon.colcon_core.environment:checking '/home/tofstudent/sa_zhao/install/tod_command_creation/bin'
+[3.767s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/tod_command_creation/share/tod_command_creation/package.ps1'
+[3.768s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tofstudent/sa_zhao/install/tod_command_creation/share/tod_command_creation/package.dsv'
+[3.768s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/tod_command_creation/share/tod_command_creation/package.sh'
+[3.769s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/tod_command_creation/share/tod_command_creation/package.bash'
+[3.769s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofstudent/sa_zhao/install/tod_command_creation/share/tod_command_creation/package.zsh'
+[3.770s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tofstudent/sa_zhao/install/tod_command_creation/share/colcon-core/packages/tod_command_creation)
+[4.190s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.190s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.190s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[4.191s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.208s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.208s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.208s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.229s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.232s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tofstudent/sa_zhao/install/local_setup.ps1'
+[4.234s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/tofstudent/sa_zhao/install/_local_setup_util_ps1.py'
+[4.237s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tofstudent/sa_zhao/install/setup.ps1'
+[4.240s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tofstudent/sa_zhao/install/local_setup.sh'
+[4.241s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/tofstudent/sa_zhao/install/_local_setup_util_sh.py'
+[4.242s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tofstudent/sa_zhao/install/setup.sh'
+[4.244s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tofstudent/sa_zhao/install/local_setup.bash'
+[4.245s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tofstudent/sa_zhao/install/setup.bash'
+[4.247s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tofstudent/sa_zhao/install/local_setup.zsh'
+[4.248s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tofstudent/sa_zhao/install/setup.zsh'

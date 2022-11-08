@@ -1,0 +1,48 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tod_msgs/msg/VehicleData.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Vector3.idl"
+#include "std_msgs/msg/Header.idl"
+
+module tod_msgs {
+  module msg {
+    struct VehicleData {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        " see VehicleEnums.h")
+      int8 indicator;
+
+      int8 gear_position;
+
+      int8 honk;
+
+      int8 wiper;
+
+      int8 head_light;
+
+      int8 flash_light;
+
+      @verbatim (language="comment", text=
+        " steering wheel angle position in rad")
+      float steering_wheel_angle;
+
+      @verbatim (language="comment", text=
+        " current vehicle curvature in 1/m")
+      float curvature;
+
+      @verbatim (language="comment", text=
+        " rpm")
+      float engine_speed;
+
+      @verbatim (language="comment", text=
+        " vehicle ACAN data (currently from rear wheel odom)")
+      float longitudinal_speed;
+
+      @verbatim (language="comment", text=
+        " m/s^2")
+      geometry_msgs::msg::Vector3 linear_acceleration;
+    };
+  };
+};

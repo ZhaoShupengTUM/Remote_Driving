@@ -1,0 +1,40 @@
+[0.074s] Invoking command in '/home/tofstudent/sa_zhao/build/random_trajectory': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/traj_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/random_trajectory -- -j8 -l8
+[0.225s] [ 11%] Built target Gaspedal
+[0.254s] [ 22%] Built target Lenkrad
+[0.259s] [ 33%] Built target TrajParam
+[0.268s] [ 44%] Built target Taster
+[0.272s] [ 55%] Built target VehicleMarker
+[0.284s] [ 66%] Built target TrajCollect
+[0.286s] [ 88%] Built target pfas
+[0.287s] [ 88%] Built target TfPath
+[0.341s] [100%] Built target TrajGeneration
+[0.369s] Invoked command in '/home/tofstudent/sa_zhao/build/random_trajectory' returned '0': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/traj_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/random_trajectory -- -j8 -l8
+[0.612s] Invoking command in '/home/tofstudent/sa_zhao/build/random_trajectory': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/traj_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/random_trajectory
+[0.615s] -- Install configuration: ""
+[0.616s] -- Up-to-date: /home/tofstudent/sa_zhao/install/random_trajectory/lib/random_trajectory/Lenkrad
+[0.624s] -- Up-to-date: /home/tofstudent/sa_zhao/install/random_trajectory/lib/random_trajectory/Gaspedal
+[0.624s] -- Up-to-date: /home/tofstudent/sa_zhao/install/random_trajectory/lib/random_trajectory/Taster
+[0.625s] -- Up-to-date: /home/tofstudent/sa_zhao/install/random_trajectory/lib/random_trajectory/TrajParam
+[0.625s] -- Up-to-date: /home/tofstudent/sa_zhao/install/random_trajectory/lib/random_trajectory/TrajGeneration
+[0.625s] -- Up-to-date: /home/tofstudent/sa_zhao/install/random_trajectory/lib/random_trajectory/TrajCollect
+[0.626s] -- Up-to-date: /home/tofstudent/sa_zhao/install/random_trajectory/lib/random_trajectory/VehicleMarker
+[0.627s] -- Up-to-date: /home/tofstudent/sa_zhao/install/random_trajectory/lib/random_trajectory/TfPath
+[0.627s] -- Up-to-date: /home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory//launch
+[0.628s] -- Up-to-date: /home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory//launch/sensor_launch.py
+[0.628s] -- Up-to-date: /home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory//launch/pathplanning_launch.py
+[0.629s] -- Up-to-date: /home/tofstudent/sa_zhao/install/random_trajectory/share/ament_index/resource_index/package_run_dependencies/random_trajectory
+[0.629s] -- Up-to-date: /home/tofstudent/sa_zhao/install/random_trajectory/share/ament_index/resource_index/parent_prefix_path/random_trajectory
+[0.630s] -- Up-to-date: /home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory/environment/ament_prefix_path.sh
+[0.630s] -- Up-to-date: /home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory/environment/ament_prefix_path.dsv
+[0.630s] -- Up-to-date: /home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory/environment/path.sh
+[0.630s] -- Up-to-date: /home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory/environment/path.dsv
+[0.631s] -- Up-to-date: /home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory/local_setup.bash
+[0.631s] -- Up-to-date: /home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory/local_setup.sh
+[0.631s] -- Up-to-date: /home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory/local_setup.zsh
+[0.632s] -- Up-to-date: /home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory/local_setup.dsv
+[0.632s] -- Installing: /home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory/package.dsv
+[0.632s] -- Up-to-date: /home/tofstudent/sa_zhao/install/random_trajectory/share/ament_index/resource_index/packages/random_trajectory
+[0.634s] -- Up-to-date: /home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory/cmake/random_trajectoryConfig.cmake
+[0.635s] -- Up-to-date: /home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory/cmake/random_trajectoryConfig-version.cmake
+[0.635s] -- Up-to-date: /home/tofstudent/sa_zhao/install/random_trajectory/share/random_trajectory/package.xml
+[0.648s] Invoked command in '/home/tofstudent/sa_zhao/build/random_trajectory' returned '0': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/traj_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/random_trajectory

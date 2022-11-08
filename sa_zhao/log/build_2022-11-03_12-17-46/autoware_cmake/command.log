@@ -1,0 +1,4 @@
+Invoking command in '/home/tofstudent/sa_zhao/build/autoware_cmake': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/autoware_cmake -- -j8 -l8
+Invoked command in '/home/tofstudent/sa_zhao/build/autoware_cmake' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/autoware_cmake -- -j8 -l8
+Invoking command in '/home/tofstudent/sa_zhao/build/autoware_cmake': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/autoware_cmake
+Invoked command in '/home/tofstudent/sa_zhao/build/autoware_cmake' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/autoware_cmake

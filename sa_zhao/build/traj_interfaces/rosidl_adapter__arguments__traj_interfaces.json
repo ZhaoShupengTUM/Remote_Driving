@@ -1,0 +1,7 @@
+{
+  "package_name": "traj_interfaces",
+  "non_idl_tuples": [
+    "/home/tofstudent/sa_zhao/src/traj_interfaces:msg/TrajParam.msg",
+    "/home/tofstudent/sa_zhao/src/traj_interfaces:msg/StateMachine.msg"
+  ]
+}

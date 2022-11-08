@@ -1,0 +1,57 @@
+[0.156s] Invoking command in '/home/tofstudent/sa_zhao/build/pure_pursuit': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/vehicle_info_util:/home/tofstudent/sa_zhao/install/autoware_cmake:/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/vehicle_info_util:/home/tofstudent/sa_zhao/install/autoware_cmake:/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/vehicle_info_util/lib:/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/tofstudent/sa_zhao/src/pure_pursuit -DCMAKE_INSTALL_PREFIX=/home/tofstudent/sa_zhao/install/pure_pursuit
+[0.336s] -- The C compiler identification is GNU 8.4.0
+[0.557s] -- The CXX compiler identification is GNU 8.4.0
+[0.565s] -- Check for working C compiler: /usr/bin/cc
+[0.966s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.968s] -- Detecting C compiler ABI info
+[1.406s] -- Detecting C compiler ABI info - done
+[1.436s] -- Detecting C compile features
+[1.437s] -- Detecting C compile features - done
+[1.441s] -- Check for working CXX compiler: /usr/bin/c++
+[1.865s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.866s] -- Detecting CXX compiler ABI info
+[2.254s] -- Detecting CXX compiler ABI info - done
+[2.285s] -- Detecting CXX compile features
+[2.286s] -- Detecting CXX compile features - done
+[2.288s] -- Found autoware_cmake: 0.1.0 (/home/tofstudent/sa_zhao/install/autoware_cmake/share/autoware_cmake/cmake)
+[2.291s] -- Found ament_cmake_auto: 0.9.11 (/opt/ros/foxy/share/ament_cmake_auto/cmake)
+[2.335s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[2.336s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.904s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.917s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[3.296s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[3.352s] -- Found FastRTPS: /opt/ros/foxy/include  
+[3.551s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.693s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[4.695s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.697s] -- Looking for pthread.h
+[5.068s] -- Looking for pthread.h - found
+[5.068s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[5.443s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[5.443s] -- Looking for pthread_create in pthreads
+[5.779s] -- Looking for pthread_create in pthreads - not found
+[5.779s] -- Looking for pthread_create in pthread
+[6.142s] -- Looking for pthread_create in pthread - found
+[6.144s] -- Found Threads: TRUE  
+[7.568s] -- Found Eigen3: TRUE (found version "3.3.7") 
+[7.832s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[7.975s] -- Configuring done
+[8.210s] -- Generating done
+[8.213s] -- Build files have been written to: /home/tofstudent/sa_zhao/build/pure_pursuit
+[8.257s] Invoked command in '/home/tofstudent/sa_zhao/build/pure_pursuit' returned '0': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/vehicle_info_util:/home/tofstudent/sa_zhao/install/autoware_cmake:/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/vehicle_info_util:/home/tofstudent/sa_zhao/install/autoware_cmake:/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/vehicle_info_util/lib:/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/tofstudent/sa_zhao/src/pure_pursuit -DCMAKE_INSTALL_PREFIX=/home/tofstudent/sa_zhao/install/pure_pursuit
+[8.260s] Invoking command in '/home/tofstudent/sa_zhao/build/pure_pursuit': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/vehicle_info_util:/home/tofstudent/sa_zhao/install/autoware_cmake:/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/vehicle_info_util:/home/tofstudent/sa_zhao/install/autoware_cmake:/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/vehicle_info_util/lib:/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/pure_pursuit -- -j8 -l8
+[8.402s] [35m[1mScanning dependencies of target pure_pursuit_node_exe[0m
+[8.463s] [35m[1mScanning dependencies of target pure_pursuit_core[0m
+[8.600s] [ 11%] [32mBuilding CXX object CMakeFiles/pure_pursuit_node_exe.dir/rclcpp_components/node_main_pure_pursuit_node_exe.cpp.o[0m
+[8.869s] [ 22%] [32mBuilding CXX object CMakeFiles/pure_pursuit_core.dir/src/pure_pursuit_core/planning_utils.cpp.o[0m
+[8.871s] [ 33%] [32mBuilding CXX object CMakeFiles/pure_pursuit_core.dir/src/pure_pursuit_core/pure_pursuit.cpp.o[0m
+[8.904s] [ 44%] [32mBuilding CXX object CMakeFiles/pure_pursuit_core.dir/src/pure_pursuit_core/interpolate.cpp.o[0m
+[13.843s] [ 55%] [32m[1mLinking CXX executable pure_pursuit_node_exe[0m
+[14.297s] [ 55%] Built target pure_pursuit_node_exe
+[16.871s] [ 66%] [32m[1mLinking CXX shared library libpure_pursuit_core.so[0m
+[17.152s] [ 66%] Built target pure_pursuit_core
+[17.165s] [35m[1mScanning dependencies of target pure_pursuit_node[0m
+[17.309s] [ 77%] [32mBuilding CXX object CMakeFiles/pure_pursuit_node.dir/src/pure_pursuit/pure_pursuit_viz.cpp.o[0m
+[17.309s] [ 88%] [32mBuilding CXX object CMakeFiles/pure_pursuit_node.dir/src/pure_pursuit/pure_pursuit_node.cpp.o[0m
+[27.190s] [100%] [32m[1mLinking CXX shared library libpure_pursuit_node.so[0m
+[27.833s] [100%] Built target pure_pursuit_node

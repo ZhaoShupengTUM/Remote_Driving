@@ -1,0 +1,14 @@
+source;share/tod_msgs/hook/cmake_prefix_path.ps1
+source;share/tod_msgs/hook/cmake_prefix_path.dsv
+source;share/tod_msgs/hook/cmake_prefix_path.sh
+source;share/tod_msgs/hook/ld_library_path_lib.ps1
+source;share/tod_msgs/hook/ld_library_path_lib.dsv
+source;share/tod_msgs/hook/ld_library_path_lib.sh
+source;share/tod_msgs/hook/pythonpath.ps1
+source;share/tod_msgs/hook/pythonpath.dsv
+source;share/tod_msgs/hook/pythonpath.sh
+source;share/tod_msgs/local_setup.bash
+source;share/tod_msgs/local_setup.dsv
+source;share/tod_msgs/local_setup.ps1
+source;share/tod_msgs/local_setup.sh
+source;share/tod_msgs/local_setup.zsh

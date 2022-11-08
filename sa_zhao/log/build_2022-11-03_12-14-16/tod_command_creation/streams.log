@@ -1,0 +1,31 @@
+[0.093s] Invoking command in '/home/tofstudent/sa_zhao/build/tod_command_creation': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces:/home/tofstudent/sa_zhao/install/tod_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces:/home/tofstudent/sa_zhao/install/tod_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces/lib:/home/tofstudent/sa_zhao/install/tod_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/traj_interfaces/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/tod_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/tofstudent/sa_zhao/src/tod_command_creation -DCMAKE_INSTALL_PREFIX=/home/tofstudent/sa_zhao/install/tod_command_creation
+[0.123s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.157s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.420s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.455s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.458s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.599s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.650s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.651s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.872s] -- Found tod_msgs: 1.0.0 (/home/tofstudent/sa_zhao/install/tod_msgs/share/tod_msgs/cmake)
+[1.270s] CMake Error at CMakeLists.txt:12 (find_package):
+[1.270s]   By not providing "Findtod_helper.cmake" in CMAKE_MODULE_PATH this project
+[1.270s]   has asked CMake to find a package configuration file provided by
+[1.270s]   "tod_helper", but CMake did not find one.
+[1.270s] 
+[1.270s]   Could not find a package configuration file provided by "tod_helper" with
+[1.270s]   any of the following names:
+[1.270s] 
+[1.271s]     tod_helperConfig.cmake
+[1.271s]     tod_helper-config.cmake
+[1.271s] 
+[1.271s]   Add the installation prefix of "tod_helper" to CMAKE_PREFIX_PATH or set
+[1.271s]   "tod_helper_DIR" to a directory containing one of the above files.  If
+[1.271s]   "tod_helper" provides a separate development package or SDK, be sure it has
+[1.271s]   been installed.
+[1.271s] 
+[1.272s] 
+[1.272s] -- Configuring incomplete, errors occurred!
+[1.272s] See also "/home/tofstudent/sa_zhao/build/tod_command_creation/CMakeFiles/CMakeOutput.log".
+[1.272s] See also "/home/tofstudent/sa_zhao/build/tod_command_creation/CMakeFiles/CMakeError.log".
+[1.283s] Invoked command in '/home/tofstudent/sa_zhao/build/tod_command_creation' returned '1': AMENT_PREFIX_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces:/home/tofstudent/sa_zhao/install/tod_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces:/home/tofstudent/sa_zhao/install/tod_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/tofstudent/sa_zhao/install/traj_interfaces/lib:/home/tofstudent/sa_zhao/install/tod_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/tofstudent/sa_zhao/install/traj_interfaces/lib/python3.8/site-packages:/home/tofstudent/sa_zhao/install/tod_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/tofstudent/sa_zhao/src/tod_command_creation -DCMAKE_INSTALL_PREFIX=/home/tofstudent/sa_zhao/install/tod_command_creation

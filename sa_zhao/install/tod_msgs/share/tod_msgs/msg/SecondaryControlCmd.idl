@@ -1,0 +1,27 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tod_msgs/msg/SecondaryControlCmd.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module tod_msgs {
+  module msg {
+    struct SecondaryControlCmd {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        " see VehicleEnums.h")
+      int8 indicator;
+
+      int8 gear_position;
+
+      int8 honk;
+
+      int8 wiper;
+
+      int8 head_light;
+
+      int8 flash_light;
+    };
+  };
+};

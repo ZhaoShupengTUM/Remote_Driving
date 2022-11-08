@@ -1,0 +1,166 @@
+[0.345s] Invoking command in '/home/tofstudent/sa_zhao/build/autoware_auto_planning_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/autoware_auto_planning_msgs -- -j8 -l8
+[0.507s] [  1%] Built target autoware_auto_planning_msgs__cpp
+[0.525s] [ 12%] Built target autoware_auto_planning_msgs__rosidl_generator_c
+[0.626s] [ 23%] Built target autoware_auto_planning_msgs__rosidl_typesupport_fastrtps_cpp
+[0.631s] [ 34%] Built target autoware_auto_planning_msgs__rosidl_typesupport_introspection_cpp
+[0.633s] [ 45%] Built target autoware_auto_planning_msgs__rosidl_typesupport_cpp
+[0.643s] [ 56%] Built target autoware_auto_planning_msgs__rosidl_typesupport_introspection_c
+[0.667s] [ 67%] Built target autoware_auto_planning_msgs__rosidl_typesupport_c
+[0.685s] [ 78%] Built target autoware_auto_planning_msgs__rosidl_typesupport_fastrtps_c
+[0.714s] [ 78%] Built target autoware_auto_planning_msgs
+[0.744s] [ 80%] Built target autoware_auto_planning_msgs__py
+[0.790s] [ 89%] Built target autoware_auto_planning_msgs__python
+[0.845s] [ 92%] Built target autoware_auto_planning_msgs__rosidl_typesupport_c__pyext
+[0.854s] [ 96%] Built target autoware_auto_planning_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.865s] [100%] Built target autoware_auto_planning_msgs__rosidl_typesupport_introspection_c__pyext
+[0.911s] Invoked command in '/home/tofstudent/sa_zhao/build/autoware_auto_planning_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/autoware_auto_planning_msgs -- -j8 -l8
+[1.161s] Invoking command in '/home/tofstudent/sa_zhao/build/autoware_auto_planning_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/autoware_auto_planning_msgs
+[1.197s] -- Install configuration: ""
+[1.197s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/ament_index/resource_index/rosidl_interfaces/autoware_auto_planning_msgs
+[1.197s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs
+[1.197s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg
+[1.197s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/path.h
+[1.198s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail
+[1.198s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/path_point__functions.c
+[1.198s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/trajectory_point__type_support.h
+[1.198s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/trajectory_point__functions.c
+[1.198s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/trajectory__struct.h
+[1.198s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/trajectory_point__functions.h
+[1.198s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/trajectory__type_support.h
+[1.198s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/path_point__functions.h
+[1.198s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/path__type_support.h
+[1.198s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/trajectory_point__struct.h
+[1.199s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/path__functions.c
+[1.199s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/path_point__struct.h
+[1.199s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/path_point__type_support.h
+[1.199s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/path__struct.h
+[1.199s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/path__functions.h
+[1.199s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/trajectory__functions.h
+[1.199s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/trajectory__functions.c
+[1.199s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/rosidl_generator_c__visibility_control.h
+[1.199s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/path_point.h
+[1.199s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/trajectory.h
+[1.200s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/trajectory_point.h
+[1.200s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/environment/library_path.sh
+[1.200s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/environment/library_path.dsv
+[1.200s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/libautoware_auto_planning_msgs__rosidl_generator_c.so
+[1.200s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs
+[1.200s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg
+[1.201s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.201s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail
+[1.201s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/path_point__rosidl_typesupport_fastrtps_c.h
+[1.201s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/trajectory_point__rosidl_typesupport_fastrtps_c.h
+[1.202s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/trajectory__rosidl_typesupport_fastrtps_c.h
+[1.202s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/path__rosidl_typesupport_fastrtps_c.h
+[1.202s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/libautoware_auto_planning_msgs__rosidl_typesupport_fastrtps_c.so
+[1.202s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs
+[1.202s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg
+[1.205s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.205s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail
+[1.206s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/path__rosidl_typesupport_fastrtps_cpp.hpp
+[1.206s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/trajectory_point__rosidl_typesupport_fastrtps_cpp.hpp
+[1.206s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/path_point__rosidl_typesupport_fastrtps_cpp.hpp
+[1.207s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/trajectory__rosidl_typesupport_fastrtps_cpp.hpp
+[1.207s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/dds_fastrtps
+[1.207s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/libautoware_auto_planning_msgs__rosidl_typesupport_fastrtps_cpp.so
+[1.208s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs
+[1.208s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg
+[1.213s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail
+[1.213s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/path__type_support.c
+[1.213s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/path_point__rosidl_typesupport_introspection_c.h
+[1.213s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/trajectory__type_support.c
+[1.213s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/path_point__type_support.c
+[1.213s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/trajectory_point__rosidl_typesupport_introspection_c.h
+[1.213s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/path__rosidl_typesupport_introspection_c.h
+[1.214s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/trajectory__rosidl_typesupport_introspection_c.h
+[1.214s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/trajectory_point__type_support.c
+[1.214s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.214s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/libautoware_auto_planning_msgs__rosidl_typesupport_introspection_c.so
+[1.214s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/libautoware_auto_planning_msgs__rosidl_typesupport_c.so
+[1.214s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs
+[1.214s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg
+[1.214s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/trajectory.hpp
+[1.214s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/trajectory_point.hpp
+[1.214s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail
+[1.215s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/path__builder.hpp
+[1.215s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/trajectory__struct.hpp
+[1.215s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/trajectory__traits.hpp
+[1.215s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/path__struct.hpp
+[1.215s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/trajectory_point__traits.hpp
+[1.215s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/trajectory__builder.hpp
+[1.215s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/trajectory_point__builder.hpp
+[1.215s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/path__traits.hpp
+[1.215s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/path_point__traits.hpp
+[1.215s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/path_point__struct.hpp
+[1.215s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/trajectory_point__struct.hpp
+[1.216s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/path_point__builder.hpp
+[1.216s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/path_point.hpp
+[1.216s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/path.hpp
+[1.216s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs
+[1.216s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg
+[1.216s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail
+[1.216s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/path_point__rosidl_typesupport_introspection_cpp.hpp
+[1.216s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/trajectory__type_support.cpp
+[1.216s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/trajectory__rosidl_typesupport_introspection_cpp.hpp
+[1.217s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/trajectory_point__type_support.cpp
+[1.217s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/path__rosidl_typesupport_introspection_cpp.hpp
+[1.217s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/path_point__type_support.cpp
+[1.224s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/path__type_support.cpp
+[1.225s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include/autoware_auto_planning_msgs/msg/detail/trajectory_point__rosidl_typesupport_introspection_cpp.hpp
+[1.226s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/libautoware_auto_planning_msgs__rosidl_typesupport_introspection_cpp.so
+[1.226s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/libautoware_auto_planning_msgs__rosidl_typesupport_cpp.so
+[1.226s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/environment/pythonpath.sh
+[1.227s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/environment/pythonpath.dsv
+[1.227s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/python3.8/site-packages/autoware_auto_planning_msgs/__init__.py
+[1.289s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/python3.8/site-packages/autoware_auto_planning_msgs/msg
+[1.289s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/python3.8/site-packages/autoware_auto_planning_msgs/msg/_trajectory_point.py
+[1.290s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/python3.8/site-packages/autoware_auto_planning_msgs/msg/_path_point.py
+[1.290s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/python3.8/site-packages/autoware_auto_planning_msgs/msg/_path.py
+[1.290s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/python3.8/site-packages/autoware_auto_planning_msgs/msg/_trajectory_s.c
+[1.290s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/python3.8/site-packages/autoware_auto_planning_msgs/msg/__init__.py
+[1.291s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/python3.8/site-packages/autoware_auto_planning_msgs/msg/_trajectory.py
+[1.291s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/python3.8/site-packages/autoware_auto_planning_msgs/msg/_trajectory_point_s.c
+[1.291s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/python3.8/site-packages/autoware_auto_planning_msgs/msg/_path_s.c
+[1.291s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/python3.8/site-packages/autoware_auto_planning_msgs/msg/_path_point_s.c
+[1.291s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/python3.8/site-packages/autoware_auto_planning_msgs/autoware_auto_planning_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[1.291s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/python3.8/site-packages/autoware_auto_planning_msgs/autoware_auto_planning_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[1.292s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/python3.8/site-packages/autoware_auto_planning_msgs/autoware_auto_planning_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[1.293s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib/libautoware_auto_planning_msgs__python.so
+[1.293s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/msg/Trajectory.idl
+[1.293s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/msg/TrajectoryPoint.idl
+[1.293s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/msg/Path.idl
+[1.294s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/msg/PathPoint.idl
+[1.294s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/ament_index/resource_index/package_run_dependencies/autoware_auto_planning_msgs
+[1.294s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/ament_index/resource_index/parent_prefix_path/autoware_auto_planning_msgs
+[1.294s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/environment/ament_prefix_path.sh
+[1.294s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/environment/ament_prefix_path.dsv
+[1.295s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/environment/path.sh
+[1.295s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/environment/path.dsv
+[1.295s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/local_setup.bash
+[1.295s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/local_setup.sh
+[1.295s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/local_setup.zsh
+[1.295s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/local_setup.dsv
+[1.296s] -- Installing: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/package.dsv
+[1.296s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/ament_index/resource_index/packages/autoware_auto_planning_msgs
+[1.297s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/cmake/autoware_auto_planning_msgs__rosidl_generator_cExport.cmake
+[1.297s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/cmake/autoware_auto_planning_msgs__rosidl_generator_cExport-noconfig.cmake
+[1.297s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/cmake/autoware_auto_planning_msgs__rosidl_typesupport_introspection_cExport.cmake
+[1.297s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/cmake/autoware_auto_planning_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.297s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/cmake/autoware_auto_planning_msgs__rosidl_typesupport_cExport.cmake
+[1.297s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/cmake/autoware_auto_planning_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[1.297s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/cmake/autoware_auto_planning_msgs__rosidl_generator_cppExport.cmake
+[1.298s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/cmake/autoware_auto_planning_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[1.298s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/cmake/autoware_auto_planning_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.298s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/cmake/autoware_auto_planning_msgs__rosidl_typesupport_cppExport.cmake
+[1.298s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/cmake/autoware_auto_planning_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[1.300s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/cmake/rosidl_cmake-extras.cmake
+[1.300s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.300s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[1.300s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[1.300s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.300s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.300s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.300s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/cmake/autoware_auto_planning_msgsConfig.cmake
+[1.300s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/cmake/autoware_auto_planning_msgsConfig-version.cmake
+[1.301s] -- Up-to-date: /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/share/autoware_auto_planning_msgs/package.xml
+[1.310s] Invoked command in '/home/tofstudent/sa_zhao/build/autoware_auto_planning_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/autoware_auto_planning_msgs
