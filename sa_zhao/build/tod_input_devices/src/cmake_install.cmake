@@ -1,8 +1,8 @@
-# Install script for directory: /home/tofstudent/sa_zhao/src/tod_input_devices/src
+# Install script for directory: /home/tofstudent/Remote_Driving/sa_zhao/src/tod_input_devices/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/tofstudent/sa_zhao/install/tod_input_devices")
+  set(CMAKE_INSTALL_PREFIX "/home/tofstudent/Remote_Driving/sa_zhao/install/tod_input_devices")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,12 +44,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/tod_input_devices/InputDevice"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/tod_input_devices" TYPE EXECUTABLE FILES "/home/tofstudent/sa_zhao/build/tod_input_devices/src/InputDevice")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/tod_input_devices" TYPE EXECUTABLE FILES "/home/tofstudent/Remote_Driving/sa_zhao/build/tod_input_devices/src/InputDevice")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/tod_input_devices/InputDevice" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/tod_input_devices/InputDevice")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/tod_input_devices/InputDevice"
-         OLD_RPATH "/opt/ros/foxy/lib:/home/tofstudent/sa_zhao/install/tod_msgs/lib:"
+         OLD_RPATH "/opt/ros/foxy/lib:/home/tofstudent/Remote_Driving/sa_zhao/install/tod_msgs/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/tod_input_devices/InputDevice")
@@ -59,7 +59,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/tofstudent/sa_zhao/build/tod_input_devices/src/UsbInputDevice/cmake_install.cmake")
+  include("/home/tofstudent/Remote_Driving/sa_zhao/build/tod_input_devices/src/UsbInputDevice/cmake_install.cmake")
 
 endif()
 

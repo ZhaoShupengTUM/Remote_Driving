@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tofstudent/sa_zhao/src/vehicle_info_util
+CMAKE_SOURCE_DIR = /home/tofstudent/Remote_Driving/sa_zhao/src/vehicle_info_util
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tofstudent/sa_zhao/build/vehicle_info_util
+CMAKE_BINARY_DIR = /home/tofstudent/Remote_Driving/sa_zhao/build/vehicle_info_util
 
 # Utility rule file for vehicle_info_util_uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/tofstudent/sa_zhao/build/vehicle_info_util
 include CMakeFiles/vehicle_info_util_uninstall.dir/progress.make
 
 CMakeFiles/vehicle_info_util_uninstall:
-	/usr/bin/cmake -P /home/tofstudent/sa_zhao/build/vehicle_info_util/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/tofstudent/Remote_Driving/sa_zhao/build/vehicle_info_util/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 vehicle_info_util_uninstall: CMakeFiles/vehicle_info_util_uninstall
 vehicle_info_util_uninstall: CMakeFiles/vehicle_info_util_uninstall.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/vehicle_info_util_uninstall.dir/clean:
 .PHONY : CMakeFiles/vehicle_info_util_uninstall.dir/clean
 
 CMakeFiles/vehicle_info_util_uninstall.dir/depend:
-	cd /home/tofstudent/sa_zhao/build/vehicle_info_util && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tofstudent/sa_zhao/src/vehicle_info_util /home/tofstudent/sa_zhao/src/vehicle_info_util /home/tofstudent/sa_zhao/build/vehicle_info_util /home/tofstudent/sa_zhao/build/vehicle_info_util /home/tofstudent/sa_zhao/build/vehicle_info_util/CMakeFiles/vehicle_info_util_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tofstudent/Remote_Driving/sa_zhao/build/vehicle_info_util && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tofstudent/Remote_Driving/sa_zhao/src/vehicle_info_util /home/tofstudent/Remote_Driving/sa_zhao/src/vehicle_info_util /home/tofstudent/Remote_Driving/sa_zhao/build/vehicle_info_util /home/tofstudent/Remote_Driving/sa_zhao/build/vehicle_info_util /home/tofstudent/Remote_Driving/sa_zhao/build/vehicle_info_util/CMakeFiles/vehicle_info_util_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/vehicle_info_util_uninstall.dir/depend
 

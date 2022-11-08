@@ -1,5 +1,2 @@
 # Hashes of file build rules.
-3d0fc623f67f63b54f040eced0820431 CMakeFiles/tod_input_devices_uninstall
-262c7bcc0e6d5a42bf9763ec6f54d483 src/VirtualDevice/moc_VirtualInputDevice.cpp
-173a0ddf7be05035ab0bd6ef27e4e006 src/VirtualDevice/qrc_qml.cpp
-ef520daf9289e0a246b50400d2f9583c src/VirtualDevice/ui_joystickwindow.h
+bbf1e8cd53d4024970951e228d39d5e7 CMakeFiles/tod_input_devices_uninstall

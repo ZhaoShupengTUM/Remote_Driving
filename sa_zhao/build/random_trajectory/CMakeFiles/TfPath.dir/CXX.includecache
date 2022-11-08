@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/tofstudent/sa_zhao/src/random_trajectory/src/TfPathStartNode.cpp
+/home/tofstudent/Remote_Driving/sa_zhao/src/random_trajectory/src/TfPathStartNode.cpp
 geometry_msgs/msg/transform_stamped.hpp
 -
 rclcpp/rclcpp.hpp
@@ -20,7 +20,7 @@ tf2_ros/transform_broadcaster.h
 nav_msgs/msg/path.hpp
 -
 std_msgs/msg/bool.hpp
-/home/tofstudent/sa_zhao/src/random_trajectory/src/std_msgs/msg/bool.hpp
+/home/tofstudent/Remote_Driving/sa_zhao/src/random_trajectory/src/std_msgs/msg/bool.hpp
 memory
 -
 

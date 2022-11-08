@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tofstudent/sa_zhao/src/carla_ackermann_msgs
+CMAKE_SOURCE_DIR = /home/tofstudent/Remote_Driving/sa_zhao/src/carla_ackermann_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tofstudent/sa_zhao/build/carla_ackermann_msgs
+CMAKE_BINARY_DIR = /home/tofstudent/Remote_Driving/sa_zhao/build/carla_ackermann_msgs
 
 # Utility rule file for carla_ackermann_msgs_uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/tofstudent/sa_zhao/build/carla_ackermann_msgs
 include CMakeFiles/carla_ackermann_msgs_uninstall.dir/progress.make
 
 CMakeFiles/carla_ackermann_msgs_uninstall:
-	/usr/bin/cmake -P /home/tofstudent/sa_zhao/build/carla_ackermann_msgs/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/tofstudent/Remote_Driving/sa_zhao/build/carla_ackermann_msgs/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 carla_ackermann_msgs_uninstall: CMakeFiles/carla_ackermann_msgs_uninstall
 carla_ackermann_msgs_uninstall: CMakeFiles/carla_ackermann_msgs_uninstall.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/carla_ackermann_msgs_uninstall.dir/clean:
 .PHONY : CMakeFiles/carla_ackermann_msgs_uninstall.dir/clean
 
 CMakeFiles/carla_ackermann_msgs_uninstall.dir/depend:
-	cd /home/tofstudent/sa_zhao/build/carla_ackermann_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tofstudent/sa_zhao/src/carla_ackermann_msgs /home/tofstudent/sa_zhao/src/carla_ackermann_msgs /home/tofstudent/sa_zhao/build/carla_ackermann_msgs /home/tofstudent/sa_zhao/build/carla_ackermann_msgs /home/tofstudent/sa_zhao/build/carla_ackermann_msgs/CMakeFiles/carla_ackermann_msgs_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tofstudent/Remote_Driving/sa_zhao/build/carla_ackermann_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tofstudent/Remote_Driving/sa_zhao/src/carla_ackermann_msgs /home/tofstudent/Remote_Driving/sa_zhao/src/carla_ackermann_msgs /home/tofstudent/Remote_Driving/sa_zhao/build/carla_ackermann_msgs /home/tofstudent/Remote_Driving/sa_zhao/build/carla_ackermann_msgs /home/tofstudent/Remote_Driving/sa_zhao/build/carla_ackermann_msgs/CMakeFiles/carla_ackermann_msgs_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/carla_ackermann_msgs_uninstall.dir/depend
 

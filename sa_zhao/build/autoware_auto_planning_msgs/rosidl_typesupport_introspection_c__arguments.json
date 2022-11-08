@@ -1,12 +1,12 @@
 {
   "package_name": "autoware_auto_planning_msgs",
-  "output_dir": "/home/tofstudent/sa_zhao/build/autoware_auto_planning_msgs/rosidl_typesupport_introspection_c/autoware_auto_planning_msgs",
+  "output_dir": "/home/tofstudent/Remote_Driving/sa_zhao/build/autoware_auto_planning_msgs/rosidl_typesupport_introspection_c/autoware_auto_planning_msgs",
   "template_dir": "/opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource",
   "idl_tuples": [
-    "/home/tofstudent/sa_zhao/src/autoware_auto_planning_msgs:msg/Trajectory.idl",
-    "/home/tofstudent/sa_zhao/src/autoware_auto_planning_msgs:msg/TrajectoryPoint.idl",
-    "/home/tofstudent/sa_zhao/src/autoware_auto_planning_msgs:msg/Path.idl",
-    "/home/tofstudent/sa_zhao/src/autoware_auto_planning_msgs:msg/PathPoint.idl"
+    "/home/tofstudent/Remote_Driving/sa_zhao/src/autoware_auto_planning_msgs:msg/Trajectory.idl",
+    "/home/tofstudent/Remote_Driving/sa_zhao/src/autoware_auto_planning_msgs:msg/TrajectoryPoint.idl",
+    "/home/tofstudent/Remote_Driving/sa_zhao/src/autoware_auto_planning_msgs:msg/Path.idl",
+    "/home/tofstudent/Remote_Driving/sa_zhao/src/autoware_auto_planning_msgs:msg/PathPoint.idl"
   ],
   "ros_interface_dependencies": [
     "geometry_msgs:/opt/ros/foxy/share/geometry_msgs/msg/Accel.idl",
@@ -88,10 +88,10 @@
     "/opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/msg__type_support.c.em",
     "/opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/srv__rosidl_typesupport_introspection_c.h.em",
     "/opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em",
-    "/home/tofstudent/sa_zhao/src/autoware_auto_planning_msgs/msg/Trajectory.idl",
-    "/home/tofstudent/sa_zhao/src/autoware_auto_planning_msgs/msg/TrajectoryPoint.idl",
-    "/home/tofstudent/sa_zhao/src/autoware_auto_planning_msgs/msg/Path.idl",
-    "/home/tofstudent/sa_zhao/src/autoware_auto_planning_msgs/msg/PathPoint.idl",
+    "/home/tofstudent/Remote_Driving/sa_zhao/src/autoware_auto_planning_msgs/msg/Trajectory.idl",
+    "/home/tofstudent/Remote_Driving/sa_zhao/src/autoware_auto_planning_msgs/msg/TrajectoryPoint.idl",
+    "/home/tofstudent/Remote_Driving/sa_zhao/src/autoware_auto_planning_msgs/msg/Path.idl",
+    "/home/tofstudent/Remote_Driving/sa_zhao/src/autoware_auto_planning_msgs/msg/PathPoint.idl",
     "/opt/ros/foxy/share/geometry_msgs/msg/Accel.idl",
     "/opt/ros/foxy/share/geometry_msgs/msg/AccelStamped.idl",
     "/opt/ros/foxy/share/geometry_msgs/msg/AccelWithCovariance.idl",

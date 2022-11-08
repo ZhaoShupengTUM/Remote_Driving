@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tofstudent/sa_zhao/src/autoware_auto_planning_msgs
+CMAKE_SOURCE_DIR = /home/tofstudent/Remote_Driving/sa_zhao/src/autoware_auto_planning_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tofstudent/sa_zhao/build/autoware_auto_planning_msgs
+CMAKE_BINARY_DIR = /home/tofstudent/Remote_Driving/sa_zhao/build/autoware_auto_planning_msgs
 
 # Utility rule file for autoware_auto_planning_msgs.
 
@@ -137,6 +137,6 @@ CMakeFiles/autoware_auto_planning_msgs.dir/clean:
 .PHONY : CMakeFiles/autoware_auto_planning_msgs.dir/clean
 
 CMakeFiles/autoware_auto_planning_msgs.dir/depend:
-	cd /home/tofstudent/sa_zhao/build/autoware_auto_planning_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tofstudent/sa_zhao/src/autoware_auto_planning_msgs /home/tofstudent/sa_zhao/src/autoware_auto_planning_msgs /home/tofstudent/sa_zhao/build/autoware_auto_planning_msgs /home/tofstudent/sa_zhao/build/autoware_auto_planning_msgs /home/tofstudent/sa_zhao/build/autoware_auto_planning_msgs/CMakeFiles/autoware_auto_planning_msgs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tofstudent/Remote_Driving/sa_zhao/build/autoware_auto_planning_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tofstudent/Remote_Driving/sa_zhao/src/autoware_auto_planning_msgs /home/tofstudent/Remote_Driving/sa_zhao/src/autoware_auto_planning_msgs /home/tofstudent/Remote_Driving/sa_zhao/build/autoware_auto_planning_msgs /home/tofstudent/Remote_Driving/sa_zhao/build/autoware_auto_planning_msgs /home/tofstudent/Remote_Driving/sa_zhao/build/autoware_auto_planning_msgs/CMakeFiles/autoware_auto_planning_msgs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/autoware_auto_planning_msgs.dir/depend
 

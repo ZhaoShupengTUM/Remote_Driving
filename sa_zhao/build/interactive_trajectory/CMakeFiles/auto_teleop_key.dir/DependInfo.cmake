@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/tofstudent/sa_zhao/src/interactive_trajectory/src/telecontrolNode.cpp" "/home/tofstudent/sa_zhao/build/interactive_trajectory/CMakeFiles/auto_teleop_key.dir/src/telecontrolNode.cpp.o"
+  "/home/tofstudent/Remote_Driving/sa_zhao/src/interactive_trajectory/src/telecontrolNode.cpp" "/home/tofstudent/Remote_Driving/sa_zhao/build/interactive_trajectory/CMakeFiles/auto_teleop_key.dir/src/telecontrolNode.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -28,8 +28,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/freetype2"
   "/usr/include/pcl-1.10"
   "/usr/include/eigen3"
-  "/home/tofstudent/sa_zhao/src/interactive_trajectory/include"
-  "/home/tofstudent/sa_zhao/install/traj_interfaces/include"
+  "/home/tofstudent/Remote_Driving/sa_zhao/src/interactive_trajectory/include"
+  "/home/tofstudent/Remote_Driving/sa_zhao/install/traj_interfaces/include"
   "/opt/ros/foxy/include"
   )
 

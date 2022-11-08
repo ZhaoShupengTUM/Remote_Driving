@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tofstudent/sa_zhao/src/traj_interfaces
+CMAKE_SOURCE_DIR = /home/tofstudent/Remote_Driving/sa_zhao/src/traj_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tofstudent/sa_zhao/build/traj_interfaces
+CMAKE_BINARY_DIR = /home/tofstudent/Remote_Driving/sa_zhao/build/traj_interfaces
 
 # Utility rule file for traj_interfaces__cpp.
 
@@ -80,8 +80,8 @@ rosidl_generator_cpp/traj_interfaces/msg/traj_param.hpp: /opt/ros/foxy/share/ros
 rosidl_generator_cpp/traj_interfaces/msg/traj_param.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/traj_interfaces/msg/traj_param.hpp: rosidl_adapter/traj_interfaces/msg/TrajParam.idl
 rosidl_generator_cpp/traj_interfaces/msg/traj_param.hpp: rosidl_adapter/traj_interfaces/msg/StateMachine.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tofstudent/sa_zhao/build/traj_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/foxy/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/tofstudent/sa_zhao/build/traj_interfaces/rosidl_generator_cpp__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tofstudent/Remote_Driving/sa_zhao/build/traj_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/foxy/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/tofstudent/Remote_Driving/sa_zhao/build/traj_interfaces/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/traj_interfaces/msg/detail/traj_param__builder.hpp: rosidl_generator_cpp/traj_interfaces/msg/traj_param.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/traj_interfaces/msg/detail/traj_param__builder.hpp
@@ -127,6 +127,6 @@ CMakeFiles/traj_interfaces__cpp.dir/clean:
 .PHONY : CMakeFiles/traj_interfaces__cpp.dir/clean
 
 CMakeFiles/traj_interfaces__cpp.dir/depend:
-	cd /home/tofstudent/sa_zhao/build/traj_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tofstudent/sa_zhao/src/traj_interfaces /home/tofstudent/sa_zhao/src/traj_interfaces /home/tofstudent/sa_zhao/build/traj_interfaces /home/tofstudent/sa_zhao/build/traj_interfaces /home/tofstudent/sa_zhao/build/traj_interfaces/CMakeFiles/traj_interfaces__cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tofstudent/Remote_Driving/sa_zhao/build/traj_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tofstudent/Remote_Driving/sa_zhao/src/traj_interfaces /home/tofstudent/Remote_Driving/sa_zhao/src/traj_interfaces /home/tofstudent/Remote_Driving/sa_zhao/build/traj_interfaces /home/tofstudent/Remote_Driving/sa_zhao/build/traj_interfaces /home/tofstudent/Remote_Driving/sa_zhao/build/traj_interfaces/CMakeFiles/traj_interfaces__cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/traj_interfaces__cpp.dir/depend
 

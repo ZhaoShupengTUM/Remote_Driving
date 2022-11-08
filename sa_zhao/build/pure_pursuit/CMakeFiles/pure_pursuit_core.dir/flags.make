@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC   -Wall -Wextra -Wpedantic -Werror -std=c++17
 
 CXX_DEFINES = -DBOOST_ALLOW_DEPRECATED_HEADERS -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -DROS_DISTRO_FOXY -DSPDLOG_COMPILED_LIB -Dpure_pursuit_core_EXPORTS
 
-CXX_INCLUDES = -I/home/tofstudent/sa_zhao/src/pure_pursuit/include -I/home/tofstudent/sa_zhao/install/vehicle_info_util/include -isystem /usr/include/eigen3 -isystem /home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/include -isystem /home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include -isystem /home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/include -isystem /opt/ros/foxy/include 
+CXX_INCLUDES = -I/home/tofstudent/Remote_Driving/sa_zhao/src/pure_pursuit/include -I/home/tofstudent/Remote_Driving/sa_zhao/install/vehicle_info_util/include -isystem /usr/include/eigen3 -isystem /home/tofstudent/Remote_Driving/sa_zhao/install/autoware_auto_vehicle_msgs/include -isystem /home/tofstudent/Remote_Driving/sa_zhao/install/autoware_auto_planning_msgs/include -isystem /home/tofstudent/Remote_Driving/sa_zhao/install/autoware_auto_control_msgs/include -isystem /opt/ros/foxy/include 
 

@@ -11,6 +11,7 @@
 #include "std_msgs/msg/string.hpp"
 #include "rclcpp/logger.hpp"
 #include "tod_msgs/srv/input_device.hpp"
+#include "tod_msgs/msg/status.hpp"
 #include <boost/bind.hpp>
 
 
@@ -71,9 +72,11 @@ private:
     bool _active{true};
     std::thread _rosThread;
     sensor_msgs::msg::Joy _operatorMsg;
+    tod_msgs::msg::Status _statusMsg;
 
     std::vector<rclcpp::Subscription<std_msgs::msg::String>::SharedPtr> _subscriber;
     rclcpp::Publisher<sensor_msgs::msg::Joy>::SharedPtr _joystickMsgPublisher;
+    rclcpp::Publisher<tod_msgs::msg::Status>::SharedPtr _statusMsgPublisher;
 
     InputDeviceController* _parent;
     void run();

@@ -156,24 +156,30 @@ void InputDeviceController::update_mapping_from_param_workspace() {
       {"FlashLight"    , 9         },           
       {"FrontLight"    , 21        },           
       {"Honk"          , 25},
-      {"IncreaseSpeed" , 23     },            
-      {"DecreaseSpeed" , 22     },            
+      {"IncreaseSpeed" , 6     },            
+      {"DecreaseSpeed" , 7     },            
       {"IncreaseGear"  , 4       },            
       {"DecreaseGear"  , 5       }            
       };
 
     // _ros->get_param(_ros->get_node_name() + "/ButtonConfig/", buttonConfig);
 
+    //short explanation:
+    //6--increase distance--top right button
+    //7--decrease distance--top left button
+    //3--conform trajectory--down left button
+    //4--reverse gear--right gear shifter
+
     for ( auto conf : buttonConfig ) {
         if ( conf.first == "IndicatorLeft" )   {_buttonMapping[conf.second] = joystick::ButtonPos::INDICATOR_LEFT;}
-        if ( conf.first == "IndicatorRight" )  {_buttonMapping[conf.second] = joystick::ButtonPos::INDICATOR_RIGHT;}
+        if ( conf.first == "IndicatorRight" )  {_buttonMapping[conf.second] = joystick::ButtonPos::CONFIRM_TRAJ;}
         if ( conf.first == "FlashLight" )      {_buttonMapping[conf.second] = joystick::ButtonPos::FLASHLIGHT;}
         if ( conf.first == "FrontLight" )      {_buttonMapping[conf.second] = joystick::ButtonPos::FRONTLIGHT;}
         if ( conf.first == "Honk" )            {_buttonMapping[conf.second] = joystick::ButtonPos::HONK;}
         if ( conf.first == "IncreaseSpeed" )   {_buttonMapping[conf.second] = joystick::ButtonPos::INCREASE_DISTANCE;}
         if ( conf.first == "DecreaseSpeed" )   {_buttonMapping[conf.second] = joystick::ButtonPos::DECREASE_DISTANCE;}
         if ( conf.first == "IncreaseGear" )    {_buttonMapping[conf.second] = joystick::ButtonPos::REVERSE_GEAR;}
-        if ( conf.first == "DecreaseGear" )    {_buttonMapping[conf.second] = joystick::ButtonPos::CONFIRM_TRAJ;}
+        if ( conf.first == "DecreaseGear" )    {_buttonMapping[conf.second] = joystick::ButtonPos::INDICATOR_RIGHT;}
     }
 
     std::map<std::string, bool> invertAxisConfig = {

@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/tofstudent/sa_zhao/src/pure_pursuit/src/pure_pursuit_core/interpolate.cpp" "/home/tofstudent/sa_zhao/build/pure_pursuit/CMakeFiles/pure_pursuit_core.dir/src/pure_pursuit_core/interpolate.cpp.o"
-  "/home/tofstudent/sa_zhao/src/pure_pursuit/src/pure_pursuit_core/planning_utils.cpp" "/home/tofstudent/sa_zhao/build/pure_pursuit/CMakeFiles/pure_pursuit_core.dir/src/pure_pursuit_core/planning_utils.cpp.o"
-  "/home/tofstudent/sa_zhao/src/pure_pursuit/src/pure_pursuit_core/pure_pursuit.cpp" "/home/tofstudent/sa_zhao/build/pure_pursuit/CMakeFiles/pure_pursuit_core.dir/src/pure_pursuit_core/pure_pursuit.cpp.o"
+  "/home/tofstudent/Remote_Driving/sa_zhao/src/pure_pursuit/src/pure_pursuit_core/interpolate.cpp" "/home/tofstudent/Remote_Driving/sa_zhao/build/pure_pursuit/CMakeFiles/pure_pursuit_core.dir/src/pure_pursuit_core/interpolate.cpp.o"
+  "/home/tofstudent/Remote_Driving/sa_zhao/src/pure_pursuit/src/pure_pursuit_core/planning_utils.cpp" "/home/tofstudent/Remote_Driving/sa_zhao/build/pure_pursuit/CMakeFiles/pure_pursuit_core.dir/src/pure_pursuit_core/planning_utils.cpp.o"
+  "/home/tofstudent/Remote_Driving/sa_zhao/src/pure_pursuit/src/pure_pursuit_core/pure_pursuit.cpp" "/home/tofstudent/Remote_Driving/sa_zhao/build/pure_pursuit/CMakeFiles/pure_pursuit_core.dir/src/pure_pursuit_core/pure_pursuit.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -22,12 +22,12 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/tofstudent/sa_zhao/src/pure_pursuit/include"
-  "/home/tofstudent/sa_zhao/install/vehicle_info_util/include"
+  "/home/tofstudent/Remote_Driving/sa_zhao/src/pure_pursuit/include"
+  "/home/tofstudent/Remote_Driving/sa_zhao/install/vehicle_info_util/include"
   "/usr/include/eigen3"
-  "/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/include"
-  "/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/include"
-  "/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/include"
+  "/home/tofstudent/Remote_Driving/sa_zhao/install/autoware_auto_vehicle_msgs/include"
+  "/home/tofstudent/Remote_Driving/sa_zhao/install/autoware_auto_planning_msgs/include"
+  "/home/tofstudent/Remote_Driving/sa_zhao/install/autoware_auto_control_msgs/include"
   "/opt/ros/foxy/include"
   )
 

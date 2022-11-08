@@ -71,6 +71,7 @@
         "typeinfo": "cpp",
         "variant": "cpp",
         "codecvt": "cpp",
-        "*.idl": "cpp"
+        "*.idl": "cpp",
+        "valarray": "cpp"
     }
 }

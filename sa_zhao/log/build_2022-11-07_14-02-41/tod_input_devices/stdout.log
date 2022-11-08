@@ -1,9 +1,0 @@
-[35m[1mScanning dependencies of target UsbInputDevice[0m
-[ 12%] [32mBuilding CXX object src/UsbInputDevice/CMakeFiles/UsbInputDevice.dir/UsbInputDevice.cpp.o[0m
-[ 25%] [32m[1mLinking CXX static library libUsbInputDevice.a[0m
-[ 37%] Built target UsbInputDevice
-[35m[1mScanning dependencies of target InputDevice[0m
-[ 50%] [32mBuilding CXX object src/CMakeFiles/InputDevice.dir/InputDeviceNode.cpp.o[0m
-[ 62%] [32mBuilding CXX object src/CMakeFiles/InputDevice.dir/General/MyInputDevice.cpp.o[0m
-[ 87%] [32mBuilding CXX object src/CMakeFiles/InputDevice.dir/RosInterface.cpp.o[0m
-[ 87%] [32mBuilding CXX object src/CMakeFiles/InputDevice.dir/InputDeviceController.cpp.o[0m

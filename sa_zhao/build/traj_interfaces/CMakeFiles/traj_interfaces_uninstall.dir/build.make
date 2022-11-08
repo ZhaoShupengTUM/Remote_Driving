@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tofstudent/sa_zhao/src/traj_interfaces
+CMAKE_SOURCE_DIR = /home/tofstudent/Remote_Driving/sa_zhao/src/traj_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tofstudent/sa_zhao/build/traj_interfaces
+CMAKE_BINARY_DIR = /home/tofstudent/Remote_Driving/sa_zhao/build/traj_interfaces
 
 # Utility rule file for traj_interfaces_uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/tofstudent/sa_zhao/build/traj_interfaces
 include CMakeFiles/traj_interfaces_uninstall.dir/progress.make
 
 CMakeFiles/traj_interfaces_uninstall:
-	/usr/bin/cmake -P /home/tofstudent/sa_zhao/build/traj_interfaces/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/tofstudent/Remote_Driving/sa_zhao/build/traj_interfaces/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 traj_interfaces_uninstall: CMakeFiles/traj_interfaces_uninstall
 traj_interfaces_uninstall: CMakeFiles/traj_interfaces_uninstall.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/traj_interfaces_uninstall.dir/clean:
 .PHONY : CMakeFiles/traj_interfaces_uninstall.dir/clean
 
 CMakeFiles/traj_interfaces_uninstall.dir/depend:
-	cd /home/tofstudent/sa_zhao/build/traj_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tofstudent/sa_zhao/src/traj_interfaces /home/tofstudent/sa_zhao/src/traj_interfaces /home/tofstudent/sa_zhao/build/traj_interfaces /home/tofstudent/sa_zhao/build/traj_interfaces /home/tofstudent/sa_zhao/build/traj_interfaces/CMakeFiles/traj_interfaces_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tofstudent/Remote_Driving/sa_zhao/build/traj_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tofstudent/Remote_Driving/sa_zhao/src/traj_interfaces /home/tofstudent/Remote_Driving/sa_zhao/src/traj_interfaces /home/tofstudent/Remote_Driving/sa_zhao/build/traj_interfaces /home/tofstudent/Remote_Driving/sa_zhao/build/traj_interfaces /home/tofstudent/Remote_Driving/sa_zhao/build/traj_interfaces/CMakeFiles/traj_interfaces_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/traj_interfaces_uninstall.dir/depend
 

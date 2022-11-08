@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/tofstudent/sa_zhao/src/random_trajectory/src/VehicleMarkerNode.cpp
+/home/tofstudent/Remote_Driving/sa_zhao/src/random_trajectory/src/VehicleMarkerNode.cpp
 rclcpp/rclcpp.hpp
-/home/tofstudent/sa_zhao/src/random_trajectory/src/rclcpp/rclcpp.hpp
+/home/tofstudent/Remote_Driving/sa_zhao/src/random_trajectory/src/rclcpp/rclcpp.hpp
 visualization_msgs/msg/marker.hpp
-/home/tofstudent/sa_zhao/src/random_trajectory/src/visualization_msgs/msg/marker.hpp
+/home/tofstudent/Remote_Driving/sa_zhao/src/random_trajectory/src/visualization_msgs/msg/marker.hpp
 nav_msgs/msg/path.hpp
-/home/tofstudent/sa_zhao/src/random_trajectory/src/nav_msgs/msg/path.hpp
+/home/tofstudent/Remote_Driving/sa_zhao/src/random_trajectory/src/nav_msgs/msg/path.hpp
 tf2/LinearMath/Quaternion.h
-/home/tofstudent/sa_zhao/src/random_trajectory/src/tf2/LinearMath/Quaternion.h
+/home/tofstudent/Remote_Driving/sa_zhao/src/random_trajectory/src/tf2/LinearMath/Quaternion.h
 tf2_geometry_msgs/tf2_geometry_msgs.h
-/home/tofstudent/sa_zhao/src/random_trajectory/src/tf2_geometry_msgs/tf2_geometry_msgs.h
+/home/tofstudent/Remote_Driving/sa_zhao/src/random_trajectory/src/tf2_geometry_msgs/tf2_geometry_msgs.h
 chrono
 -
 

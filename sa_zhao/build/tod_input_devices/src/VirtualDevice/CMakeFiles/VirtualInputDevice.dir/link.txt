@@ -1,2 +1,0 @@
-/usr/bin/ar qc libVirtualInputDevice.a  CMakeFiles/VirtualInputDevice.dir/VirtualInputDevice.cpp.o CMakeFiles/VirtualInputDevice.dir/__/General/MyInputDevice.cpp.o CMakeFiles/VirtualInputDevice.dir/moc_VirtualInputDevice.cpp.o CMakeFiles/VirtualInputDevice.dir/qrc_qml.cpp.o
-/usr/bin/ranlib libVirtualInputDevice.a

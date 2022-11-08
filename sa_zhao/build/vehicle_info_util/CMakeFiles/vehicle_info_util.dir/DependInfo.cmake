@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/tofstudent/sa_zhao/src/vehicle_info_util/src/vehicle_info_util.cpp" "/home/tofstudent/sa_zhao/build/vehicle_info_util/CMakeFiles/vehicle_info_util.dir/src/vehicle_info_util.cpp.o"
+  "/home/tofstudent/Remote_Driving/sa_zhao/src/vehicle_info_util/src/vehicle_info_util.cpp" "/home/tofstudent/Remote_Driving/sa_zhao/build/vehicle_info_util/CMakeFiles/vehicle_info_util.dir/src/vehicle_info_util.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -20,7 +20,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/tofstudent/sa_zhao/src/vehicle_info_util/include"
+  "/home/tofstudent/Remote_Driving/sa_zhao/src/vehicle_info_util/include"
   "/opt/ros/foxy/include"
   )
 

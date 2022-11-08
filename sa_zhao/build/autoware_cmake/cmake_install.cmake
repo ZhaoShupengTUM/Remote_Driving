@@ -1,8 +1,8 @@
-# Install script for directory: /home/tofstudent/sa_zhao/src/autoware_cmake
+# Install script for directory: /home/tofstudent/Remote_Driving/sa_zhao/src/autoware_cmake
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/tofstudent/sa_zhao/install/autoware_cmake")
+  set(CMAKE_INSTALL_PREFIX "/home/tofstudent/Remote_Driving/sa_zhao/install/autoware_cmake")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,15 +38,15 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autoware_cmake" TYPE DIRECTORY FILES "/home/tofstudent/sa_zhao/src/autoware_cmake/cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autoware_cmake" TYPE DIRECTORY FILES "/home/tofstudent/Remote_Driving/sa_zhao/src/autoware_cmake/cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/tofstudent/sa_zhao/build/autoware_cmake/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/autoware_cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/tofstudent/Remote_Driving/sa_zhao/build/autoware_cmake/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/autoware_cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/tofstudent/sa_zhao/build/autoware_cmake/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/autoware_cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/tofstudent/Remote_Driving/sa_zhao/build/autoware_cmake/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/autoware_cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -54,7 +54,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autoware_cmake/environment" TYPE FILE FILES "/home/tofstudent/sa_zhao/build/autoware_cmake/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autoware_cmake/environment" TYPE FILE FILES "/home/tofstudent/Remote_Driving/sa_zhao/build/autoware_cmake/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -62,46 +62,46 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autoware_cmake/environment" TYPE FILE FILES "/home/tofstudent/sa_zhao/build/autoware_cmake/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autoware_cmake/environment" TYPE FILE FILES "/home/tofstudent/Remote_Driving/sa_zhao/build/autoware_cmake/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autoware_cmake" TYPE FILE FILES "/home/tofstudent/sa_zhao/build/autoware_cmake/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autoware_cmake" TYPE FILE FILES "/home/tofstudent/Remote_Driving/sa_zhao/build/autoware_cmake/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autoware_cmake" TYPE FILE FILES "/home/tofstudent/sa_zhao/build/autoware_cmake/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autoware_cmake" TYPE FILE FILES "/home/tofstudent/Remote_Driving/sa_zhao/build/autoware_cmake/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autoware_cmake" TYPE FILE FILES "/home/tofstudent/sa_zhao/build/autoware_cmake/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autoware_cmake" TYPE FILE FILES "/home/tofstudent/Remote_Driving/sa_zhao/build/autoware_cmake/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autoware_cmake" TYPE FILE FILES "/home/tofstudent/sa_zhao/build/autoware_cmake/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autoware_cmake" TYPE FILE FILES "/home/tofstudent/Remote_Driving/sa_zhao/build/autoware_cmake/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autoware_cmake" TYPE FILE FILES "/home/tofstudent/sa_zhao/build/autoware_cmake/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autoware_cmake" TYPE FILE FILES "/home/tofstudent/Remote_Driving/sa_zhao/build/autoware_cmake/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/tofstudent/sa_zhao/build/autoware_cmake/ament_cmake_index/share/ament_index/resource_index/packages/autoware_cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/tofstudent/Remote_Driving/sa_zhao/build/autoware_cmake/ament_cmake_index/share/ament_index/resource_index/packages/autoware_cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autoware_cmake/cmake" TYPE FILE FILES "/home/tofstudent/sa_zhao/src/autoware_cmake/autoware_cmake-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autoware_cmake/cmake" TYPE FILE FILES "/home/tofstudent/Remote_Driving/sa_zhao/src/autoware_cmake/autoware_cmake-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autoware_cmake/cmake" TYPE FILE FILES
-    "/home/tofstudent/sa_zhao/build/autoware_cmake/ament_cmake_core/autoware_cmakeConfig.cmake"
-    "/home/tofstudent/sa_zhao/build/autoware_cmake/ament_cmake_core/autoware_cmakeConfig-version.cmake"
+    "/home/tofstudent/Remote_Driving/sa_zhao/build/autoware_cmake/ament_cmake_core/autoware_cmakeConfig.cmake"
+    "/home/tofstudent/Remote_Driving/sa_zhao/build/autoware_cmake/ament_cmake_core/autoware_cmakeConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autoware_cmake" TYPE FILE FILES "/home/tofstudent/sa_zhao/src/autoware_cmake/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/autoware_cmake" TYPE FILE FILES "/home/tofstudent/Remote_Driving/sa_zhao/src/autoware_cmake/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -112,5 +112,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/tofstudent/sa_zhao/build/autoware_cmake/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/tofstudent/Remote_Driving/sa_zhao/build/autoware_cmake/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

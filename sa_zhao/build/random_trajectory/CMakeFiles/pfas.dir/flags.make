@@ -6,5 +6,5 @@ CXX_FLAGS =   -Wall -Wextra -Wpedantic -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/tofstudent/sa_zhao/src/random_trajectory/include 
+CXX_INCLUDES = -I/home/tofstudent/Remote_Driving/sa_zhao/src/random_trajectory/include 
 

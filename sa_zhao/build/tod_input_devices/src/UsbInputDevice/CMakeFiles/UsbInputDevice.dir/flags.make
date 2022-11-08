@@ -6,5 +6,5 @@ CXX_FLAGS =  -Wno-deprecated-declarations -Wno-format   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/tofstudent/sa_zhao/build/tod_input_devices/src/UsbInputDevice -I/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice/../General -I/home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice 
+CXX_INCLUDES = -I/home/tofstudent/Remote_Driving/sa_zhao/build/tod_input_devices/src/UsbInputDevice -I/home/tofstudent/Remote_Driving/sa_zhao/src/tod_input_devices/src/UsbInputDevice/../General -I/home/tofstudent/Remote_Driving/sa_zhao/src/tod_input_devices/src/UsbInputDevice 
 

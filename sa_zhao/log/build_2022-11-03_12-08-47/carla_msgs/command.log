@@ -1,3 +1,0 @@
-Invoking command in '/home/tofstudent/sa_zhao/build/carla_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/tofstudent/sa_zhao/src/carla_msgs -DCMAKE_INSTALL_PREFIX=/home/tofstudent/sa_zhao/install/carla_msgs
-Invoked command in '/home/tofstudent/sa_zhao/build/carla_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/tofstudent/sa_zhao/src/carla_msgs -DCMAKE_INSTALL_PREFIX=/home/tofstudent/sa_zhao/install/carla_msgs
-Invoking command in '/home/tofstudent/sa_zhao/build/carla_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/carla_msgs -- -j8 -l8

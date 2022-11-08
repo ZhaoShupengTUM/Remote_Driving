@@ -6,19 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/tofstudent/sa_zhao/src/interactive_trajectory/include/util/CollisionDetection.hpp
+/home/tofstudent/Remote_Driving/sa_zhao/src/interactive_trajectory/include/util/CollisionDetection.hpp
 vector
 -
 Pose.hpp
-/home/tofstudent/sa_zhao/src/interactive_trajectory/include/util/Pose.hpp
+/home/tofstudent/Remote_Driving/sa_zhao/src/interactive_trajectory/include/util/Pose.hpp
 iostream
 -
 
-/home/tofstudent/sa_zhao/src/interactive_trajectory/include/util/Pose.hpp
+/home/tofstudent/Remote_Driving/sa_zhao/src/interactive_trajectory/include/util/Pose.hpp
 
-/home/tofstudent/sa_zhao/src/interactive_trajectory/include/util/VehicleParams.h
+/home/tofstudent/Remote_Driving/sa_zhao/src/interactive_trajectory/include/util/VehicleParams.h
 
-/home/tofstudent/sa_zhao/src/interactive_trajectory/src/CollisionDetectionNode.cpp
+/home/tofstudent/Remote_Driving/sa_zhao/src/interactive_trajectory/src/CollisionDetectionNode.cpp
 rclcpp/rclcpp.hpp
 -
 geometry_msgs/msg/polygon_stamped.hpp
@@ -34,9 +34,9 @@ pcl/PCLPointCloud2.h
 pcl_conversions/pcl_conversions.h
 -
 util/CollisionDetection.hpp
-/home/tofstudent/sa_zhao/src/interactive_trajectory/src/util/CollisionDetection.hpp
+/home/tofstudent/Remote_Driving/sa_zhao/src/interactive_trajectory/src/util/CollisionDetection.hpp
 util/VehicleParams.h
-/home/tofstudent/sa_zhao/src/interactive_trajectory/src/util/VehicleParams.h
+/home/tofstudent/Remote_Driving/sa_zhao/src/interactive_trajectory/src/util/VehicleParams.h
 
 /opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__builder.hpp
 builtin_interfaces/msg/detail/duration__struct.hpp

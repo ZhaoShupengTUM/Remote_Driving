@@ -1,8 +1,8 @@
-# Install script for directory: /home/tofstudent/sa_zhao/src/pure_pursuit
+# Install script for directory: /home/tofstudent/Remote_Driving/sa_zhao/src/pure_pursuit
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/tofstudent/sa_zhao/install/pure_pursuit")
+  set(CMAKE_INSTALL_PREFIX "/home/tofstudent/Remote_Driving/sa_zhao/install/pure_pursuit")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,7 +44,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pure_pursuit/pure_pursuit_node_exe"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pure_pursuit" TYPE EXECUTABLE FILES "/home/tofstudent/sa_zhao/build/pure_pursuit/pure_pursuit_node_exe")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pure_pursuit" TYPE EXECUTABLE FILES "/home/tofstudent/Remote_Driving/sa_zhao/build/pure_pursuit/pure_pursuit_node_exe")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pure_pursuit/pure_pursuit_node_exe" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pure_pursuit/pure_pursuit_node_exe")
     file(RPATH_CHANGE
@@ -58,7 +58,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/tofstudent/sa_zhao/src/pure_pursuit/include/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/tofstudent/Remote_Driving/sa_zhao/src/pure_pursuit/include/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -66,7 +66,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pure_pursuit/environment" TYPE FILE FILES "/home/tofstudent/sa_zhao/build/pure_pursuit/ament_cmake_environment_hooks/library_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pure_pursuit/environment" TYPE FILE FILES "/home/tofstudent/Remote_Driving/sa_zhao/build/pure_pursuit/ament_cmake_environment_hooks/library_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -76,12 +76,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libpure_pursuit_core.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/tofstudent/sa_zhao/build/pure_pursuit/libpure_pursuit_core.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/tofstudent/Remote_Driving/sa_zhao/build/pure_pursuit/libpure_pursuit_core.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libpure_pursuit_core.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libpure_pursuit_core.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libpure_pursuit_core.so"
-         OLD_RPATH "/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/lib:/opt/ros/foxy/lib:/home/tofstudent/sa_zhao/install/vehicle_info_util/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:"
+         OLD_RPATH "/home/tofstudent/Remote_Driving/sa_zhao/install/autoware_auto_control_msgs/lib:/home/tofstudent/Remote_Driving/sa_zhao/install/autoware_auto_planning_msgs/lib:/home/tofstudent/Remote_Driving/sa_zhao/install/autoware_auto_vehicle_msgs/lib:/opt/ros/foxy/lib:/home/tofstudent/Remote_Driving/sa_zhao/install/vehicle_info_util/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libpure_pursuit_core.so")
@@ -99,12 +99,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libpure_pursuit_node.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/tofstudent/sa_zhao/build/pure_pursuit/libpure_pursuit_node.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/tofstudent/Remote_Driving/sa_zhao/build/pure_pursuit/libpure_pursuit_node.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libpure_pursuit_node.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libpure_pursuit_node.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libpure_pursuit_node.so"
-         OLD_RPATH "/opt/ros/foxy/lib:/home/tofstudent/sa_zhao/install/vehicle_info_util/lib:/home/tofstudent/sa_zhao/build/pure_pursuit:/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_planning_msgs/lib:/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:"
+         OLD_RPATH "/opt/ros/foxy/lib:/home/tofstudent/Remote_Driving/sa_zhao/install/vehicle_info_util/lib:/home/tofstudent/Remote_Driving/sa_zhao/build/pure_pursuit:/home/tofstudent/Remote_Driving/sa_zhao/install/autoware_auto_control_msgs/lib:/home/tofstudent/Remote_Driving/sa_zhao/install/autoware_auto_planning_msgs/lib:/home/tofstudent/Remote_Driving/sa_zhao/install/autoware_auto_vehicle_msgs/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libpure_pursuit_node.so")
@@ -116,19 +116,19 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pure_pursuit" TYPE DIRECTORY FILES "/home/tofstudent/sa_zhao/src/pure_pursuit/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pure_pursuit" TYPE DIRECTORY FILES "/home/tofstudent/Remote_Driving/sa_zhao/src/pure_pursuit/launch")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pure_pursuit" TYPE DIRECTORY FILES "/home/tofstudent/sa_zhao/src/pure_pursuit/config")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pure_pursuit" TYPE DIRECTORY FILES "/home/tofstudent/Remote_Driving/sa_zhao/src/pure_pursuit/config")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/tofstudent/sa_zhao/build/pure_pursuit/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/pure_pursuit")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/tofstudent/Remote_Driving/sa_zhao/build/pure_pursuit/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/pure_pursuit")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/tofstudent/sa_zhao/build/pure_pursuit/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/pure_pursuit")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/tofstudent/Remote_Driving/sa_zhao/build/pure_pursuit/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/pure_pursuit")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -136,7 +136,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pure_pursuit/environment" TYPE FILE FILES "/home/tofstudent/sa_zhao/build/pure_pursuit/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pure_pursuit/environment" TYPE FILE FILES "/home/tofstudent/Remote_Driving/sa_zhao/build/pure_pursuit/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -144,58 +144,58 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pure_pursuit/environment" TYPE FILE FILES "/home/tofstudent/sa_zhao/build/pure_pursuit/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pure_pursuit/environment" TYPE FILE FILES "/home/tofstudent/Remote_Driving/sa_zhao/build/pure_pursuit/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pure_pursuit" TYPE FILE FILES "/home/tofstudent/sa_zhao/build/pure_pursuit/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pure_pursuit" TYPE FILE FILES "/home/tofstudent/Remote_Driving/sa_zhao/build/pure_pursuit/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pure_pursuit" TYPE FILE FILES "/home/tofstudent/sa_zhao/build/pure_pursuit/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pure_pursuit" TYPE FILE FILES "/home/tofstudent/Remote_Driving/sa_zhao/build/pure_pursuit/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pure_pursuit" TYPE FILE FILES "/home/tofstudent/sa_zhao/build/pure_pursuit/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pure_pursuit" TYPE FILE FILES "/home/tofstudent/Remote_Driving/sa_zhao/build/pure_pursuit/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pure_pursuit" TYPE FILE FILES "/home/tofstudent/sa_zhao/build/pure_pursuit/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pure_pursuit" TYPE FILE FILES "/home/tofstudent/Remote_Driving/sa_zhao/build/pure_pursuit/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pure_pursuit" TYPE FILE FILES "/home/tofstudent/sa_zhao/build/pure_pursuit/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pure_pursuit" TYPE FILE FILES "/home/tofstudent/Remote_Driving/sa_zhao/build/pure_pursuit/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/tofstudent/sa_zhao/build/pure_pursuit/ament_cmake_index/share/ament_index/resource_index/packages/pure_pursuit")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/tofstudent/Remote_Driving/sa_zhao/build/pure_pursuit/ament_cmake_index/share/ament_index/resource_index/packages/pure_pursuit")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/rclcpp_components" TYPE FILE FILES "/home/tofstudent/sa_zhao/build/pure_pursuit/ament_cmake_index/share/ament_index/resource_index/rclcpp_components/pure_pursuit")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/rclcpp_components" TYPE FILE FILES "/home/tofstudent/Remote_Driving/sa_zhao/build/pure_pursuit/ament_cmake_index/share/ament_index/resource_index/rclcpp_components/pure_pursuit")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pure_pursuit/cmake" TYPE FILE FILES "/home/tofstudent/sa_zhao/build/pure_pursuit/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pure_pursuit/cmake" TYPE FILE FILES "/home/tofstudent/Remote_Driving/sa_zhao/build/pure_pursuit/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pure_pursuit/cmake" TYPE FILE FILES "/home/tofstudent/sa_zhao/build/pure_pursuit/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pure_pursuit/cmake" TYPE FILE FILES "/home/tofstudent/Remote_Driving/sa_zhao/build/pure_pursuit/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pure_pursuit/cmake" TYPE FILE FILES "/home/tofstudent/sa_zhao/build/pure_pursuit/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pure_pursuit/cmake" TYPE FILE FILES "/home/tofstudent/Remote_Driving/sa_zhao/build/pure_pursuit/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pure_pursuit/cmake" TYPE FILE FILES
-    "/home/tofstudent/sa_zhao/build/pure_pursuit/ament_cmake_core/pure_pursuitConfig.cmake"
-    "/home/tofstudent/sa_zhao/build/pure_pursuit/ament_cmake_core/pure_pursuitConfig-version.cmake"
+    "/home/tofstudent/Remote_Driving/sa_zhao/build/pure_pursuit/ament_cmake_core/pure_pursuitConfig.cmake"
+    "/home/tofstudent/Remote_Driving/sa_zhao/build/pure_pursuit/ament_cmake_core/pure_pursuitConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pure_pursuit" TYPE FILE FILES "/home/tofstudent/sa_zhao/src/pure_pursuit/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pure_pursuit" TYPE FILE FILES "/home/tofstudent/Remote_Driving/sa_zhao/src/pure_pursuit/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -206,5 +206,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/tofstudent/sa_zhao/build/pure_pursuit/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/tofstudent/Remote_Driving/sa_zhao/build/pure_pursuit/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

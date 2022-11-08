@@ -13,12 +13,12 @@ CommandCreator::CommandCreator() : Node("command_creator"), _count(0)
         std::bind(&CommandCreator::callback_joystick_msg, this, _1));
     
     _statusSubs = this->create_subscription<tod_msgs::msg::Status>(
-        "/Operator/Manager/status_msg", 
+        "/Operator/InputDevices/status_msg", 
         1,
         std::bind(&CommandCreator::callback_status_msg, this, _1));
 
     _vehicle_state_sub = this->create_subscription<traj_interfaces::msg::StateMachine>(
-        "statemachine/vehicle_state",
+        "/statemachine/vehicle_state",
         1,
         std::bind(&CommandCreator::callback_vehicle_state, this, _1)
     );
@@ -125,6 +125,7 @@ void CommandCreator::calculate_traj_direction(traj_interfaces::msg::TrajParam &o
     double newDesiredSWA = axes.at(joystick::AxesPos::STEERING) * _maxSteeringWheelAngle * 180 / M_PI;
     //lenkrad unit: degree
     out.lenkrad = newDesiredSWA;
+    // std::cout << "Change the steering wheel angle: " << newDesiredSWA << std::endl;
 }
 
 void CommandCreator::calculate_traj_distance(traj_interfaces::msg::TrajParam &out, const sensor_msgs::msg::Joy &msg) 
@@ -132,12 +133,14 @@ void CommandCreator::calculate_traj_distance(traj_interfaces::msg::TrajParam &ou
     if (msg.buttons.at(joystick::ButtonPos::INCREASE_DISTANCE) == 1
         && _prevButtonState.at(joystick::ButtonPos::INCREASE_DISTANCE) == 0
         && out.pedal < _maxTrajLength) {
-        out.pedal += _lengthRatio; // kmh increments
+        out.pedal += _lengthRatio; // m increments
+        std::cout << "Increase Trajectory Length: " << out.pedal << std::endl;
     }
     if (msg.buttons.at(joystick::ButtonPos::DECREASE_DISTANCE) == 1
         && _prevButtonState.at(joystick::ButtonPos::DECREASE_DISTANCE) == 0
         && out.pedal > _minTrajLength) {
-        out.pedal -= _lengthRatio; // kmh increments
+        out.pedal -= _lengthRatio; // m increments
+        std::cout << "Dcrease Trajectory Length: " << out.pedal << std::endl;
     }
 
     _prevButtonState.at(joystick::ButtonPos::INCREASE_DISTANCE) = msg.buttons.at(joystick::ButtonPos::INCREASE_DISTANCE);
@@ -147,21 +150,21 @@ void CommandCreator::calculate_traj_distance(traj_interfaces::msg::TrajParam &ou
 void CommandCreator::set_gear(traj_interfaces::msg::TrajParam &out, const std::vector<int> &buttonState) 
 {
     // Reverse Gear
-    if(_vehicle_state == WAIT || _vehicle_state == EMERGENCY_STOP) 
-    {
-        if (buttonState.at(joystick::ButtonPos::REVERSE_GEAR) == 1
-            && _prevButtonState.at(joystick::ButtonPos::REVERSE_GEAR) == 0) {
-            if (out.r_gear) {
+    if (buttonState.at(joystick::ButtonPos::REVERSE_GEAR) == 1
+        && _prevButtonState.at(joystick::ButtonPos::REVERSE_GEAR) == 0) {
+            if(_vehicle_state == WAIT || _vehicle_state == EMERGENCY_STOP || _vehicle_state == END ) 
+            {
+                if (out.r_gear) {
                 out.r_gear = false;
                 std::cout << "Deactivate R_GEAR." << std::endl;
+                }
+                else {
+                    out.r_gear = true;
+                    std::cout << "Activate R_GEAR." << std::endl;
+                }
+            }else {
+                std::cout << "Vehicle is still moving. Cannot activate R_GEAR." << std::endl;
             }
-            else {
-                out.r_gear = true;
-                std::cout << "Activate R_GEAR." << std::endl;
-            }
-        }
-    } else {
-        std::cout << "Vehicle is still moving. Cannot activate R_GEAR." << std::endl;
     }
 
     _prevButtonState.at(joystick::ButtonPos::REVERSE_GEAR) = buttonState.at(joystick::ButtonPos::REVERSE_GEAR);
@@ -175,6 +178,7 @@ void CommandCreator::set_confirm(
     if (buttonState.at(joystick::ButtonPos::CONFIRM_TRAJ) == 1
         && _prevButtonState.at(joystick::ButtonPos::CONFIRM_TRAJ) == 0) {
             out.taster_confirm = true;
+            std::cout << "Confirm the Trajectory." << std::endl;
     }
 
     _prevButtonState.at(joystick::ButtonPos::CONFIRM_TRAJ) = buttonState.at(joystick::ButtonPos::CONFIRM_TRAJ);

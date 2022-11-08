@@ -1,8 +1,8 @@
-# Install script for directory: /home/tofstudent/sa_zhao/build/traj_interfaces/traj_interfaces__py
+# Install script for directory: /home/tofstudent/Remote_Driving/sa_zhao/build/traj_interfaces/traj_interfaces__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/tofstudent/sa_zhao/install/traj_interfaces")
+  set(CMAKE_INSTALL_PREFIX "/home/tofstudent/Remote_Driving/sa_zhao/install/traj_interfaces")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

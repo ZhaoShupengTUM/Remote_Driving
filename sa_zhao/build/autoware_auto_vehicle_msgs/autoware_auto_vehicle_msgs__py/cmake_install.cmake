@@ -1,8 +1,8 @@
-# Install script for directory: /home/tofstudent/sa_zhao/build/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs__py
+# Install script for directory: /home/tofstudent/Remote_Driving/sa_zhao/build/autoware_auto_vehicle_msgs/autoware_auto_vehicle_msgs__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/tofstudent/sa_zhao/install/autoware_auto_vehicle_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/tofstudent/Remote_Driving/sa_zhao/install/autoware_auto_vehicle_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

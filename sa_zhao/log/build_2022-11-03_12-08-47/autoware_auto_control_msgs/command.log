@@ -1,6 +1,0 @@
-Invoking command in '/home/tofstudent/sa_zhao/build/autoware_auto_control_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/tofstudent/sa_zhao/src/autoware_auto_control_msgs -DCMAKE_INSTALL_PREFIX=/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs
-Invoked command in '/home/tofstudent/sa_zhao/build/autoware_auto_control_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/tofstudent/sa_zhao/src/autoware_auto_control_msgs -DCMAKE_INSTALL_PREFIX=/home/tofstudent/sa_zhao/install/autoware_auto_control_msgs
-Invoking command in '/home/tofstudent/sa_zhao/build/autoware_auto_control_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/autoware_auto_control_msgs -- -j8 -l8
-Invoked command in '/home/tofstudent/sa_zhao/build/autoware_auto_control_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/tofstudent/sa_zhao/build/autoware_auto_control_msgs -- -j8 -l8
-Invoking command in '/home/tofstudent/sa_zhao/build/autoware_auto_control_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/autoware_auto_control_msgs
-Invoked command in '/home/tofstudent/sa_zhao/build/autoware_auto_control_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/tofstudent/sa_zhao/build/autoware_auto_control_msgs

@@ -1,10 +1,10 @@
 {
   "package_name": "traj_interfaces",
-  "output_dir": "/home/tofstudent/sa_zhao/build/traj_interfaces/rosidl_typesupport_fastrtps_cpp/traj_interfaces",
+  "output_dir": "/home/tofstudent/Remote_Driving/sa_zhao/build/traj_interfaces/rosidl_typesupport_fastrtps_cpp/traj_interfaces",
   "template_dir": "/opt/ros/foxy/share/rosidl_typesupport_fastrtps_cpp/resource",
   "idl_tuples": [
-    "/home/tofstudent/sa_zhao/build/traj_interfaces/rosidl_adapter/traj_interfaces:msg/TrajParam.idl",
-    "/home/tofstudent/sa_zhao/build/traj_interfaces/rosidl_adapter/traj_interfaces:msg/StateMachine.idl"
+    "/home/tofstudent/Remote_Driving/sa_zhao/build/traj_interfaces/rosidl_adapter/traj_interfaces:msg/TrajParam.idl",
+    "/home/tofstudent/Remote_Driving/sa_zhao/build/traj_interfaces/rosidl_adapter/traj_interfaces:msg/StateMachine.idl"
   ],
   "target_dependencies": [
     "/opt/ros/foxy/lib/rosidl_typesupport_fastrtps_cpp/rosidl_typesupport_fastrtps_cpp",
@@ -15,7 +15,7 @@
     "/opt/ros/foxy/share/rosidl_typesupport_fastrtps_cpp/resource/msg__type_support.cpp.em",
     "/opt/ros/foxy/share/rosidl_typesupport_fastrtps_cpp/resource/srv__rosidl_typesupport_fastrtps_cpp.hpp.em",
     "/opt/ros/foxy/share/rosidl_typesupport_fastrtps_cpp/resource/srv__type_support.cpp.em",
-    "/home/tofstudent/sa_zhao/build/traj_interfaces/rosidl_adapter/traj_interfaces/msg/TrajParam.idl",
-    "/home/tofstudent/sa_zhao/build/traj_interfaces/rosidl_adapter/traj_interfaces/msg/StateMachine.idl"
+    "/home/tofstudent/Remote_Driving/sa_zhao/build/traj_interfaces/rosidl_adapter/traj_interfaces/msg/TrajParam.idl",
+    "/home/tofstudent/Remote_Driving/sa_zhao/build/traj_interfaces/rosidl_adapter/traj_interfaces/msg/StateMachine.idl"
   ]
 }

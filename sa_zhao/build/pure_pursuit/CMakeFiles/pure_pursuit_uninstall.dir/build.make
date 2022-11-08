@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tofstudent/sa_zhao/src/pure_pursuit
+CMAKE_SOURCE_DIR = /home/tofstudent/Remote_Driving/sa_zhao/src/pure_pursuit
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tofstudent/sa_zhao/build/pure_pursuit
+CMAKE_BINARY_DIR = /home/tofstudent/Remote_Driving/sa_zhao/build/pure_pursuit
 
 # Utility rule file for pure_pursuit_uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/tofstudent/sa_zhao/build/pure_pursuit
 include CMakeFiles/pure_pursuit_uninstall.dir/progress.make
 
 CMakeFiles/pure_pursuit_uninstall:
-	/usr/bin/cmake -P /home/tofstudent/sa_zhao/build/pure_pursuit/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/tofstudent/Remote_Driving/sa_zhao/build/pure_pursuit/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 pure_pursuit_uninstall: CMakeFiles/pure_pursuit_uninstall
 pure_pursuit_uninstall: CMakeFiles/pure_pursuit_uninstall.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/pure_pursuit_uninstall.dir/clean:
 .PHONY : CMakeFiles/pure_pursuit_uninstall.dir/clean
 
 CMakeFiles/pure_pursuit_uninstall.dir/depend:
-	cd /home/tofstudent/sa_zhao/build/pure_pursuit && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tofstudent/sa_zhao/src/pure_pursuit /home/tofstudent/sa_zhao/src/pure_pursuit /home/tofstudent/sa_zhao/build/pure_pursuit /home/tofstudent/sa_zhao/build/pure_pursuit /home/tofstudent/sa_zhao/build/pure_pursuit/CMakeFiles/pure_pursuit_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tofstudent/Remote_Driving/sa_zhao/build/pure_pursuit && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tofstudent/Remote_Driving/sa_zhao/src/pure_pursuit /home/tofstudent/Remote_Driving/sa_zhao/src/pure_pursuit /home/tofstudent/Remote_Driving/sa_zhao/build/pure_pursuit /home/tofstudent/Remote_Driving/sa_zhao/build/pure_pursuit /home/tofstudent/Remote_Driving/sa_zhao/build/pure_pursuit/CMakeFiles/pure_pursuit_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/pure_pursuit_uninstall.dir/depend
 

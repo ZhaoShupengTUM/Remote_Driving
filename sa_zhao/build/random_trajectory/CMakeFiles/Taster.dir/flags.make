@@ -6,5 +6,5 @@ CXX_FLAGS =   -Wall -Wextra -Wpedantic -std=gnu++14
 
 CXX_DEFINES = -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -DSPDLOG_COMPILED_LIB
 
-CXX_INCLUDES = -I/home/tofstudent/sa_zhao/src/random_trajectory/include -isystem /opt/ros/foxy/include 
+CXX_INCLUDES = -I/home/tofstudent/Remote_Driving/sa_zhao/src/random_trajectory/include -isystem /opt/ros/foxy/include 
 

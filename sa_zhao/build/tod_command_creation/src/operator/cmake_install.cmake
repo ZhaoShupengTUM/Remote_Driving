@@ -1,8 +1,8 @@
-# Install script for directory: /home/tofstudent/sa_zhao/src/tod_command_creation/src/operator
+# Install script for directory: /home/tofstudent/Remote_Driving/sa_zhao/src/tod_command_creation/src/operator
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/tofstudent/sa_zhao/install/tod_command_creation")
+  set(CMAKE_INSTALL_PREFIX "/home/tofstudent/Remote_Driving/sa_zhao/install/tod_command_creation")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,12 +44,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/tod_command_creation/OperatorCommandCreator"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/tod_command_creation" TYPE EXECUTABLE FILES "/home/tofstudent/sa_zhao/build/tod_command_creation/src/operator/OperatorCommandCreator")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/tod_command_creation" TYPE EXECUTABLE FILES "/home/tofstudent/Remote_Driving/sa_zhao/build/tod_command_creation/src/operator/OperatorCommandCreator")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/tod_command_creation/OperatorCommandCreator" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/tod_command_creation/OperatorCommandCreator")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/tod_command_creation/OperatorCommandCreator"
-         OLD_RPATH "/opt/ros/foxy/lib:/home/tofstudent/sa_zhao/install/tod_msgs/lib:/home/tofstudent/sa_zhao/install/traj_interfaces/lib:"
+         OLD_RPATH "/opt/ros/foxy/lib:/home/tofstudent/Remote_Driving/sa_zhao/install/tod_msgs/lib:/home/tofstudent/Remote_Driving/sa_zhao/install/traj_interfaces/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/tod_command_creation/OperatorCommandCreator")

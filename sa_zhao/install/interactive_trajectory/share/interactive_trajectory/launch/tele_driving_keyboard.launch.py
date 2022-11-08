@@ -10,7 +10,7 @@ from launch_ros.parameter_descriptions import ParameterValue
 
 def generate_launch_description():
 
-   rviz_config_path =  '/home/tofstudent/sa_zhao/config/trajInteractive.rviz'
+   rviz_config_path =  '/home/tofstudent/Remote_Driving/sa_zhao/config/trajInteractive.rviz'
 
    rviz_arg = launch.actions.DeclareLaunchArgument(
       name='rvizconfig', 

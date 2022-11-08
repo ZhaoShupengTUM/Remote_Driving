@@ -11,7 +11,7 @@ from launch_ros.parameter_descriptions import ParameterValue
 
 def generate_launch_description():
 
-   rviz_config_path =  '/home/zsp/sa_zhao/config/trajInteractive.rviz'
+   rviz_config_path =  '/home/tofstudent/Remote_Driving/sa_zhao/config/trajInteractive.rviz'
 
    rviz_arg = launch.actions.DeclareLaunchArgument(
       name='rvizconfig', 
@@ -23,6 +23,7 @@ def generate_launch_description():
             executable='traj_visualization',
             name='traj_visualization',
             output='screen',
+            remappings=[('/interactive/param', '/Operator/InputDevices/interactive/param')]
             )
 
    tf_node = launch_ros.actions.Node(
@@ -30,27 +31,31 @@ def generate_launch_description():
             executable='tf_path',
             name='tf_pathframe_transfer',
             output='screen',
+            remappings=[('/interactive/param', '/Operator/InputDevices/interactive/param')]
             )
 
    collect_node = launch_ros.actions.Node(
             package='interactive_trajectory',
             executable='traj_collect',
             name='traj_collect',
-            output='screen'
+            output='screen',
+            remappings=[('/interactive/param', '/Operator/InputDevices/interactive/param')]
             )
 
    discrete_pid_node = launch_ros.actions.Node(
             package='interactive_trajectory',
             executable='pid_longitudinal_control',
             name='pid_longitudinal_control',
-            output='screen'
+            output='screen',
+            remappings=[('/interactive/param', '/Operator/InputDevices/interactive/param')]
    )
 
    carla_bridge_node = launch_ros.actions.Node(
             package='interactive_trajectory',
             executable='carla_bridge',
             name='carla_bridge',
-            output='screen'
+            output='screen',
+            remappings=[('/interactive/param', '/Operator/InputDevices/interactive/param')]
             )
 
    corriodor_node = launch_ros.actions.Node(
@@ -67,12 +72,12 @@ def generate_launch_description():
             output='screen'
             )
 
-   fanactec_node = launch_ros.actions.Node(
-            package='tod_command_creation',
-            executable='OperatorCommandCreator',
-            name='operator_command_creator',
-            output='screen'
-            )
+   # fanactec_node = launch_ros.actions.Node(
+   #          package='tod_command_creation',
+   #          executable='OperatorCommandCreator',
+   #          name='operator_command_creator',
+   #          output='screen'
+   #          )
 
    rviz_node = launch_ros.actions.Node(
             package='rviz2',
@@ -111,5 +116,5 @@ def generate_launch_description():
          pure_puresuit,
          corriodor_node,
          ebs_node,
-         fanactec_node
+         # fanactec_node
      ])

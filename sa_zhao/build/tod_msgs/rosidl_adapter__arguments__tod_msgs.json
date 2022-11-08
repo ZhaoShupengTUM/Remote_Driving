@@ -1,18 +1,18 @@
 {
   "package_name": "tod_msgs",
   "non_idl_tuples": [
-    "/home/tofstudent/sa_zhao/src/tod_msgs:msg/ColoredPoint.msg",
-    "/home/tofstudent/sa_zhao/src/tod_msgs:msg/ColoredPolygon.msg",
-    "/home/tofstudent/sa_zhao/src/tod_msgs:msg/KeyPress.msg",
-    "/home/tofstudent/sa_zhao/src/tod_msgs:msg/ObjectData.msg",
-    "/home/tofstudent/sa_zhao/src/tod_msgs:msg/ObjectList.msg",
-    "/home/tofstudent/sa_zhao/src/tod_msgs:msg/PaketInfo.msg",
-    "/home/tofstudent/sa_zhao/src/tod_msgs:msg/PrimaryControlCmd.msg",
-    "/home/tofstudent/sa_zhao/src/tod_msgs:msg/SafetyDriverStatus.msg",
-    "/home/tofstudent/sa_zhao/src/tod_msgs:msg/SecondaryControlCmd.msg",
-    "/home/tofstudent/sa_zhao/src/tod_msgs:msg/Status.msg",
-    "/home/tofstudent/sa_zhao/src/tod_msgs:msg/VehicleData.msg",
-    "/home/tofstudent/sa_zhao/src/tod_msgs:msg/VideoInfo.msg",
-    "/home/tofstudent/sa_zhao/src/tod_msgs:srv/InputDevice.srv"
+    "/home/tofstudent/Remote_Driving/sa_zhao/src/tod_msgs:msg/ColoredPoint.msg",
+    "/home/tofstudent/Remote_Driving/sa_zhao/src/tod_msgs:msg/ColoredPolygon.msg",
+    "/home/tofstudent/Remote_Driving/sa_zhao/src/tod_msgs:msg/KeyPress.msg",
+    "/home/tofstudent/Remote_Driving/sa_zhao/src/tod_msgs:msg/ObjectData.msg",
+    "/home/tofstudent/Remote_Driving/sa_zhao/src/tod_msgs:msg/ObjectList.msg",
+    "/home/tofstudent/Remote_Driving/sa_zhao/src/tod_msgs:msg/PaketInfo.msg",
+    "/home/tofstudent/Remote_Driving/sa_zhao/src/tod_msgs:msg/PrimaryControlCmd.msg",
+    "/home/tofstudent/Remote_Driving/sa_zhao/src/tod_msgs:msg/SafetyDriverStatus.msg",
+    "/home/tofstudent/Remote_Driving/sa_zhao/src/tod_msgs:msg/SecondaryControlCmd.msg",
+    "/home/tofstudent/Remote_Driving/sa_zhao/src/tod_msgs:msg/Status.msg",
+    "/home/tofstudent/Remote_Driving/sa_zhao/src/tod_msgs:msg/VehicleData.msg",
+    "/home/tofstudent/Remote_Driving/sa_zhao/src/tod_msgs:msg/VideoInfo.msg",
+    "/home/tofstudent/Remote_Driving/sa_zhao/src/tod_msgs:srv/InputDevice.srv"
   ]
 }

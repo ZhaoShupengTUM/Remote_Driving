@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tofstudent/sa_zhao/src/interactive_trajectory
+CMAKE_SOURCE_DIR = /home/tofstudent/Remote_Driving/sa_zhao/src/interactive_trajectory
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tofstudent/sa_zhao/build/interactive_trajectory
+CMAKE_BINARY_DIR = /home/tofstudent/Remote_Driving/sa_zhao/build/interactive_trajectory
 
 # Utility rule file for interactive_trajectory_uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/tofstudent/sa_zhao/build/interactive_trajectory
 include CMakeFiles/interactive_trajectory_uninstall.dir/progress.make
 
 CMakeFiles/interactive_trajectory_uninstall:
-	/usr/bin/cmake -P /home/tofstudent/sa_zhao/build/interactive_trajectory/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/tofstudent/Remote_Driving/sa_zhao/build/interactive_trajectory/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 interactive_trajectory_uninstall: CMakeFiles/interactive_trajectory_uninstall
 interactive_trajectory_uninstall: CMakeFiles/interactive_trajectory_uninstall.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/interactive_trajectory_uninstall.dir/clean:
 .PHONY : CMakeFiles/interactive_trajectory_uninstall.dir/clean
 
 CMakeFiles/interactive_trajectory_uninstall.dir/depend:
-	cd /home/tofstudent/sa_zhao/build/interactive_trajectory && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tofstudent/sa_zhao/src/interactive_trajectory /home/tofstudent/sa_zhao/src/interactive_trajectory /home/tofstudent/sa_zhao/build/interactive_trajectory /home/tofstudent/sa_zhao/build/interactive_trajectory /home/tofstudent/sa_zhao/build/interactive_trajectory/CMakeFiles/interactive_trajectory_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tofstudent/Remote_Driving/sa_zhao/build/interactive_trajectory && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tofstudent/Remote_Driving/sa_zhao/src/interactive_trajectory /home/tofstudent/Remote_Driving/sa_zhao/src/interactive_trajectory /home/tofstudent/Remote_Driving/sa_zhao/build/interactive_trajectory /home/tofstudent/Remote_Driving/sa_zhao/build/interactive_trajectory /home/tofstudent/Remote_Driving/sa_zhao/build/interactive_trajectory/CMakeFiles/interactive_trajectory_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/interactive_trajectory_uninstall.dir/depend
 

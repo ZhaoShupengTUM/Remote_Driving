@@ -1,9 +1,9 @@
 {
   "package_name": "autoware_auto_control_msgs",
-  "output_dir": "/home/tofstudent/sa_zhao/build/autoware_auto_control_msgs/rosidl_generator_cpp/autoware_auto_control_msgs",
+  "output_dir": "/home/tofstudent/Remote_Driving/sa_zhao/build/autoware_auto_control_msgs/rosidl_generator_cpp/autoware_auto_control_msgs",
   "template_dir": "/opt/ros/foxy/share/rosidl_generator_cpp/cmake/../resource",
   "idl_tuples": [
-    "/home/tofstudent/sa_zhao/src/autoware_auto_control_msgs:msg/AckermannLateralCommand.idl"
+    "/home/tofstudent/Remote_Driving/sa_zhao/src/autoware_auto_control_msgs:msg/AckermannLateralCommand.idl"
   ],
   "ros_interface_dependencies": [
     "builtin_interfaces:/opt/ros/foxy/share/builtin_interfaces/msg/Duration.idl",
@@ -25,7 +25,7 @@
     "/opt/ros/foxy/share/rosidl_generator_cpp/cmake/../resource/srv__builder.hpp.em",
     "/opt/ros/foxy/share/rosidl_generator_cpp/cmake/../resource/srv__struct.hpp.em",
     "/opt/ros/foxy/share/rosidl_generator_cpp/cmake/../resource/srv__traits.hpp.em",
-    "/home/tofstudent/sa_zhao/src/autoware_auto_control_msgs/msg/AckermannLateralCommand.idl",
+    "/home/tofstudent/Remote_Driving/sa_zhao/src/autoware_auto_control_msgs/msg/AckermannLateralCommand.idl",
     "/opt/ros/foxy/share/builtin_interfaces/msg/Duration.idl",
     "/opt/ros/foxy/share/builtin_interfaces/msg/Time.idl"
   ]

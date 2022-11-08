@@ -1,8 +1,8 @@
-# Install script for directory: /home/tofstudent/sa_zhao/src/tod_input_devices/src/UsbInputDevice
+# Install script for directory: /home/tofstudent/Remote_Driving/sa_zhao/src/tod_input_devices/src/UsbInputDevice
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/tofstudent/sa_zhao/install/tod_input_devices")
+  set(CMAKE_INSTALL_PREFIX "/home/tofstudent/Remote_Driving/sa_zhao/install/tod_input_devices")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,6 +38,6 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/tofstudent/sa_zhao/build/tod_input_devices/src/UsbInputDevice/libUsbInputDevice.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/tofstudent/Remote_Driving/sa_zhao/build/tod_input_devices/src/UsbInputDevice/libUsbInputDevice.a")
 endif()
 

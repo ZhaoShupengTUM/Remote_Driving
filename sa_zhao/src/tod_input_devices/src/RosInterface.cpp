@@ -29,6 +29,9 @@ bool RosInterface::init() {
     bool debug{false};
     RCLCPP_INFO_ONCE(node->get_logger(), "TEST!!!");
 
+    //set the status as teleoperation
+    _statusMsg.tod_status = _statusMsg.TOD_STATUS_TELEOPERATION; 
+
     // nh->getParam(ros::this_node::getName() + "/debug", debug);
 
     if (debug) // print ROS_DEBUG
@@ -37,8 +40,9 @@ bool RosInterface::init() {
     rclcpp::Time init_time_ = rclcpp::Clock().now();
 
     _joystickMsgPublisher = node->create_publisher<sensor_msgs::msg::Joy>("joystick", 100);
-    _rosThread = std::thread([=]{ run();});
+     _statusMsgPublisher = node->create_publisher<tod_msgs::msg::Status>("status_msg", 100);
 
+    _rosThread = std::thread([=]{ run();});
     return true;
 }
 
@@ -56,6 +60,7 @@ void RosInterface::run() {
     while ( rclcpp::ok()) {
         _operatorMsg.header.stamp = this->get_clock()->now();
         _joystickMsgPublisher->publish(_operatorMsg);
+        _statusMsgPublisher->publish(_statusMsg);
         rclcpp::spin_some(node);
         r.sleep();
     }

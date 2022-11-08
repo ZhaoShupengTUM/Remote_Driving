@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/tofstudent/sa_zhao/src/tod_command_creation
-# Build directory: /home/tofstudent/sa_zhao/build/tod_command_creation
+# Source directory: /home/tofstudent/Remote_Driving/sa_zhao/src/tod_command_creation
+# Build directory: /home/tofstudent/Remote_Driving/sa_zhao/build/tod_command_creation
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

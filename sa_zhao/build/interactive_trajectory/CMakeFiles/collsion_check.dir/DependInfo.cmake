@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/tofstudent/sa_zhao/src/interactive_trajectory/src/CollisionDetectionNode.cpp" "/home/tofstudent/sa_zhao/build/interactive_trajectory/CMakeFiles/collsion_check.dir/src/CollisionDetectionNode.cpp.o"
+  "/home/tofstudent/Remote_Driving/sa_zhao/src/interactive_trajectory/src/CollisionDetectionNode.cpp" "/home/tofstudent/Remote_Driving/sa_zhao/build/interactive_trajectory/CMakeFiles/collsion_check.dir/src/CollisionDetectionNode.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -24,7 +24,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/tofstudent/sa_zhao/src/interactive_trajectory/include"
+  "/home/tofstudent/Remote_Driving/sa_zhao/src/interactive_trajectory/include"
   "/usr/include/vtk-7.1"
   "/usr/include/freetype2"
   "/usr/include/pcl-1.10"
@@ -34,7 +34,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/tofstudent/sa_zhao/build/interactive_trajectory/CMakeFiles/util.dir/DependInfo.cmake"
+  "/home/tofstudent/Remote_Driving/sa_zhao/build/interactive_trajectory/CMakeFiles/util.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
