@@ -1,4 +1,0 @@
-source;share/tod_input_devices/local_setup.bash
-source;share/tod_input_devices/local_setup.dsv
-source;share/tod_input_devices/local_setup.sh
-source;share/tod_input_devices/local_setup.zsh

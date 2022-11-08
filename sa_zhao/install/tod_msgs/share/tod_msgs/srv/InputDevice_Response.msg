@@ -1,2 +1,0 @@
-
-bool successfully_changed

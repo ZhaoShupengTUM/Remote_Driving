@@ -1,2 +1,0 @@
-/usr/bin/ar qc libpfas.a  CMakeFiles/pfas.dir/include/pfas_src/TrajectoryPrediction.cpp.o
-/usr/bin/ranlib libpfas.a
