@@ -9,8 +9,10 @@ namespace TrajectoryLength
         return sqrt(dx * dx + dy * dy);
     }
 
-    double calcTrajLengthBetweenTwoIndex(const nav_msgs::msg::Path trajectory, int32_t
-     begin, int32_t end)
+    double calcTrajLengthBetweenTwoIndex(
+        const nav_msgs::msg::Path trajectory, 
+        int32_t begin, 
+        int32_t end)
     {
         geometry_msgs::msg::PoseStamped poseStamped;
         double length{0.0};

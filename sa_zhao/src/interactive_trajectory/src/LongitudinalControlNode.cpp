@@ -113,10 +113,12 @@ void PIDControlNode::run()
     vector_pose = TrajectoryLength::extractPoses(path);
 
     if(!r_gear) {
-        closet_idx = TrajectoryLength::findClosestIdxWithDistAngThr(vector_pose, current_pose.pose, 5.5, M_PI/4);
+        closet_idx = TrajectoryLength::findClosestIdxWithDistAngThr(vector_pose, current_pose.pose, 3.0, M_PI/4);
+        std::cout << "Index: " << closet_idx.second << std::endl;
         lost_flag = closet_idx.first;
         if(closet_idx.first) {
             rest_length = TrajectoryLength::calcTrajLengthBetweenTwoIndex(path, closet_idx.second, path.poses.size()-1) - 3.8;
+            std::cout << "Rest length: " << rest_length << std::endl;
         }
     } else {
         closet_idx = TrajectoryLength::findClosestIdxWithDistAngThr(vector_pose, current_pose.pose, 0.5, M_PI/4);

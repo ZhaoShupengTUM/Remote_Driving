@@ -25,11 +25,11 @@ TrajVisualisation::TrajVisualisation(): Node("traj_visualization")
     pub_path_right_confirmed = this->create_publisher<nav_msgs::msg::Path>("path/right/confirmed",10);
 
     //publishing the wished trajectory
-    timer_1 = this->create_wall_timer(10ms, std::bind(&TrajVisualisation::timer_callback_wished, this));
+    timer_1 = this->create_wall_timer(50ms, std::bind(&TrajVisualisation::timer_callback_wished, this));
 
     //publishing the confirmed trajectory
     timer_2 = this->create_wall_timer(
-    10ms, std::bind(&TrajVisualisation::timer_callback_confirmed, this));
+    50ms, std::bind(&TrajVisualisation::timer_callback_confirmed, this));
 
     tf_buffer_ =
     std::make_unique<tf2_ros::Buffer>(this->get_clock());
