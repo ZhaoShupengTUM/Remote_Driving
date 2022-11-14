@@ -39,9 +39,9 @@ void TrajCollect::callback_param(const traj_interfaces::msg::TrajParam::SharedPt
     last_r_gear = current_r_gear;
     current_r_gear = param_msg->r_gear;
     gear_change = last_r_gear != current_r_gear;
-    // if(gear_change) {
-    //     all_path.poses.clear();
-    // }
+    if(gear_change) {
+        all_path.poses.clear();
+    }
 }
 
 void TrajCollect::callback_statemachine(const traj_interfaces::msg::StateMachine::SharedPtr state_msg)
@@ -177,10 +177,10 @@ void TrajCollect::send_collected_path()
         }
 
         erase_path(all_path, vehicle_pose);
-        if(gear_change) {
-            clear_path(all_path);
-            gear_change = false;
-        }
+        // if(gear_change) {
+        //     clear_path(all_path);
+        //     gear_change = false;
+        // }
 
         path2autowaretraj(all_path_autoware, all_path);
         pub_all_path->publish(all_path);

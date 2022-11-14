@@ -1,4 +1,5 @@
 // Copyright 2020 Simon Hoffmann
+//to be finished: declare the parameters and load all parameters from .yaml file
 
 #include "InputDeviceController.h"
 #include <stdlib.h>
@@ -196,7 +197,7 @@ void InputDeviceController::update_mapping_from_param_workspace() {
 
     // _ros->get_param(_ros->get_node_name() + "/InvertAxis/", invertAxisConfig);
     // _ros->get_param(_ros->get_node_name() + "/AxisConfig/", axisConfig);
-    _configurationMode = true;
+    _configurationMode = false;
     // _ros->get_param(_ros->get_node_name() + "/ConfigMode/", _configurationMode);
 
     for ( auto conf : axisConfig ) {

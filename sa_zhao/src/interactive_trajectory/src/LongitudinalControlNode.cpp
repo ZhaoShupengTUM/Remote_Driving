@@ -11,6 +11,7 @@ using namespace std::chrono_literals;
 using std::placeholders::_1;
 
 PIDController pid_controller(1.0, 2.0, 0.01);
+PIDController pid_controller_v(0.3, 0.0, 0.4);
 
 PIDControlNode::PIDControlNode(): Node("PID_longitudinal_control")
 {
@@ -200,13 +201,17 @@ void PIDControlNode::vehicle_end()
     accel_cmd.acceleration = max_decel;
     pub_accel->publish(accel_cmd);
     pid_controller.Reset();
+    pid_controller_v.Reset();
 
     RCLCPP_INFO(this->get_logger(), "Vehicle State: END\n At the End of the trajectory. Control_error: %f", rest_length+ VehicleParams::distance_rear_axle);
 }
 
 void PIDControlNode::vehicle_move_forward()
 {
+    // double target_v = pid_controller_v.Control(rest_length, dt);
+    // std::cout << "target_v:" << target_v << std::endl;
     accel_cmd.acceleration = pid_controller.Control(rest_length, dt);
+    std::cout << "output_a:" << accel_cmd.acceleration << std::endl;
     if(accel_cmd.acceleration>0) {
         accel_cmd.speed=8.0;
     } else {
