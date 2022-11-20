@@ -9,10 +9,9 @@ find_package(ament_cmake REQUIRED)
 
 find_package(rclcpp REQUIRED)
 find_package(tod_msgs REQUIRED)
-# find_package(tod_helper REQUIRED)
-
+find_package(carla_msgs REQUIRED)
 find_package(traj_interfaces REQUIRED)
-
+# find_package(interactive_trajectory REQUIRED)
 
 option(NOT_OPEN_SOURCE "Build open source and not for open source" ON)
 
@@ -35,6 +34,8 @@ install(DIRECTORY
     config
     DESTINATION share/${PROJECT_NAME}
     )
-    
-ament_export_dependencies(rclcpp tod_msgs)
+
+# include_directories(include ${catkin_INCLUDE_DIRS})
+
+ament_export_dependencies(rclcpp tod_msgs carla_msgs)
 ament_package()

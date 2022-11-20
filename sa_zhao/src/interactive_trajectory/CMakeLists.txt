@@ -49,7 +49,7 @@ add_definitions(${PCL_DEFINITIONS})
 
 #add execuable
 add_executable(auto_teleop_key src/telecontrolNode.cpp)
-ament_target_dependencies(auto_teleop_key rclcpp geometry_msgs std_msgs traj_interfaces)
+ament_target_dependencies(auto_teleop_key rclcpp geometry_msgs std_msgs traj_interfaces tf2 tf2_ros carla_msgs)
 
 add_executable(traj_visualization src/TrajVisualisationNode.cpp)
 ament_target_dependencies(traj_visualization rclcpp std_msgs nav_msgs tf2 tf2_ros tf2_geometry_msgs geometry_msgs traj_interfaces )
@@ -68,7 +68,7 @@ add_executable(carla_bridge src/CarlaBridgeNode.cpp)
 ament_target_dependencies(carla_bridge rclcpp carla_msgs nav_msgs tf2_ros tf2 geometry_msgs autoware_auto_control_msgs ackermann_msgs traj_interfaces sensor_msgs)
 
 add_executable(pid_longitudinal_control src/LongitudinalControlNode.cpp)
-ament_target_dependencies(pid_longitudinal_control rclcpp nav_msgs  tf2_ros tf2 autoware_auto_planning_msgs traj_interfaces ackermann_msgs)
+ament_target_dependencies(pid_longitudinal_control rclcpp nav_msgs  tf2_ros tf2 autoware_auto_planning_msgs traj_interfaces ackermann_msgs carla_msgs)
 
 add_executable(collsion_check src/CollisionDetectionNode.cpp)
 ament_target_dependencies(collsion_check rclcpp geometry_msgs sensor_msgs std_msgs)
@@ -100,6 +100,7 @@ target_link_libraries(carla_bridge util)
 target_link_libraries(pid_longitudinal_control util)
 target_link_libraries(collsion_check util)
 target_link_libraries(tf_path util)
+target_link_libraries(auto_teleop_key util)
 ########### the util library ends################
 
 #add install
@@ -125,5 +126,6 @@ install(DIRECTORY
   DESTINATION share/${PROJECT_NAME}/
 )
 
+ament_export_include_directories(src)
 #the last call
 ament_package()

@@ -43,7 +43,7 @@ PurePursuitNode::PurePursuitNode(const rclcpp::NodeOptions & node_options)
     this->declare_parameter<double>("lookahead_distance_ratio", 0.0);
   param_.min_lookahead_distance = this->declare_parameter<double>("min_lookahead_distance", 3.5);
   param_.reverse_min_lookahead_distance =
-    this->declare_parameter<double>("reverse_min_lookahead_distance", 2.0);
+    this->declare_parameter<double>("reverse_min_lookahead_distance", 6.0);
 
   // Subscribers
   using std::placeholders::_1;

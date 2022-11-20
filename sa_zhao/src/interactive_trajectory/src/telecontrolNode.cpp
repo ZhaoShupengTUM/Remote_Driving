@@ -2,10 +2,16 @@
 #include <rclcpp/rclcpp.hpp>
 #include <geometry_msgs/msg/twist.hpp>
 #include <std_msgs/msg/bool.hpp>
+#include <std_msgs/msg/float64.hpp>
+#include <tf2_ros/transform_listener.h>  //receiving transforms
+#include <tf2_ros/buffer.h>  //buffer the transformation
+
 #include "traj_interfaces/msg/traj_param.hpp"
 #include "traj_interfaces/msg/state_machine.hpp"
 
 #include "util/StateMachine.hpp"
+#include "util/KosTransfrom.hpp"
+#include "util/VehicleParams.h"
 
 //include keyboard-relative
 #include <signal.h>
@@ -24,6 +30,8 @@ using namespace std::chrono_literals;
 #define KEYCODE_F 0x66
 #define KEYCODE_Q 0x71
 #define KEYCODE_B 0x62
+
+#define DEBUG
 
 using std::placeholders::_1;
 
@@ -62,6 +70,8 @@ class KeyboardReader
     private:
       int kfd;
       struct termios cooked;
+      std::string path_frame_name;
+      geometry_msgs::msg::TransformStamped check_transform;
 };
 
 KeyboardReader input;
@@ -86,7 +96,14 @@ class TeleopAuto
     rclcpp::Node::SharedPtr nh_;
     rclcpp::Publisher<traj_interfaces::msg::TrajParam>::SharedPtr param_pub_;
     rclcpp::Subscription<traj_interfaces::msg::StateMachine>::SharedPtr vehicle_state_sub_;
+
     rclcpp::TimerBase::SharedPtr timer;
+    std::shared_ptr<tf2_ros::TransformListener> transform_listener_{nullptr};
+    std::unique_ptr<tf2_ros::Buffer> tf_buffer_;
+
+    #ifdef DEBUG
+    rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr length_pub_;
+    #endif
 
     traj_interfaces::msg::TrajParam traj_param_;
     double Lenkrad {0.0};  // range [-180, 180 degree]
@@ -99,7 +116,14 @@ class TeleopAuto
 
     int vehicle_state{WAIT};
 
+    int path_id {1};
+
+    bool collision_flag {false};
+    bool event_flag {false};
+    double impuls_x{}, impuls_y{}, impuls_z{};
+
     void callback_state(const traj_interfaces::msg::StateMachine::SharedPtr state_msg);
+
     void timer_pub_cmd();
 };
 
@@ -119,9 +143,19 @@ TeleopAuto::TeleopAuto()
 
       param_pub_ = nh_->create_publisher<traj_interfaces::msg::TrajParam>("interactive/param", 10);
 
+      #ifdef DEBUG
+      length_pub_ = nh_->create_publisher<std_msgs::msg::Float64>("debug/path_length",10);
+      #endif
+
       vehicle_state_sub_ = nh_->create_subscription<traj_interfaces::msg::StateMachine>("statemachine/vehicle_state", 10, std::bind(&TeleopAuto::callback_state, this, _1));
 
       timer = nh_->create_wall_timer(10ms, std::bind(&TeleopAuto::timer_pub_cmd, this));
+
+      tf_buffer_ =
+      std::make_unique<tf2_ros::Buffer>(nh_->get_clock());
+
+      transform_listener_ =
+      std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
 
       //publish the default trajectory parameters
       traj_param_.lenkrad = Lenkrad;
@@ -131,8 +165,6 @@ TeleopAuto::TeleopAuto()
       param_pub_ -> publish(traj_param_);
       RCLCPP_INFO(nh_->get_logger(), "Default Trajectory Parameters: Length:%d, Steering:%d degree, Confirm:%d, R-GEAR:%d", Lenkrad, Gaspedal, taster_confirm, r_gear);
 
-      //display
-      // RCLCPP_INFO(nh_->get_logger(), "The keyboard control node starts!");
   }
 
 void TeleopAuto::spin()
@@ -153,6 +185,13 @@ void TeleopAuto::timer_pub_cmd()
   traj_param_.set__r_gear(r_gear);
 
   param_pub_->publish(traj_param_);  
+
+  #ifdef DEBUG
+  std_msgs::msg::Float64 set_length;
+  set_length.data = Gaspedal - VehicleParams::distance_front_bumper - 1.4;
+  length_pub_ -> publish(set_length);
+  #endif
+
   if(taster_confirm) {
     taster_confirm = false; //confirm will only publish once
   }  
@@ -198,6 +237,7 @@ int TeleopAuto::keyLoop()
         // dirty = true;
         RCLCPP_INFO(nh_->get_logger(), "The lenkrad is now: %f", Lenkrad);
         break;
+
     case KEYCODE_LEFT:
         if(Lenkrad < 180)
         {
@@ -206,6 +246,7 @@ int TeleopAuto::keyLoop()
         // dirty = true;
         RCLCPP_INFO(nh_->get_logger(), "The lenkrad is now: %f", Lenkrad);
         break;
+
     case KEYCODE_UP:
         if(Gaspedal < 28)
         {
@@ -214,6 +255,7 @@ int TeleopAuto::keyLoop()
         // dirty = true;
         RCLCPP_INFO(nh_->get_logger(), "The trajectory length is now: %f", Gaspedal);
         break;
+
     case KEYCODE_DOWN:
         if(Gaspedal > 6)
         {
@@ -222,47 +264,48 @@ int TeleopAuto::keyLoop()
         // dirty = true;
         RCLCPP_INFO(nh_->get_logger(), "The trajectory length is now: %f", Gaspedal);
         break;
+
     case KEYCODE_F:  
-        if(vehicle_state == EMERGENCY_STOP && !r_gear) {
-          RCLCPP_INFO(nh_->get_logger(), "CONNOT DRIVE FORWARD, EMERGENCY STOP");
-        } else {
-          taster_confirm = true;
-          RCLCPP_INFO(nh_->get_logger(), "CONFIRM, SEND THE TRAJECTORY");
+        //before confirm, check the transform
+        {
+          std::string path_frame_name = "path_" + std::to_string(path_id);
+          auto check_transform = KosTransform::waitForTransform(*tf_buffer_, path_frame_name, "path_start");
+          if(vehicle_state == EMERGENCY_STOP && !r_gear) {
+            RCLCPP_INFO(nh_->get_logger(), "CONNOT DRIVE FORWARD, EMERGENCY STOP");
+          } else {
+            taster_confirm = true;
+            RCLCPP_INFO(nh_->get_logger(), "CONFIRM, SEND THE TRAJECTORY");
+            path_id += 1;
+          }
         }
-        // dirty = true;
         break;
+
     case KEYCODE_B:    
         //check the state of the vehicle
-        if(vehicle_state == END || vehicle_state == EMERGENCY_STOP || vehicle_state == WAIT ) {
-          r_gear = !r_gear;
-          // dirty = true;
-          if(!r_gear) {
-            RCLCPP_INFO(nh_->get_logger(), "R_GEAR DEACTIVATED, FORWARD DRIVING.");
-          } else {
-            RCLCPP_INFO(nh_->get_logger(), "R_GEAR ACTIVATED, BACKWARD DRIVING.");
-          }          
-        }
-        else {
-          RCLCPP_WARN(nh_->get_logger(), "Cannont switch to the reverse gear, vehicle is still moving!");
+        {
+          std::string path_frame_name = "path_" + std::to_string(path_id);
+          auto check_transform = KosTransform::waitForTransform(*tf_buffer_, path_frame_name, "path_start");
+          if(vehicle_state == END || vehicle_state == EMERGENCY_STOP || vehicle_state == WAIT|| vehicle_state == COLLISION ) {
+            r_gear = !r_gear;
+            // dirty = true;
+            if(!r_gear) {
+              RCLCPP_INFO(nh_->get_logger(), "R_GEAR DEACTIVATED, FORWARD DRIVING.");
+            } else {
+              RCLCPP_INFO(nh_->get_logger(), "R_GEAR ACTIVATED, BACKWARD DRIVING.");
+            }  
+            path_id += 1;        
+          }
+          else {
+            RCLCPP_WARN(nh_->get_logger(), "Cannont switch to the reverse gear, vehicle is still moving!");
+          }
         }
         break;
+
     case KEYCODE_Q:
         RCLCPP_INFO(nh_->get_logger(), "quit");
         return 0;
+        break;
     }
-
-    // traj_interfaces::msg::TrajParam traj_param;
-    // traj_param.set__lenkrad(Lenkrad);
-    // traj_param.set__pedal(Gaspedal);
-    // traj_param.set__taster_confirm(taster_confirm);
-    // traj_param.set__r_gear(r_gear);
-  
-    // if(dirty ==true)
-    // {
-    //   param_pub_->publish(traj_param);    
-    //   dirty=false;
-    //   taster_confirm = false;
-    // }
 
    }
 

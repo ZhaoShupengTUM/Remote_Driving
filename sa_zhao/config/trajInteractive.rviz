@@ -6,8 +6,6 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
-        - /Path_collect1
-        - /Path_choose1
         - /TF1/Frames1
         - /TF1/Tree1
       Splitter Ratio: 0.6695803999900818
@@ -235,8 +233,6 @@ Visualization Manager:
           Value: false
         path_1:
           Value: false
-        path_2:
-          Value: true
         path_start:
           Value: false
       Marker Scale: 5
@@ -265,8 +261,7 @@ Visualization Manager:
               {}
           path_start:
             path_1:
-              path_2:
-                {}
+              {}
       Update Interval: 0
       Value: true
     - Alpha: 1
@@ -284,9 +279,9 @@ Visualization Manager:
       Enabled: true
       Invert Rainbow: false
       Max Color: 255; 255; 255
-      Max Intensity: 0.9470022916793823
+      Max Intensity: 0.9672857522964478
       Min Color: 0; 0; 0
-      Min Intensity: 0.9282621741294861
+      Min Intensity: 0.9234658479690552
       Name: PointCloud2
       Position Transformer: XYZ
       Selectable: true

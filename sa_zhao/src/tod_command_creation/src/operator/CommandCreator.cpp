@@ -23,6 +23,12 @@ CommandCreator::CommandCreator() : Node("command_creator"), _count(0)
         std::bind(&CommandCreator::callback_vehicle_state, this, _1)
     );
 
+    // _vehicle_collision_sub = this->create_subscription<carla_msgs::msg::CarlaCollisionEvent>(
+    //     "/carla/ego_vehicle/collision",
+    //     1,
+    //     std::bind(&CommandCreator::callback_vehicle_collsion, this, _1)
+    // );
+
     _param_pub = this->create_publisher<traj_interfaces::msg::TrajParam>("interactive/param", 1);
 
     _timer = this->create_wall_timer(
@@ -97,6 +103,13 @@ void CommandCreator::timer_callback()
 void CommandCreator::callback_vehicle_state(const traj_interfaces::msg::StateMachine::SharedPtr msg)
 {
     _vehicle_state = msg->vehicle_state;
+    // if(event_flag) {
+    //     collision_flag = true;
+    // } else {
+    //     collision_flag = false;
+    // }
+
+    // event_flag = false;
 }
 
 void CommandCreator::callback_joystick_msg(const sensor_msgs::msg::Joy::SharedPtr msg) 
@@ -110,6 +123,12 @@ void CommandCreator::callback_joystick_msg(const sensor_msgs::msg::Joy::SharedPt
         _joystickInputSet = true;
     }
 }
+
+// void CommandCreator::callback_vehicle_collsion(const carla_msgs::msg::CarlaCollisionEvent::SharedPtr msg) {
+//     if(msg) {
+//         event_flag = true;
+//     }
+// }
 
 void CommandCreator::callback_status_msg(const tod_msgs::msg::Status::SharedPtr msg) 
 {
@@ -125,7 +144,7 @@ void CommandCreator::calculate_traj_direction(traj_interfaces::msg::TrajParam &o
     double newDesiredSWA = axes.at(joystick::AxesPos::STEERING) * _maxSteeringWheelAngle * 180 / M_PI;
     //lenkrad unit: degree
     out.lenkrad = newDesiredSWA;
-    // std::cout << "Change the steering wheel angle: " << newDesiredSWA << std::endl;
+    std::cout << "Change the steering wheel angle: " << newDesiredSWA << "degrees." << std::endl;
 }
 
 void CommandCreator::calculate_traj_distance(traj_interfaces::msg::TrajParam &out, const sensor_msgs::msg::Joy &msg) 
@@ -152,7 +171,7 @@ void CommandCreator::set_gear(traj_interfaces::msg::TrajParam &out, const std::v
     // Reverse Gear
     if (buttonState.at(joystick::ButtonPos::REVERSE_GEAR) == 1
         && _prevButtonState.at(joystick::ButtonPos::REVERSE_GEAR) == 0) {
-            if(_vehicle_state == WAIT || _vehicle_state == EMERGENCY_STOP || _vehicle_state == END ) 
+            if(_vehicle_state == WAIT || _vehicle_state == EMERGENCY_STOP || _vehicle_state == END || _vehicle_state == COLLISION) 
             {
                 if (out.r_gear) {
                 out.r_gear = false;
@@ -163,7 +182,8 @@ void CommandCreator::set_gear(traj_interfaces::msg::TrajParam &out, const std::v
                     std::cout << "Activate R_GEAR." << std::endl;
                 }
             }else {
-                std::cout << "Vehicle is still moving. Cannot activate R_GEAR." << std::endl;
+                // std::cout << "Vehicle is still moving. Cannot activate R_GEAR." << std::endl;
+                RCLCPP_WARN(this->get_logger(), "The Vehicle is still moving, please dont change the R-GEAR");
             }
     }
 

@@ -5,11 +5,12 @@
 
 #include <nav_msgs/msg/path.hpp>
 #include <nav_msgs/msg/odometry.hpp>
-// #include <geometry_msgs/msg/accel.hpp>
 #include <ackermann_msgs/msg/ackermann_drive.hpp>
 #include <std_msgs/msg/bool.hpp>
+#include <std_msgs/msg/float64.hpp>
 
 #include <autoware_auto_planning_msgs/msg/trajectory.hpp>
+#include <carla_msgs/msg/carla_collision_event.hpp>
 // #include <carla_msgs/msg/carla_ego_vehicle_control.hpp>
 #include "traj_interfaces/msg/state_machine.hpp"
 #include "traj_interfaces/msg/traj_param.hpp"
@@ -18,6 +19,9 @@
 #include "util/TrajectoryLength.hpp"
 #include "util/DiscretePIDController.hpp"
 #include "util/StateMachine.hpp"
+#include "util/VehicleParams.h"
+
+#define DEBUG
 
 nav_msgs::msg::Path AutowareTraj2navPath(
 const autoware_auto_planning_msgs::msg::Trajectory & trajectory)
@@ -48,13 +52,17 @@ class PIDControlNode: public rclcpp::Node
     rclcpp::Publisher<ackermann_msgs::msg::AckermannDrive>::SharedPtr pub_accel;
     rclcpp::Publisher<traj_interfaces::msg::StateMachine>::SharedPtr pub_vehicle_state;
     rclcpp::Subscription<autoware_auto_planning_msgs::msg::Trajectory>::SharedPtr sub_aw_traj;
+    rclcpp::Subscription<carla_msgs::msg::CarlaCollisionEvent>::SharedPtr sub_carla_collision;
     rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr sub_odo;
     rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr sub_EBS_sig;
     rclcpp::Subscription<traj_interfaces::msg::TrajParam>::SharedPtr sub_param;
     rclcpp::TimerBase::SharedPtr on_timer;
+    #ifdef DEBUG
+    rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr pub_rest_length;
+    rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr sub_set_length;
+    #endif
 
     //pid part
-    // geometry_msgs::msg::Accel accel_cmd;
     ackermann_msgs::msg::AckermannDrive accel_cmd;
     // carla_msgs::msg::CarlaEgoVehicleControl vehicle_cmd;
     autoware_auto_planning_msgs::msg::Trajectory::ConstSharedPtr current_path;
@@ -79,6 +87,8 @@ class PIDControlNode: public rclcpp::Node
     //state machine part
     int vehicle_state{0};
     bool lost_flag {false};
+    bool collision_flag {false};
+    bool collision_event_flag {false};
     traj_interfaces::msg::StateMachine msg_state;
 
     //taster part
@@ -96,12 +106,20 @@ class PIDControlNode: public rclcpp::Node
     void callback_odometry(const nav_msgs::msg::Odometry::SharedPtr odometry);
     void callback_path(const autoware_auto_planning_msgs::msg::Trajectory::SharedPtr path);
     void callback_param(const traj_interfaces::msg::TrajParam::SharedPtr msg_param);
+    void callback_collision(const carla_msgs::msg::CarlaCollisionEvent::SharedPtr msg_collison);
+    #ifdef DEBUG
+    double set_length{};
+    void callback_set_length(const std_msgs::msg::Float64::SharedPtr msg_set_length);
+    #endif 
+
     void run();
+
 
     void vehicle_end();
     void vehicle_wait();
     void vehicle_move_forward();
     void vehicle_move_backward();
     void vehicle_ebs();
+    void vehicle_collision();
 
 };

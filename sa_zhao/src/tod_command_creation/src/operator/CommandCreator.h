@@ -9,6 +9,7 @@
 // #include "tod_helper/vehicle/Model.h"  //calculate the vehicle parameters
 #include "traj_interfaces/msg/traj_param.hpp"
 #include "traj_interfaces/msg/state_machine.hpp"
+// #include "carla_msgs/msg/carla_collision_event.hpp"
 
 #include <utility>
 #include <stdio.h>
@@ -31,6 +32,7 @@ private:
     rclcpp::Subscription<tod_msgs::msg::Status>::SharedPtr _statusSubs;
     rclcpp::Publisher<traj_interfaces::msg::TrajParam>::SharedPtr _param_pub;
     rclcpp::Subscription<traj_interfaces::msg::StateMachine>::SharedPtr _vehicle_state_sub;
+    // rclcpp::Subscription<carla_msgs::msg::CarlaCollisionEvent>::SharedPtr _vehicle_collision_sub;
 
     std::map<joystick::ButtonPos, int> _prevButtonState;
     uint8_t _status{tod_msgs::msg::Status::TOD_STATUS_IDLE};
@@ -61,6 +63,10 @@ private:
     size_t _count;
     bool _joystickInputSet{false};
 
+    //collsion parameters
+    bool collision_flag {false};
+    bool event_flag {false};
+
     void init_control_messages();
 
     void callback_joystick_msg(const sensor_msgs::msg::Joy::SharedPtr msg);
@@ -68,6 +74,8 @@ private:
     void callback_status_msg(const tod_msgs::msg::Status::SharedPtr msg);
 
     void callback_vehicle_state(const traj_interfaces::msg::StateMachine::SharedPtr msg);
+
+    // void callback_vehicle_collsion(const carla_msgs::msg::CarlaCollisionEvent::SharedPtr msg);
 
     void calculate_traj_direction(
         traj_interfaces::msg::TrajParam &out, 

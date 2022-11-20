@@ -109,7 +109,6 @@ void TrajVisualisation::callback_traj_param(const traj_interfaces::msg::TrajPara
     pathID_add_judge();
 
     std::string path_frame_name = "path_"+std::to_string(pathID);
-    auto check_transform = KosTransform::waitForTransform(*tf_buffer_, path_frame_name, "path_start");
 
     msg_time = this->now();
     traj_wished = vector2pathmsg(path_frame_name, vector_traj, msg_time);
@@ -147,10 +146,12 @@ void TrajVisualisation::pathID_add_judge()
         pathID += 1;
         gear_change_flag = false;
     }
+    // std::cout << "path id: " << std::to_string(pathID) << std::endl;
 }
 
 nav_msgs::msg::Path TrajVisualisation::vector2pathmsg(std::string frame_name, std::vector<Pose> traj, rclcpp::Time now)
 {
+    // auto check_transform = KosTransform::waitForTransform(*tf_buffer_, frame_name, "path_start");
     nav_msgs::msg::Path traj_result;
     traj_result.header.stamp = now;
     traj_result.header.frame_id = frame_name;

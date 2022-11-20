@@ -9,7 +9,7 @@ namespace VehicleParams{
     const float width_edge_to_edge_safe {2.500};
     const float height {1.443};
     const float distance_front_bumper {2.347};
-    const float distance_rear_bumper {2.347};
+    const float distance_rear_bumper {2.100};
     const float length_edge_to_edge {4.694};
 
     const float distance_rearAxle_frontBumper = distance_front_bumper + distance_rear_axle;

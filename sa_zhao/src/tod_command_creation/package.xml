@@ -11,8 +11,9 @@
 
     <depend>roscpp</depend>
     <depend>tod_msgs</depend>
-    <!-- <depend>tod_helper</depend> -->
+    <depend>carla_msgs</depend>
     <depend>traj_interfaces</depend>
+    <!-- <depend>interactive_trajectory</depend> -->
     <!-- <depend>tod_network</depend> -->
     <!-- <depend>tod_core</depend> -->
     <!-- <depend>tod_vehicle_config</depend> -->

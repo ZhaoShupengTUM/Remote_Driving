@@ -5,7 +5,6 @@
 #include <chrono>
 
 #include "LongitudinalControlNode.hpp"
-#include "util/VehicleParams.h"
 
 using namespace std::chrono_literals;
 using std::placeholders::_1;
@@ -19,6 +18,11 @@ PIDControlNode::PIDControlNode(): Node("PID_longitudinal_control")
 
     pub_vehicle_state = this->create_publisher<traj_interfaces::msg::StateMachine>("statemachine/vehicle_state", 10);
 
+    #ifdef DEBUG
+    pub_rest_length = this->create_publisher<std_msgs::msg::Float64>("debug/vehicle_path_length",10);
+    sub_set_length = this->create_subscription<std_msgs::msg::Float64>("debug/path_length", 10, std::bind(&PIDControlNode::callback_set_length, this, _1));
+    #endif
+
     sub_odo = this->create_subscription<nav_msgs::msg::Odometry>("carla/ego_vehicle/odometry", 10, std::bind(&PIDControlNode::callback_odometry, this, _1));
 
     sub_EBS_sig = this->create_subscription<std_msgs::msg::Bool>("EBS/signal", 10, std::bind(&PIDControlNode::callback_EBS, this, _1));
@@ -26,6 +30,8 @@ PIDControlNode::PIDControlNode(): Node("PID_longitudinal_control")
     sub_aw_traj = this->create_subscription<autoware_auto_planning_msgs::msg::Trajectory>("pure_pursuit/input/reference_trajectory", 10, std::bind(&PIDControlNode::callback_path, this, _1));
 
     sub_param = this->create_subscription<traj_interfaces::msg::TrajParam>("interactive/param", 10, std::bind(&PIDControlNode::callback_param, this, _1));
+
+    sub_carla_collision = this->create_subscription<carla_msgs::msg::CarlaCollisionEvent>("carla/ego_vehicle/collision", 10, std::bind(&PIDControlNode::callback_collision, this, _1));
 
     this->declare_parameter<double>("kp", 1.0);
     this->declare_parameter<double>("kd", 3.0);
@@ -68,6 +74,13 @@ bool PIDControlNode::isDataReady()
     return true;
 }
 
+void PIDControlNode::callback_collision(const carla_msgs::msg::CarlaCollisionEvent::SharedPtr msg_collison)
+{
+    if(msg_collison) {
+        collision_event_flag = true;
+    }
+}
+
 void PIDControlNode::callback_EBS(const std_msgs::msg::Bool::SharedPtr msg)
 {
     ebs_sig.data = msg->data;
@@ -77,6 +90,13 @@ void PIDControlNode::callback_param(const traj_interfaces::msg::TrajParam::Share
 {
     r_gear = msg_param->r_gear;
 }
+
+#ifdef DEBUG
+void PIDControlNode::callback_set_length(const std_msgs::msg::Float64::SharedPtr msg_set_length)
+{
+    set_length = msg_set_length->data;
+}
+#endif
 
 void PIDControlNode::callback_odometry(const nav_msgs::msg::Odometry::SharedPtr odometry)
 {
@@ -97,6 +117,13 @@ void PIDControlNode::callback_odometry(const nav_msgs::msg::Odometry::SharedPtr 
     current_pose.pose.orientation = current_odometry->pose.pose.orientation;
     current_pose.set__header(current_odometry->header);
 
+    if(collision_event_flag) {
+        collision_flag = true;
+    } else {
+        collision_flag = false;
+    }
+    collision_event_flag = false;
+
     if(isDataReady()) 
     {
         run();   
@@ -115,21 +142,27 @@ void PIDControlNode::run()
 
     if(!r_gear) {
         closet_idx = TrajectoryLength::findClosestIdxWithDistAngThr(vector_pose, current_pose.pose, 3.0, M_PI/4);
-        std::cout << "Index: " << closet_idx.second << std::endl;
+        // std::cout << "Index: " << closet_idx.second << std::endl;
         lost_flag = closet_idx.first;
         if(closet_idx.first) {
-            rest_length = TrajectoryLength::calcTrajLengthBetweenTwoIndex(path, closet_idx.second, path.poses.size()-1) - 3.8;
-            std::cout << "Rest length: " << rest_length << std::endl;
+            rest_length = TrajectoryLength::calcTrajLengthBetweenTwoIndex(path, closet_idx.second, path.poses.size()-1) - VehicleParams::distance_front_bumper;
+            // std::cout << "Rest length: " << rest_length << std::endl;
         }
     } else {
         closet_idx = TrajectoryLength::findClosestIdxWithDistAngThr(vector_pose, current_pose.pose, 0.5, M_PI/4);
         lost_flag = closet_idx.first;
         if(closet_idx.first) {
-            rest_length = TrajectoryLength::calcTrajLengthBetweenTwoIndex(path, closet_idx.second, path.poses.size()-1) - 0.7;  
+            rest_length = TrajectoryLength::calcTrajLengthBetweenTwoIndex(path, closet_idx.second, path.poses.size()-1);  
         }
     }
 
-    //state machine transfer
+    #ifdef DEBUG
+    std_msgs::msg::Float64 actual_length;
+    actual_length.data = set_length - rest_length;
+    pub_rest_length -> publish(actual_length);
+    #endif    
+
+    //state machine transform
     if(ebs_sig.data)
     {
         if(!r_gear) {
@@ -142,11 +175,15 @@ void PIDControlNode::run()
             }
         }
     }
+    else if(collision_flag)
+    {
+        vehicle_state = COLLISION;
+    }
     else
     {
         if(closet_idx.first) 
         {
-            if(rest_length <= 0.3) {
+            if(rest_length <= 0.2) {
                 vehicle_state = END;
             } 
             else if (r_gear)
@@ -192,6 +229,11 @@ void PIDControlNode::run()
         msg_state.set__vehicle_state(EMERGENCY_STOP);
         pub_vehicle_state->publish(msg_state);
         break;
+    case COLLISION:
+        vehicle_collision();
+        msg_state.set__vehicle_state(COLLISION);
+        pub_vehicle_state->publish(msg_state);
+        break;
     }
 }
 
@@ -203,7 +245,7 @@ void PIDControlNode::vehicle_end()
     pid_controller.Reset();
     pid_controller_v.Reset();
 
-    RCLCPP_INFO(this->get_logger(), "Vehicle State: END\n At the End of the trajectory. Control_error: %f", rest_length+ VehicleParams::distance_rear_axle);
+    RCLCPP_INFO(this->get_logger(), "Vehicle State: END\n~At the End of the trajectory. Control_error: %f");
 }
 
 void PIDControlNode::vehicle_move_forward()
@@ -211,7 +253,7 @@ void PIDControlNode::vehicle_move_forward()
     // double target_v = pid_controller_v.Control(rest_length, dt);
     // std::cout << "target_v:" << target_v << std::endl;
     accel_cmd.acceleration = pid_controller.Control(rest_length, dt);
-    std::cout << "output_a:" << accel_cmd.acceleration << std::endl;
+    // std::cout << "output_a:" << accel_cmd.acceleration << std::endl;
     if(accel_cmd.acceleration>0) {
         accel_cmd.speed=8.0;
     } else {
@@ -220,7 +262,7 @@ void PIDControlNode::vehicle_move_forward()
 
     pub_accel->publish(accel_cmd);
 
-    RCLCPP_INFO(this->get_logger(), "Vehicle State: MOVE_FORWARD\n error:%f\n proportional_part:%f\n derivative_part:%f\n integral_part:%f\n", rest_length, pid_controller.proportional_part, pid_controller.derivative_part, pid_controller.integral_part);
+    RCLCPP_INFO(this->get_logger(), "Vehicle State: MOVE_FORWARD\n~error:%f\n proportional_part:%f\n derivative_part:%f\n integral_part:%f\n", rest_length, pid_controller.proportional_part, pid_controller.derivative_part, pid_controller.integral_part);
 }
 
 void PIDControlNode::vehicle_move_backward()
@@ -233,7 +275,7 @@ void PIDControlNode::vehicle_move_backward()
     }
     pub_accel->publish(accel_cmd);
 
-    RCLCPP_INFO(this->get_logger(), "Vehicle State: MOVE_BACKWARD\n error:%f\n proportional_part:%f\n derivative_part:%f\n integral_part:%f\n", rest_length, pid_controller.proportional_part, pid_controller.derivative_part, pid_controller.integral_part);
+    RCLCPP_INFO(this->get_logger(), "Vehicle State: MOVE_BACKWARD\n~error:%f\n proportional_part:%f\n derivative_part:%f\n integral_part:%f\n", rest_length, pid_controller.proportional_part, pid_controller.derivative_part, pid_controller.integral_part);
 }
 
 void PIDControlNode::vehicle_wait()
@@ -241,7 +283,7 @@ void PIDControlNode::vehicle_wait()
     accel_cmd.acceleration = max_decel;
     accel_cmd.speed = 0.0;
     pub_accel->publish(accel_cmd);
-    RCLCPP_INFO(this->get_logger(), "Vehicle State: WAIT\n, Wait for the new path!");
+    RCLCPP_INFO(this->get_logger(), "Vehicle State: WAIT\n~Vehicle lost. Please use keyboard B to refresh the trajectory!");
 }
 
 void PIDControlNode::vehicle_ebs()
@@ -250,6 +292,14 @@ void PIDControlNode::vehicle_ebs()
     accel_cmd.speed = 0.0;
     pub_accel->publish(accel_cmd);
     RCLCPP_INFO(this->get_logger(), "Vehicle State: EMERGENCY_STOP\n");
+}
+
+void PIDControlNode::vehicle_collision()
+{
+    accel_cmd.acceleration = max_decel;
+    accel_cmd.speed = 0.0;
+    pub_accel->publish(accel_cmd);
+    RCLCPP_WARN(this->get_logger(), "Vehicle State: COLLISION\n~Please switch the driving direction!");
 }
 
 int main(int argc, char * argv[])

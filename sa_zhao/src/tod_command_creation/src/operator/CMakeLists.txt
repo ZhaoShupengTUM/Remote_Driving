@@ -1,6 +1,6 @@
 set(TARGETS ${TARGETS} OperatorCommandCreator)
 add_executable(OperatorCommandCreator CommandCreatorNode.cpp CommandCreator.cpp)
-ament_target_dependencies(OperatorCommandCreator rclcpp tod_msgs traj_interfaces)
+ament_target_dependencies(OperatorCommandCreator rclcpp tod_msgs traj_interfaces carla_msgs)
 target_include_directories(OperatorCommandCreator PRIVATE ${tod_msgs_INCLUDE_DIRS})
 
 # set(TARGETS ${TARGETS} OperatorPrimaryCommandSender)
