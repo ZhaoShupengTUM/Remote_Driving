@@ -1,5 +1,4 @@
-#basic launch lib
-#This launch file will launch the tele_driving with the keyboard
+#launch the trajectory generation test
 from launch_ros.actions import Node
 from launch import LaunchDescription
 
@@ -39,13 +38,6 @@ def generate_launch_description():
             output='screen',
             )
 
-   # autoware_bridge_node = Node(
-   #          package='interactive_trajectory',
-   #          executable='autoware_bridge',
-   #          name='autoware_bridge',
-   #          output='screen',
-   #          )
-
    rviz_node = Node(
             package='rviz2',
             executable='rviz2',
@@ -57,7 +49,7 @@ def generate_launch_description():
    static_tf2_node = Node(
       package="tf2_ros",
       executable='static_transform_publisher',
-      arguments=['0', '0', '0', '0', '0', '0', 'path_start', 'ego_vehicle']
+      arguments=['0', '0', '0', '0', '0', '0', 'ego_vehicle', 'path_start']
    )
 
    return LaunchDescription([

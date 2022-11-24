@@ -60,6 +60,7 @@ class PIDControlNode: public rclcpp::Node
     #ifdef DEBUG
     rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr pub_rest_length;
     rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr sub_set_length;
+    rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr pub_lateral_error;    
     #endif
 
     //pid part

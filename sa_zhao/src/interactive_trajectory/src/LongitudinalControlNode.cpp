@@ -21,6 +21,7 @@ PIDControlNode::PIDControlNode(): Node("PID_longitudinal_control")
     #ifdef DEBUG
     pub_rest_length = this->create_publisher<std_msgs::msg::Float64>("debug/vehicle_path_length",10);
     sub_set_length = this->create_subscription<std_msgs::msg::Float64>("debug/path_length", 10, std::bind(&PIDControlNode::callback_set_length, this, _1));
+    pub_lateral_error = this->create_publisher<std_msgs::msg::Float64>("debug/lateral_error",10);
     #endif
 
     sub_odo = this->create_subscription<nav_msgs::msg::Odometry>("carla/ego_vehicle/odometry", 10, std::bind(&PIDControlNode::callback_odometry, this, _1));
@@ -152,14 +153,25 @@ void PIDControlNode::run()
         closet_idx = TrajectoryLength::findClosestIdxWithDistAngThr(vector_pose, current_pose.pose, 0.5, M_PI/4);
         lost_flag = closet_idx.first;
         if(closet_idx.first) {
-            rest_length = TrajectoryLength::calcTrajLengthBetweenTwoIndex(path, closet_idx.second, path.poses.size()-1);  
+            rest_length = TrajectoryLength::calcTrajLengthBetweenTwoIndex(path, closet_idx.second, path.poses.size()-1) - VehicleParams::distance_rear_bumper;  
         }
     }
 
     #ifdef DEBUG
+    //the longitudinal control
     std_msgs::msg::Float64 actual_length;
     actual_length.data = set_length - rest_length;
     pub_rest_length -> publish(actual_length);
+
+    //the horizontal control
+    if(closet_idx.first) {
+        geometry_msgs::msg::Pose closest_pose = vector_pose.at(closet_idx.second);
+        geometry_msgs::msg::Point closest_point = KosTransform::transformToRelativeCoordinate2D(closest_pose.position, current_pose.pose);
+        double y_error = closest_point.y;
+        std_msgs::msg::Float64 lateral_error;
+        lateral_error.data = y_error;
+        pub_lateral_error -> publish(lateral_error);
+    }
     #endif    
 
     //state machine transform

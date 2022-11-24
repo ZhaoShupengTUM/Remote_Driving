@@ -96,12 +96,13 @@ class TeleopAuto
     rclcpp::Node::SharedPtr nh_;
     rclcpp::Publisher<traj_interfaces::msg::TrajParam>::SharedPtr param_pub_;
     rclcpp::Subscription<traj_interfaces::msg::StateMachine>::SharedPtr vehicle_state_sub_;
-
+    
     rclcpp::TimerBase::SharedPtr timer;
     std::shared_ptr<tf2_ros::TransformListener> transform_listener_{nullptr};
     std::unique_ptr<tf2_ros::Buffer> tf_buffer_;
 
     #ifdef DEBUG
+    // rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr curvature_pub_;
     rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr length_pub_;
     #endif
 
@@ -145,6 +146,7 @@ TeleopAuto::TeleopAuto()
 
       #ifdef DEBUG
       length_pub_ = nh_->create_publisher<std_msgs::msg::Float64>("debug/path_length",10);
+      // curvature_pub_ = nh_->create_publisher<std_msgs::msg::Float64>("debug/path_curvature",10);
       #endif
 
       vehicle_state_sub_ = nh_->create_subscription<traj_interfaces::msg::StateMachine>("statemachine/vehicle_state", 10, std::bind(&TeleopAuto::callback_state, this, _1));
@@ -190,6 +192,10 @@ void TeleopAuto::timer_pub_cmd()
   std_msgs::msg::Float64 set_length;
   set_length.data = Gaspedal - VehicleParams::distance_front_bumper - 1.4;
   length_pub_ -> publish(set_length);
+
+  std_msgs::msg::Float64 set_curvature;
+  set_curvature.data = Lenkrad*M_PI/180;
+  // curvature_pub_ -> publish(set_curvature);
   #endif
 
   if(taster_confirm) {
