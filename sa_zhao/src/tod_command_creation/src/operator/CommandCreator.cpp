@@ -132,9 +132,10 @@ void CommandCreator::callback_joystick_msg(const sensor_msgs::msg::Joy::SharedPt
 
 void CommandCreator::callback_status_msg(const tod_msgs::msg::Status::SharedPtr msg) 
 {
-    if (_status == tod_msgs::msg::Status::TOD_STATUS_TELEOPERATION
-        && msg->tod_status != tod_msgs::msg::Status::TOD_STATUS_TELEOPERATION) {
+    if (_status != tod_msgs::msg::Status::TOD_STATUS_TELEOPERATION
+        && msg->tod_status == tod_msgs::msg::Status::TOD_STATUS_TELEOPERATION) {
         init_control_messages();
+        std::cout << "Activate the TOD status!" << std::endl;
     }
     _status = msg->tod_status;
 }
@@ -144,7 +145,7 @@ void CommandCreator::calculate_traj_direction(traj_interfaces::msg::TrajParam &o
     double newDesiredSWA = axes.at(joystick::AxesPos::STEERING) * _maxSteeringWheelAngle * 180 / M_PI;
     //lenkrad unit: degree
     out.lenkrad = newDesiredSWA;
-    std::cout << "Change the steering wheel angle: " << newDesiredSWA << "degrees." << std::endl;
+    // std::cout << "Change the steering wheel angle: " << newDesiredSWA << "degrees." << std::endl;
 }
 
 void CommandCreator::calculate_traj_distance(traj_interfaces::msg::TrajParam &out, const sensor_msgs::msg::Joy &msg) 
@@ -153,6 +154,8 @@ void CommandCreator::calculate_traj_distance(traj_interfaces::msg::TrajParam &ou
         && _prevButtonState.at(joystick::ButtonPos::INCREASE_DISTANCE) == 0
         && out.pedal < _maxTrajLength) {
         out.pedal += _lengthRatio; // m increments
+        // std::cout << "Current Button: " << msg.buttons.at(joystick::ButtonPos::INCREASE_DISTANCE) << std::endl;
+        // std::cout << "Previous Button: " << _prevButtonState.at(joystick::ButtonPos::INCREASE_DISTANCE) << std::endl;
         std::cout << "Increase Trajectory Length: " << out.pedal << std::endl;
     }
     if (msg.buttons.at(joystick::ButtonPos::DECREASE_DISTANCE) == 1

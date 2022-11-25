@@ -274,8 +274,8 @@ int TeleopAuto::keyLoop()
     case KEYCODE_F:  
         //before confirm, check the transform
         {
-          std::string path_frame_name = "path_" + std::to_string(path_id);
-          auto check_transform = KosTransform::waitForTransform(*tf_buffer_, path_frame_name, "path_start");
+          // std::string path_frame_name = "path_" + std::to_string(path_id);
+          // auto check_transform = KosTransform::waitForTransform(*tf_buffer_, path_frame_name, "path_start");
           if(vehicle_state == EMERGENCY_STOP && !r_gear) {
             RCLCPP_INFO(nh_->get_logger(), "CONNOT DRIVE FORWARD, EMERGENCY STOP");
           } else {
@@ -289,8 +289,8 @@ int TeleopAuto::keyLoop()
     case KEYCODE_B:    
         //check the state of the vehicle
         {
-          std::string path_frame_name = "path_" + std::to_string(path_id);
-          auto check_transform = KosTransform::waitForTransform(*tf_buffer_, path_frame_name, "path_start");
+          // std::string path_frame_name = "path_" + std::to_string(path_id);
+          // auto check_transform = KosTransform::waitForTransform(*tf_buffer_, path_frame_name, "path_start");
           if(vehicle_state == END || vehicle_state == EMERGENCY_STOP || vehicle_state == WAIT|| vehicle_state == COLLISION ) {
             r_gear = !r_gear;
             // dirty = true;

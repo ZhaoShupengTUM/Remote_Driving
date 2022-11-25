@@ -6,6 +6,7 @@
 #include <QMainWindow>
 #include <ament_index_cpp/get_package_share_directory.hpp> // TODO: Move this
 
+
 RosInterface::RosInterface(int argc, char** pArgv, InputDeviceController* parent)
     : m_Init_argc(argc), m_pInit_argv(pArgv), _parent(parent), Node("InputDevice"){
         RCLCPP_INFO(this->get_logger(), "Node created!!");
@@ -60,6 +61,24 @@ void RosInterface::run() {
     while ( rclcpp::ok()) {
         _operatorMsg.header.stamp = this->get_clock()->now();
         _joystickMsgPublisher->publish(_operatorMsg);
+
+        #ifdef TEST
+        float lenkrad_rad = _operatorMsg.axes.at(0);
+        int length_increase = _operatorMsg.buttons.at(5);
+        int length_decrease = _operatorMsg.buttons.at(6);
+        int traj_confirm = _operatorMsg.buttons.at(8);
+        int r_gear = _operatorMsg.buttons.at(7);
+        // std::cout << "The value from fanactec are:\n " 
+        // << "Steering Wheel:" << lenkrad_rad << "\n"
+        // << "Length increase:" << length_increase  << "\n"
+        // << "Length decrease:" << length_decrease  << "\n"
+        // << "Trajectory confirm:" << traj_confirm  << "\n"
+        // << "Gear change:" << r_gear  << "\n" <<std::endl;
+
+        RCLCPP_INFO(node->get_logger(), "Steering Wheel: %f\n Length increase: %d\n Length decrease: %d\n Trajectory confirm: %d\n Gear change: %d\n", lenkrad_rad, length_increase, length_decrease, traj_confirm, r_gear);
+
+        #endif
+
         _statusMsgPublisher->publish(_statusMsg);
         rclcpp::spin_some(node);
         r.sleep();

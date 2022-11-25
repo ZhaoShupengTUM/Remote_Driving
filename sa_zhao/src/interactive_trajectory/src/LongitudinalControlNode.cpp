@@ -34,8 +34,8 @@ PIDControlNode::PIDControlNode(): Node("PID_longitudinal_control")
 
     sub_carla_collision = this->create_subscription<carla_msgs::msg::CarlaCollisionEvent>("carla/ego_vehicle/collision", 10, std::bind(&PIDControlNode::callback_collision, this, _1));
 
-    this->declare_parameter<double>("kp", 1.0);
-    this->declare_parameter<double>("kd", 3.0);
+    this->declare_parameter<double>("kp", 0.8);
+    this->declare_parameter<double>("kd", 3.5);
     this->declare_parameter<double>("ki", 0.02);
 
     on_timer = this->create_wall_timer(
@@ -257,7 +257,7 @@ void PIDControlNode::vehicle_end()
     pid_controller.Reset();
     pid_controller_v.Reset();
 
-    RCLCPP_INFO(this->get_logger(), "Vehicle State: END\n~At the End of the trajectory. Control_error: %f");
+    RCLCPP_INFO(this->get_logger(), "Vehicle State: END\n~At the End of the trajectory. Control_error: %f", rest_length);
 }
 
 void PIDControlNode::vehicle_move_forward()
@@ -274,7 +274,7 @@ void PIDControlNode::vehicle_move_forward()
 
     pub_accel->publish(accel_cmd);
 
-    RCLCPP_INFO(this->get_logger(), "Vehicle State: MOVE_FORWARD\n~error:%f\n proportional_part:%f\n derivative_part:%f\n integral_part:%f\n", rest_length, pid_controller.proportional_part, pid_controller.derivative_part, pid_controller.integral_part);
+    RCLCPP_INFO(this->get_logger(), "Vehicle State: MOVE_FORWARD\n ~error:%f\n ~proportional_part:%f\n ~derivative_part:%f\n ~integral_part:%f\n", rest_length, pid_controller.proportional_part, pid_controller.derivative_part, pid_controller.integral_part);
 }
 
 void PIDControlNode::vehicle_move_backward()
@@ -287,7 +287,7 @@ void PIDControlNode::vehicle_move_backward()
     }
     pub_accel->publish(accel_cmd);
 
-    RCLCPP_INFO(this->get_logger(), "Vehicle State: MOVE_BACKWARD\n~error:%f\n proportional_part:%f\n derivative_part:%f\n integral_part:%f\n", rest_length, pid_controller.proportional_part, pid_controller.derivative_part, pid_controller.integral_part);
+    RCLCPP_INFO(this->get_logger(), "Vehicle State: MOVE_BACKWARD\n ~error:%f\n ~proportional_part:%f\n ~derivative_part:%f\n ~integral_part:%f\n", rest_length, pid_controller.proportional_part, pid_controller.derivative_part, pid_controller.integral_part);
 }
 
 void PIDControlNode::vehicle_wait()

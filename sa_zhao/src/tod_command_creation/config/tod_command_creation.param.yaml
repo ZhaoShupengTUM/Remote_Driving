@@ -7,5 +7,5 @@ Operator/InputDevices/command_creator:
     MinimumTrajLength: 6.0
     MaximumSteerWheelAngle: 7.8538
     MaxSteeringWheelAngleRate: 15.0
-    LengthRatio: 2.0
+    LengthRatio: 0.1
     VehicleID: "tum-model3" 
