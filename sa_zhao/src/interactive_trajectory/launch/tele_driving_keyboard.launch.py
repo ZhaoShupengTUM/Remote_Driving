@@ -1,17 +1,28 @@
 #basic launch lib
-from http.server import executable
-from modulefinder import packagePathMap
+# from http.server import executable
+# from modulefinder import packagePathMap
 import os
 import launch
 import launch_ros
+#parameter file needed#
+import os
+import yaml
+from ament_index_python import get_package_share_directory
 
-from ament_index_python.packages import get_package_share_directory
-from launch_ros.parameter_descriptions import ParameterValue
 
 def generate_launch_description():
 
-   rviz_config_path =  '/home/tofstudent/Remote_Driving/sa_zhao/config/trajInteractive.rviz'
-   # rviz_config_path =  '/home/zsp/Remote_Driving/sa_zhao/config/trajInteractive.rviz'
+   # rviz_config_path =  '/home/tofstudent/Remote_Driving/sa_zhao/config/trajInteractive.rviz'
+   rviz_config_path =  '/home/zsp/Remote_Driving/sa_zhao/config/trajInteractive.rviz'
+
+   paramFilepath = os.path.join(
+        get_package_share_directory('interactive_trajectory'),
+        'config',
+        'longitudinal_control.param.yaml'
+    )
+
+   with open(paramFilepath, 'r') as file:
+        configParams = yaml.safe_load(file)['pid_longitudinal_control']["ros__parameters"]
 
    rviz_arg = launch.actions.DeclareLaunchArgument(
       name='rvizconfig', 
@@ -43,7 +54,8 @@ def generate_launch_description():
             package='interactive_trajectory',
             executable='pid_longitudinal_control',
             name='pid_longitudinal_control',
-            output='screen'
+            output='screen',
+            parameters=[configParams]
    )
 
    carla_bridge_node = launch_ros.actions.Node(

@@ -12,9 +12,9 @@ def generate_launch_description():
     """Generate launch description with multiple components."""
 
     configFilepath = os.path.join(
-        get_package_share_directory('pure_pursuit'),
+        get_package_share_directory('interactive_trajectory'),
         'config',
-        'pure_pursuit.param.yaml'
+        'horizontal_control.param.yaml'
     )
 
     #load the config file to the composable node
