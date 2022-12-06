@@ -1,4 +1,6 @@
 #basic launch lib
+# from http.server import executable
+# from modulefinder import packagePathMap
 import os
 import launch
 import launch_ros
@@ -10,7 +12,17 @@ from ament_index_python import get_package_share_directory
 
 def generate_launch_description():
 
-   rviz_config_path =  '/home/zsp/sa_zhao/config/traj.rviz'
+   # rviz_config_path =  '/home/tofstudent/Remote_Driving/sa_zhao/config/trajInteractive.rviz'
+   rviz_config_path =  '/home/zsp/Remote_Driving/sa_zhao/config/trajInteractive.rviz'
+
+   paramFilepath = os.path.join(
+        get_package_share_directory('interactive_trajectory'),
+        'config',
+        'longitudinal_control.param.yaml'
+    )
+
+   with open(paramFilepath, 'r') as file:
+        configParams = yaml.safe_load(file)['pid_longitudinal_control']["ros__parameters"]
 
    rviz_arg = launch.actions.DeclareLaunchArgument(
       name='rvizconfig', 
@@ -38,10 +50,32 @@ def generate_launch_description():
             output='screen'
             )
 
-   obstacle_node = launch_ros.actions.Node(
+   discrete_pid_node = launch_ros.actions.Node(
             package='interactive_trajectory',
-            executable='obstacle_show',
-            name='obstacle_show',
+            executable='pid_longitudinal_control',
+            name='pid_longitudinal_control',
+            output='screen',
+            parameters=[configParams]
+   )
+
+   carla_bridge_node = launch_ros.actions.Node(
+            package='interactive_trajectory',
+            executable='carla_bridge',
+            name='carla_bridge',
+            output='screen'
+            )
+
+   corriodor_node = launch_ros.actions.Node(
+            package='interactive_trajectory',
+            executable='corridor',
+            name='corridor',
+            output='screen'
+            )
+
+   ebs_node = launch_ros.actions.Node(
+            package='interactive_trajectory',
+            executable='collsion_check',
+            name='ebs_collsion_detection',
             output='screen'
             )
 
@@ -56,15 +90,31 @@ def generate_launch_description():
    static_tf2_node = launch_ros.actions.Node(
       package="tf2_ros",
       executable='static_transform_publisher',
-      arguments=['-1.44', '0', '0', '0', '0', '0', 'map', 'path_start']
+      arguments=['-1.44', '0', '0', '0', '0', '0', 'ego_vehicle', 'base_link']
+   )
+   
+   pure_puresuit = launch.actions.IncludeLaunchDescription(launch.launch_description_sources.PythonLaunchDescriptionSource(
+      os.path.join
+      (
+         get_package_share_directory(
+            'interactive_trajectory'),
+            'launch',
+            'pure_pursuit.launch.py'
+         )
+      )
    )
    
    return launch.LaunchDescription([
-         static_tf2_node,
-         tf_node,
-         visual_node,
          rviz_arg,
-         rviz_node,
+         visual_node,
+         tf_node,
          collect_node,
-         obstacle_node
+         rviz_node,
+         # pure_pursuit_node,
+         discrete_pid_node,
+         carla_bridge_node,
+         static_tf2_node,
+         pure_puresuit,
+         corriodor_node,
+         ebs_node
      ])

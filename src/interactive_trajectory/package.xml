@@ -8,7 +8,8 @@
   <license>TODO: License declaration</license>
 
   <depend>rclcpp</depend>
-
+  <depend>rclcpp_components</depend>
+  <depend>rclpy</depend>
   <depend>std_msgs</depend>
   <depend>nav_msgs</depend>
   <depend>tf2</depend>
@@ -18,6 +19,13 @@
   <depend>sensor_msgs</depend>
 
   <depend>traj_interfaces</depend>
+  <depend>autoware_auto_planning_msgs</depend>
+  <depend>autoware_auto_control_msgs</depend>
+  <depend>carla_msgs</depend>
+  <depend>ackermann_msgs</depend>
+  <depend>tod_command_creation</depend>
+  <!-- <depend>pure_pursuit</depend> -->
+  <!-- <depend>tod_msgs</depend> -->
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 

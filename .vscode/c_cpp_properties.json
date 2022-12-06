@@ -7,13 +7,18 @@
                 "/opt/ros/foxy/include/**",
                 "/usr/include/**",
                 "/home/zsp/sa_zhao/src/random_trajectory/include/**",
+                "${workspaceFolder}/src/interactive_trajectory/include/",
+                "${workspaceFolder}/src/pure_pursuit/include/",
                 "/home/zsp/sa_zhao/install/traj_interfaces/include/**",
-                "/home/zsp/sa_zhao/install/tod_msgs/include/**",
-                "${workspaceFolder}/src/interactive_trajectory/include/"
+                "/home/zsp/sa_zhao/install/autoware_auto_planning_msgs/include/**",
+                "/home/zsp/sa_zhao/install/autoware_auto_control_msgs/include/**",
+                "/home/zsp/sa_zhao/install/autoware_auto_vehicle_msgs/include/**",
+                "/home/zsp/sa_zhao/install/carla_msgs/include/**",
+                "/home/zsp/sa_zhao/install/carla_ackermann_msgs/include/**"
             ],
             "defines": [],
-            "cStandard": "c11",
-            "cppStandard": "c++14",
+            "cStandard": "gnu17",
+            "cppStandard": "c++20",
             "intelliSenseMode": "linux-clang-x64",
             "configurationProvider": "ms-vscode.cmake-tools"
         }

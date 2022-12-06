@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="ConfigMode" default="false"/>
+    <arg name="ConfigFile" default="$(find-pkg-share tod_input_devices)/config/fanatec.yaml"/>
+
+    <group>
+        <push-ros-namespace namespace="Operator/InputDevices"/>
+        <node name="InputDevice" pkg="tod_input_devices" exec="InputDevice" output="screen">
+
+            <param from="$(var ConfigFile)"/>
+            <param name="ConfigMode" value="$(var ConfigMode)"/>
+            <param name="debug" value="false"/>
+        </node>
+    </group>
+</launch>

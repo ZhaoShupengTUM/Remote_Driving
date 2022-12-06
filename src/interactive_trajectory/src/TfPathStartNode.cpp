@@ -7,7 +7,6 @@
 #include <rclcpp/rclcpp.hpp>
 #include <nav_msgs/msg/path.hpp>
 #include "traj_interfaces/msg/traj_param.hpp"
-// #include "traj_interfaces/msg/state_machine.hpp"
 
 #include <tf2/LinearMath/Quaternion.h>
 #include <tf2_ros/static_transform_broadcaster.h>
@@ -42,10 +41,12 @@ public:
 
     //check the transfrom between path_start and ego_vehicle 
     toFrameRel = "path_start";
-    fromFrameRel = "map";
+    fromFrameRel = "ego_vehicle";
     auto transform_path_vehicle = KosTransform::waitForTransform(*tf_buffer_, fromFrameRel, toFrameRel);
-
+    
+    //initialize the path_1 same as path_start frame
     initialize_path_1();
+
   }
 
 private:
@@ -62,9 +63,9 @@ private:
   std::string fromFrameRel;
   int pathID = 1;
   bool taster_flag = false;
-  // bool current_r_gear = false;
-  // bool last_r_gear = false;
-  // bool gear_change = false;
+  bool current_r_gear = false;
+  bool last_r_gear = false;
+  bool gear_change = false;
 
   void initialize_path_1()
   {
@@ -95,20 +96,22 @@ private:
     // RCLCPP_INFO(this->get_logger(), "The frame of the endpose is %s", endpose.header.frame_id.c_str());
   }
 
+  //the taster will make the pathID +1 
   void callback_taster(const traj_interfaces::msg::TrajParam::SharedPtr msg)
   {
       taster_flag = msg->taster_confirm;
-      // last_r_gear = current_r_gear;
-      // current_r_gear = msg->r_gear;
-      // if(last_r_gear == current_r_gear) {
-      //   gear_change = false;
-      // } else {
-      //   gear_change = true;
-      // }
+      last_r_gear = current_r_gear;
+      current_r_gear = msg->r_gear;
+      if(last_r_gear == current_r_gear) {
+        gear_change = false;
+      } else {
+        gear_change = true;
+      }
 
       //the taster will send a new frame which is on the endpose of the trajectory
       if(taster_flag)
       {
+        //use the end pose to create a new transform
         rclcpp::Time now = this->get_clock()->now();
         t.header.stamp = now;
 
@@ -129,21 +132,21 @@ private:
       taster_flag = false;
 
       //the change of gear will generate a new path_n+1 frame as the same as the base_link
-      // if(gear_change)
-      // {
-      //   // if(pathID != 1)
-      //   {
-      //     auto baselink_transform = KosTransform::waitForTransform(*tf_buffer_, "path_"+std::to_string(pathID), "base_link");
-      //     rclcpp::Time now = this->get_clock()->now();
-      //     baselink_transform.header.stamp = now;
-      //     baselink_transform.child_frame_id = "path_" + std::to_string(pathID+1);
-      //     baselink_transform.header.frame_id = "path_" + std::to_string(pathID);
-      //     tf_publisher_->sendTransform(baselink_transform);  
+      if(gear_change)
+      {
+        // if(pathID != 1)
+        {
+          auto baselink_transform = KosTransform::waitForTransform(*tf_buffer_, "path_"+std::to_string(pathID), "base_link");
+          rclcpp::Time now = this->get_clock()->now();
+          baselink_transform.header.stamp = now;
+          baselink_transform.child_frame_id = "path_" + std::to_string(pathID+1);
+          baselink_transform.header.frame_id = "path_" + std::to_string(pathID);
+          tf_publisher_->sendTransform(baselink_transform);  
 
-      //     pathID += 1;    
-      //     RCLCPP_INFO(this->get_logger(), "Send the frame %s", baselink_transform.child_frame_id.c_str());    
-      //   }
-      // }
+          pathID += 1;    
+          RCLCPP_INFO(this->get_logger(), "Send the frame %s", baselink_transform.child_frame_id.c_str());    
+        }
+      }
   }
 };
 

@@ -1,0 +1,11 @@
+Operator/InputDevices/command_creator: 
+#this name is the name in the node class definition or the same name defined in the launch file
+  ros__parameters: 
+    ConstraintSteeringRate: false
+    InvertSteeringInGearReverse: false
+    MaximumTrajLength: 30.0
+    MinimumTrajLength: 6.0
+    MaximumSteerWheelAngle: 7.8538
+    MaxSteeringWheelAngleRate: 15.0
+    LengthRatio: 2.0
+    VehicleID: "tum-model3" 

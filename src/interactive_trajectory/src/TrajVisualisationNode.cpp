@@ -16,6 +16,14 @@ TrajVisualisation::TrajVisualisation(): Node("traj_visualization")
 
     pub_path_confirmed = this->create_publisher<nav_msgs::msg::Path>("trajectory/confirmed",10);
 
+    pub_path_left = this->create_publisher<nav_msgs::msg::Path>("path/left",10);
+
+    pub_path_right = this->create_publisher<nav_msgs::msg::Path>("path/right",10);
+
+    pub_path_left_confirmed = this->create_publisher<nav_msgs::msg::Path>("path/left/confirmed",10);
+
+    pub_path_right_confirmed = this->create_publisher<nav_msgs::msg::Path>("path/right/confirmed",10);
+
     //publishing the wished trajectory
     timer_1 = this->create_wall_timer(50ms, std::bind(&TrajVisualisation::timer_callback_wished, this));
 
@@ -23,37 +31,40 @@ TrajVisualisation::TrajVisualisation(): Node("traj_visualization")
     timer_2 = this->create_wall_timer(
     50ms, std::bind(&TrajVisualisation::timer_callback_confirmed, this));
 
-    // tf_buffer_ =
-    // std::make_unique<tf2_ros::Buffer>(this->get_clock());
+    tf_buffer_ =
+    std::make_unique<tf2_ros::Buffer>(this->get_clock());
 
-    // transform_listener_ =
-    // std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
+    transform_listener_ =
+    std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
 }
 
 TrajVisualisation::~TrajVisualisation() {}
 
+//calculate the trajectory of the type std::vector<Pose>
 void TrajVisualisation::callback_traj_param(const traj_interfaces::msg::TrajParam::SharedPtr msg)
 {
-    //store the parameters
     taster_flag = msg->taster_confirm;
-    // last_r_gear = r_gear;
+    last_r_gear = r_gear;
     r_gear = msg->r_gear;
-    // if(last_r_gear == r_gear) {
-    //     gear_change = false;
-    // } else {
-    //     gear_change = true;
-    //     gear_change_flag = true;
-    // }
+    if(last_r_gear == r_gear) {
+        gear_change = false;
+    } else {
+        gear_change = true;
+        gear_change_flag = true;
+    }
 
-    //unit transformation
+    //degree -> radius
     swa = msg->lenkrad/360*2*M_PI;
+    //Gaspedal -> distance
     distance = msg->pedal;
+    //steering wheel angle -> road wheel angle
     rwa = swa * 
     (VehicleParams::maximum_road_wheel_angle / VehicleParams::maximum_steering_wheel_angle);
         
     vector_traj.clear();
+    vector_path_left.clear();
+    vector_path_right.clear();
 
-    //two directions of trajectories
     if(!r_gear) {
         vector_traj = trajtool.predict_rear_axle_trajectory_forward(rwa, distance);
     }
@@ -61,20 +72,48 @@ void TrajVisualisation::callback_traj_param(const traj_interfaces::msg::TrajPara
         vector_traj = trajtool.predict_rear_axle_trajectory_backward(rwa, distance);
     }
 
-    //copy the confirmed wished traj to traj_confirmed
+    for(auto &traj_pose : vector_traj) {
+        Pose poseLeft, poseRight;
+        corridortool.calc_vehicle_left_right_path(traj_pose, poseRight, poseLeft);
+        vector_path_left.push_back(poseLeft);
+        vector_path_right.push_back(poseRight);
+    }
+
     if(taster_flag) {
+        //get the confirmed traj before the new wished traj
+        // rclcpp::Time time_1;
+        // time_1 = this->now();
         traj_confirmed.set__header(traj_wished.header);
         traj_confirmed.poses.clear();
         traj_confirmed.set__poses(traj_wished.poses);
 
+        path_left_confirmed.set__header(path_left.header);
+        path_left_confirmed.poses.clear();
+        path_left_confirmed.set__poses(path_left.poses);
+
+        path_right_confirmed.set__header(path_right.header);
+        path_right_confirmed.poses.clear();
+        path_right_confirmed.set__poses(path_right.poses);
+
         start_confirm = true;
+        // double dt;
+        // dt = time_1.seconds() - this->now().seconds();
+        // std::cout << "Time difference:" << dt << std::endl;
     }
 
-    //generate the wished traj msg
+    if(gear_change_flag) {
+        path_left_confirmed.poses.clear();
+        path_right_confirmed.poses.clear();
+    }
+
     pathID_add_judge();
+
     std::string path_frame_name = "path_"+std::to_string(pathID);
+
     msg_time = this->now();
     traj_wished = vector2pathmsg(path_frame_name, vector_traj, msg_time);
+    path_left = vector2pathmsg(path_frame_name, vector_path_left, msg_time);
+    path_right = vector2pathmsg(path_frame_name, vector_path_right, msg_time);
     msg_received = true;
 }
 
@@ -83,14 +122,17 @@ void TrajVisualisation::timer_callback_confirmed()
     if(start_confirm)
     {
         pub_path_confirmed->publish(traj_confirmed);
+        pub_path_left_confirmed->publish(path_left_confirmed);
+        pub_path_right_confirmed->publish(path_right_confirmed);
     }
 }
 
 void TrajVisualisation::timer_callback_wished()
 {
-    if(msg_received) 
-    {
+    if(msg_received) {
         pub_path->publish(traj_wished);
+        pub_path_left->publish(path_left);
+        pub_path_right->publish(path_right);
     }
 }
 
@@ -100,15 +142,16 @@ void TrajVisualisation::pathID_add_judge()
         pathID += 1;
         taster_flag = false;
     }
-    // if(gear_change_flag) {
-    //     pathID += 1;
-    //     gear_change_flag = false;
-    // }
+    if(gear_change_flag) {
+        pathID += 1;
+        gear_change_flag = false;
+    }
     // std::cout << "path id: " << std::to_string(pathID) << std::endl;
 }
 
 nav_msgs::msg::Path TrajVisualisation::vector2pathmsg(std::string frame_name, std::vector<Pose> traj, rclcpp::Time now)
 {
+    // auto check_transform = KosTransform::waitForTransform(*tf_buffer_, frame_name, "path_start");
     nav_msgs::msg::Path traj_result;
     traj_result.header.stamp = now;
     traj_result.header.frame_id = frame_name;
