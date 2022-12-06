@@ -1,1 +1,0 @@
-colcon build --packages-select interactive_trajectory

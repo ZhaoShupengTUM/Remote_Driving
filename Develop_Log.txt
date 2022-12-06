@@ -1,0 +1,35 @@
+$$$$The developing log:
+
+30/05/22 - 13/06/22
+1. make the rviz launch in the launch file:
+Node(
+package='rviz2',
+executable='rviz2',
+name='rviz2',
+arguments=['-d', "trajGeneration.rviz"]
+)
+
+
+2. add the static transform publisher to the launch file
+
+3. add the ed25519 SSH key and create a git repository
+
+4. add the VehicleMarkerNode to pubslish a marker in the rviz
+
+5. learn about the ros2 component a little, but dont understand too much
+
+6. learn aout ros2 tf2 
+
+phase 1 ends:
+finished a random generated trajectory tool package
+
+
+13/06/22 - 
+phase 2 starts: 
+create a interactive keyborad based trajectory generation package
+
+1. create and learn a keyboard reading node
+
+2. create a trajactory visulization node 
+
+

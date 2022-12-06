@@ -1,7 +1,0 @@
-pid_longitudinal_control:
-#this name is the name in the node class definition or the same name defined in the launch file
-  ros__parameters: 
-    kp: 0.8
-    kd: 3.5
-    ki: 0.02 
-

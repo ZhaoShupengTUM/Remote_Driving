@@ -1,9 +1,0 @@
-pure_pursuit_control:
-  ros__parameters:
-    # -- algorithm --
-    lookahead_distance_ratio: 0.5
-    min_lookahead_distance: 3.0
-    reverse_min_lookahead_distance: 4.0
-    converged_steer_rad: 0.1
-    control_period: 0.02
-    wheel_base: 2.875

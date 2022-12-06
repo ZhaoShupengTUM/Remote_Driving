@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/opt/ros/foxy/include/**",
+                "/usr/include/**",
+                "/home/zsp/sa_zhao/src/random_trajectory/include/**",
+                "/home/zsp/sa_zhao/install/traj_interfaces/include/**",
+                "/home/zsp/sa_zhao/install/tod_msgs/include/**",
+                "${workspaceFolder}/src/interactive_trajectory/include/"
+            ],
+            "defines": [],
+            "cStandard": "c11",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "linux-clang-x64",
+            "configurationProvider": "ms-vscode.cmake-tools"
+        }
+    ],
+    "version": 4
+}
