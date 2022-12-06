@@ -5,12 +5,17 @@ This is a github repository developed by Zhao, Shupeng under the guidance of Flo
 
 ## Architecture
 Two branches are really meaningful in this repositpry:  
-1.**main**: only contains several pacakages to make an interactive trajectory by keyboard. It is a small game which you need to plan a smooth trajecptory from a staring pose to an ending pose. You can play with it and get familiar with this software. Only a ros2 environment is needed😛.  
+1.**main**:  
+only contains several pacakages to make an interactive trajectory by keyboard. It is a small game which you need to plan a smooth trajecptory from a staring pose to an ending pose. You can play with it and get familiar with this software. Only a ros2 environment is needed😛.  
 <img src="image/readme_main_traj.png" alt="drawing" width="200"/>  
 
-2.**purepursuit_ackermann_control**:
-A Branch that contains interactive path planning and control.  
+2.**purepursuit_ackermann_control**:  
+A Branch that contains interactive path planning and control. Following is the running result of this program.
+
 <img src="image/readme_main_result.png" alt="drawing" width="350"/>  
+<img src="https://user-images.githubusercontent.com/74742676/205897443-2ac0f0e3-1d06-49fc-9032-13b19d5443bd.png" alt="drawing" width="350">
+
+
 
 ## Code explaination
 The packages in the purepursuit_ackermann can be seperated into four groups:  
